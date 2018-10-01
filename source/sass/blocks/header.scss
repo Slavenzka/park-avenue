@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  margin-top: 20px;
+  width: 100%;
+  background-color: $background__menu--mobile;
+}
+
+.header > .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  border-top: 1px solid $border__header;
+  border-bottom: 1px solid $border__header;
+}
+
+.header__link {
+  position: relative;
+  display: block;
+  font-size: 0;
+  z-index: 1;
+}
+
+@media (min-width: $width__tablet) {
+  .header > .container {
+    justify-content: space-between;
+  }
+
+  .header__sidebar {
+    position: absolute;
+    top: 250px;
+    right: -95px;
+    display: flex;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .header__sidebar {
+    top: 280px;
+    right: -60px;
+  }
+}

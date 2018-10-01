@@ -1,0 +1,28 @@
+.language {
+  display: none;
+}
+
+@media (min-width: $width__tablet) {
+  .language {
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+    margin: 0;
+    padding: 0;
+    width: 71px;
+    list-style: none;
+  }
+
+  .language__link {
+    font-family: $font-family__main;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 13px;
+    color: $font-color__light;
+    opacity: 0.5;
+  }
+
+  .language__item--selected .language__link {
+    opacity: 1;
+  }
+}

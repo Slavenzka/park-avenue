@@ -4,10 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница Park Avenue VIP</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__link">
+        <picture>
+          <source media="(min-width: 768px)" srcset="https://via.placeholder.com/79x44">
+          <img src="https://via.placeholder.com/72x40" alt="Логотип Park Avenue">
+        </picture>
+      </a>
+      <nav class="header__nav header__nav--closed nav-main">
+        <button class="nav-main__toggle" type="button">
+          Открыть / закрыть меню
+        </button>
+        <div class="nav-main__wrapper">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="" class="nav-main__link">
+                Главная
+              </a>
+            </li>
+            <li class="nav-main__item">
+              <a href="" class="nav-main__link">
+                О комплексе
+              </a>
+            </li>
+            <li class="nav-main__item">
+              <a href="" class="nav-main__link">
+                Планировки
+              </a>
+            </li>
+            <li class="nav-main__item">
+              <a href="" class="nav-main__link">
+                Технические данные
+              </a>
+            </li>
+            <li class="nav-main__item">
+              <a href="" class="nav-main__link">
+                Новости
+              </a>
+            </li>
+            <li class="nav-main__item">
+              <a href="" class="nav-main__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <span class="nav-main__contacts">
+            <span class="nav-main__address">
+              г. Киев, просп. Голосеевский, 58а
+            </span>
+            <span class="nav-main__phone">
+              (044) 290 338 22
+            </span>
+          </span>
+        </div>
+      </nav>
+      <aside class="header__sidebar">
+        <ul class="header__language language">
+          <li class="language__item language__item--ru language__item--selected">
+            <a href="#" class="language__link">
+              ru
+            </a>
+          </li>
+          <li class="language__item language__item--ua">
+            <a href="#" class="language__link">
+              ua
+            </a>
+          </li>
+          <li class="language__item language__item--en">
+            <a href="#" class="language__link">
+              en
+            </a>
+          </li>
+        </ul>
+        <ul class="header__social social">
+          <li class="social__item social__item--fb">
+            <a href="#" class="social__link">
+              facebook
+            </a>
+          </li>
+          <li class="social__item social__item--instagram">
+            <a href="#" class="social__link">
+              instagram
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <script src="js/menu-toggle.js"></script>
 </body>
 
 </html>
