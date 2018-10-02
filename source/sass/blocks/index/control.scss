@@ -1,0 +1,95 @@
+.control {
+  display: none;
+}
+
+@media (min-width: $width__tablet) {
+  .control {
+    position: absolute;
+    top: 420px;
+    left: calc(100% * 36 / 768 + 15px);
+    display: flex;
+    align-items: center;
+    font-family: $font-family__main;
+    z-index: 20;
+  }
+
+  .control input[type="radio"] {
+    display: none;
+  }
+
+  .control__list {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .control__item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  .control__switch {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 8px 0 9px 0;
+    width: 10px;
+    font-family: $font-family__main;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    color: $font-color__light;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .control__item .control__switch {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      height: 1px;
+      width: 40px;
+      background-color: $background__light;
+      opacity: 0.5;
+    }
+  }
+
+  .control__item--selected .control__switch {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  .control__button {
+    margin: 0;
+    padding: 0;
+    width: 7px;
+    height: 12px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    background-image: url("https://via.placeholder.com/7x12");
+    cursor: pointer;
+  }
+
+  .control__button--prev {
+    margin-left: 35px;
+  }
+
+  .control__button--next {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .control {
+    top: 582px;
+    left: calc(100% * 74 / 1440 + 15px);
+  }
+}

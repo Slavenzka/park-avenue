@@ -23,32 +23,32 @@
         </button>
         <div class="nav-main__wrapper">
           <ul class="nav-main__list">
-            <li class="nav-main__item">
+            <li class="nav-main__item nav-main__item--main">
               <a href="" class="nav-main__link">
                 Главная
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item nav-main__item--complex">
               <a href="" class="nav-main__link">
                 О комплексе
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item nav-main__item--plans">
               <a href="" class="nav-main__link">
                 Планировки
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item nav-main__item--tech">
               <a href="" class="nav-main__link">
                 Технические данные
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item nav-main__item--news">
               <a href="" class="nav-main__link">
                 Новости
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item nav-main__item--contacts">
               <a href="" class="nav-main__link">
                 Контакты
               </a>
@@ -98,7 +98,116 @@
     </div>
   </header>
 
+  <main>
+    <h1 class="visually-hidden">
+      Главная страница ЖК Park Avenue VIP
+    </h1>
+    <section class="promo">
+      <h2 class="visually-hidden">
+        Информация о жилом комплексе
+      </h2>
+      <div class="promo__slider">
+        <ul class="promo__list">
+          <li class="promo__item promo__item--1 promo__item--selected">
+            <div class="container">
+              <h3 class="promo__title">
+                Park Avenue VIP
+              </h3>
+              <h4 class="promo__subtitle">
+                Жилой комплекс
+              </h4>
+              <p class="promo__descriptor">
+                мы реализовали все пожелания клиентов. Лучший ЖК 2016 Восточной Европы и Азии
+              </p>
+            </div>
+          </li>
+          <li class="promo__item promo__item--2 promo__item--next">
+            <div class="container">
+              <h3 class="promo__title">
+                Заголовок №2
+              </h3>
+              <h4 class="promo__subtitle">
+                Подзаголовок №2
+              </h4>
+              <p class="promo__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quam, aut repudiandae velit ipsam voluptatum?
+              </p>
+            </div>
+          </li>
+          <li class="promo__item promo__item--3 promo__item--next">
+            <div class="container">
+              <h3 class="promo__title">
+                Заголовок №3
+              </h3>
+              <h4 class="promo__subtitle">
+                Подзаголовок №3
+              </h4>
+              <p class="promo__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quam, aut repudiandae velit ipsam voluptatum?
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="promo__aux">
+        <div class="promo__control control">
+          <ul class="control__list">
+            <li class="control__item control__item--1 control__item--selected">
+              <input type="radio" name="sliderPromo" id="promoSlide1" value="1">
+              <label class="control__switch" for="promoSlide1">
+                1
+              </label>
+            </li>
+            <li class="control__item control__item--2">
+              <input type="radio" name="sliderPromo" id="promoSlide2" value="2">
+              <label class="control__switch" for="promoSlide2">
+                2
+              </label>
+            </li>
+            <li class="control__item control__item--3">
+              <input type="radio" name="sliderPromo" id="promoSlide3" value="3">
+              <label class="control__switch" for="promoSlide3">
+                3
+              </label>
+            </li>
+          </ul>
+          <button class="control__button control__button--prev" type="button">
+            Предыдущий слайд
+          </button>
+          <button class="control__button control__button--next" type="button">
+            Следующий слайд
+          </button>
+        </div>
+        <div class="promo__service service">
+          <div class="container">
+            <ul class="service__list">
+              <li class="service__item service__item--select">
+                <a href="#" class="service__link">
+                  Онлайн подбор квартир
+                </a>
+              </li>
+              <li class="service__item service__item--preview">
+                <a href="#" class="service__link">
+                  Записаться на просмотр
+                </a>
+              </li>
+              <li class="service__item  service__item--counter">
+                <a class="service__link">
+                  Продано квартир:
+                  <span class="service__counter">
+                    3 565
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <script src="js/menu-toggle.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

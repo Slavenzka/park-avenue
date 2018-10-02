@@ -1,8 +1,29 @@
 .header {
   position: fixed;
-  margin-top: 20px;
+  top: 20px;
   width: 100%;
-  background-color: $background__menu--mobile;
+  background-color: $background__hover;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 100% * 15 / 320;
+    width: 1px;
+    height: 568px;
+    background-color: $border__main;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 100% * 14 / 320;
+    width: 1px;
+    height: 568px;
+    background-color: $border__main;
+  }
 }
 
 .header > .container {
@@ -18,7 +39,7 @@
   position: relative;
   display: block;
   font-size: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 @media (min-width: $width__tablet) {
@@ -28,16 +49,39 @@
 
   .header__sidebar {
     position: absolute;
-    top: 250px;
-    right: -95px;
+    top: 150px;
+    right: calc(100% * 36 / 768 + 6px);
     display: flex;
+    transform-origin: 100%;
     transform: rotate(-90deg);
   }
 }
 
 @media (min-width: $width__desktop) {
+  .header {
+    top: 35px;
+    right: 0;
+
+    &::before {
+      top: -35px;
+      left: 100% * 74 / 1440;
+      height: 800px;
+      box-shadow: 50% 0 0 0 $border__main;
+    }
+
+    &::after {
+      top: -35px;
+      right: 100% * 75 / 1440;
+      height: 800px;
+    }
+  }
+
+  .header > .container {
+    min-height: 60px;
+  }
+
   .header__sidebar {
-    top: 280px;
-    right: -60px;
+    top: 201px;
+    right: calc(100% * 74 / 1440 + 7px);
   }
 }
