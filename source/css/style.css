@@ -708,7 +708,7 @@ a {
       content: "";
       position: absolute;
       top: -9px;
-      left: 115px;
+      right: calc(-30vw - 84px);
       width: calc(400px + 30vw);
       height: 80px;
       background-color: white;
