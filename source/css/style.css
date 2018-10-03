@@ -136,13 +136,15 @@ a {
     .header::before {
       top: -35px;
       left: 5.13889%;
-      height: 800px;
-      -webkit-box-shadow: 50% 0 0 0 rgba(216, 217, 221, 0.3);
-              box-shadow: 50% 0 0 0 rgba(216, 217, 221, 0.3); }
+      height: 100vh;
+      -webkit-box-shadow: 315px 0 0 0 rgba(216, 217, 221, 0.3);
+              box-shadow: 315px 0 0 0 rgba(216, 217, 221, 0.3); }
     .header::after {
       top: -35px;
       right: 5.20833%;
-      height: 800px; }
+      height: 100vh;
+      -webkit-box-shadow: -314px 0 0 0 rgba(216, 217, 221, 0.3);
+              box-shadow: -314px 0 0 0 rgba(216, 217, 221, 0.3); }
   .header > .container {
     min-height: 60px; }
   .header__sidebar {
