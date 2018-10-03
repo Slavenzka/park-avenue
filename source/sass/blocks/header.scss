@@ -65,14 +65,15 @@
     &::before {
       top: -35px;
       left: 100% * 74 / 1440;
-      height: 800px;
-      box-shadow: 50% 0 0 0 $border__main;
+      height: 100vh;
+      box-shadow: 315px 0 0 0 $border__main;
     }
 
     &::after {
       top: -35px;
       right: 100% * 75 / 1440;
-      height: 800px;
+      height: 100vh;
+      box-shadow: -314px 0 0 0 $border__main;
     }
   }
 
