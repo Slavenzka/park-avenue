@@ -5,7 +5,7 @@
 @media (min-width: $width__tablet) {
   .control {
     position: absolute;
-    top: 420px;
+    bottom: 110px;
     left: calc(100% * 36 / 768 + 15px);
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@
 
 @media (min-width: $width__desktop) {
   .control {
-    top: 582px;
+    bottom: 188px;
     left: calc(100% * 74 / 1440 + 15px);
   }
 }
