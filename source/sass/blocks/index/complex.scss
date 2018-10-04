@@ -1,0 +1,134 @@
+.complex {
+  font-family: $font-family__main;
+  background-color: $background__light;
+}
+
+.complex__text-content {
+  min-width: $width__mobile;
+  padding: 39px 100% * 15 / 320 0;
+}
+
+.complex__chapter {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+  color: $font-color__darker;
+}
+
+.complex__slogan {
+  margin: 0;
+  margin-top: 8px;
+  font-family: $font-family__heading;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__darker;
+}
+
+.complex__descriptor {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  text-indent: 4px;
+  color: $font-color__dark;
+}
+
+.complex__welcome {
+  display: block;
+  margin-top: 23px;
+  text-indent: 0;
+}
+
+.complex__link {
+  display: block;
+  margin-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $font-color__highlight;
+}
+
+.complex__frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+@media (min-width: $width__tablet) {
+  .complex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      right: 400px;
+      width: calc(100% - 400px - 100% * 15 / 320);
+      height: 1px;
+      background-color: $border__separator;
+    }
+  }
+
+  .complex__text-content {
+    padding-top: 100px;
+    padding-right: 0;
+    width: 100% * 370 / 768;
+  }
+
+  .complex__slogan {
+    font-size: 24px;
+  }
+
+  .complex__link {
+    display: inline-block;
+  }
+
+  .complex__frame {
+    margin-top: 0;
+    width: 390px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .complex {
+    &::before {
+      left: 100% * 74 / 1440;
+      right: 0;
+      width: calc(960px + 100% - 200% * 74 / 1440 - 1290px);
+    }
+  }
+
+  .complex__text-content {
+    padding-top: 119px;
+    padding-left: 100% * 74 / 1440;
+  }
+
+  .complex__slogan {
+    margin-top: 10px;
+    margin-left: -1px;
+  }
+
+  .complex__descriptor {
+    margin-top: 40px;
+    margin-left: -1px;
+  }
+
+  .complex__link {
+    margin-top: 53px;
+    padding-left: 1px;
+  }
+
+  .complex__frame {
+    width: calc(390px + 100% * 74 / 1440 - 74px);
+  }
+}
