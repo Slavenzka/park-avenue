@@ -1,0 +1,187 @@
+.environment .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 37px;
+}
+
+.environment__alert {
+  display: none;
+}
+
+.environment__selector {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  border: 0;
+  outline: 0;
+  opacity: 0;
+}
+
+.environment__3d,
+.environment__google,
+.environment__benefits {
+  display: none;
+}
+
+.environment__selector--3d:checked ~ .environment__3d,
+.environment__selector--google:checked ~ .environment__google,
+.environment__selector--benefits:checked ~ .environment__benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.environment__title {
+  position: relative;
+  margin-left: -1px;
+  padding-bottom: 19px;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $font-color__medium;
+  z-index: 2;
+}
+
+.environment__selector:checked + .environment__title {
+  position: relative;
+  color: $font-color__highlight;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: $background__highlight;
+  }
+}
+
+.environment__title:not(:last-of-type) {
+  margin-right: 71px;
+}
+
+.environment__title:last-of-type {
+  margin-left: 0;
+}
+
+.environment__descriptor {
+  padding-top: 79px;
+  padding-left: 25px;
+  width: 316px;
+  font-family: $font-family__main;
+}
+
+.environment__location {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $font-color__highlight;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $border__highlight;
+  }
+}
+
+.environment__icon {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+
+.environment__icon use {
+  fill: $icon-color__highlight;
+}
+
+.environment__icon--list {
+  top: 11px;
+  left: 11px;
+}
+
+.environment__icon--list use {
+  fill: $icon-color__light;
+}
+
+.environment__details {
+  margin: 0;
+  margin-top: 35px;
+  font-size: 15px;
+  line-height: 23px;
+  color: $font-color__dark;
+}
+
+.environment__button {
+  margin-right: 1px;
+  margin-left: auto;
+  padding: 25px 25px 24px 25px;
+  width: 315px;
+  text-align: center;
+}
+
+@media (max-width: 1439px) {
+  .environment__descriptor {
+    display: none;
+  }
+
+  .environment__button {
+    margin-left: calc(977px - 316px);
+  }
+}
+
+@media (max-width: 1080px) {
+  .environment > .container > .environment__google,
+  .environment > .container > .environment__3d,
+  .environment__selector + .environment__title {
+    display: none;
+  }
+
+  .environment > .container > .environment__benefits {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .environment > .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .environment__alert {
+    display: block;
+    margin: 13px auto 0 auto;
+    width: 290px;
+    font-family: $font-family__main;
+    font-size: 14px;
+    line-height: 24px;
+    color: $font-color__medium;
+    text-align: center;
+  }
+
+  .environment__button {
+    margin-top: 30px;
+    margin-left: calc(50% - 290px / 2);
+    width: 290px;
+  }
+}
+
+@media (max-width: 767px) {
+  .environment > .container {
+    overflow: hidden;
+  }
+}

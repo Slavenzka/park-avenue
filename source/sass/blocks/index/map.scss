@@ -1,0 +1,137 @@
+.map {
+  margin-left: -1px;
+  width: 977px;
+  height: 550px;
+  background-color: $background__hover;
+  background-image: url("../img/index__3d-bg@1x.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/index__3d-bg@2x.jpg");
+  }
+}
+
+.map__marks {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.map__mark {
+  position: absolute;
+  max-width: 166px;
+  font-family: $font-family__aux;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.map__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 41px;
+  min-height: 32px;
+  color: $font-color__light;
+  text-transform: lowercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-color: $background__hover;
+    border: 2px solid $border__light;
+  }
+}
+
+.map__mark--1 {
+  top: 100% * 178 / 550;
+  left: 100% * 86 / 977;
+}
+
+.map__mark--2 {
+  top: 100% * 305 / 550;
+  left: 100% * 115 / 977;
+}
+
+.map__mark--3 {
+  top: 100% * 377 / 550;
+  left: 100% * 32 / 977;
+}
+
+.map__mark--4 {
+  top: 100% * 459 / 550;
+  left: 100% * 113 / 977;
+}
+
+.map__mark--5 {
+  top: 100% * 103 / 550;
+  left: 100% * 222 / 977;
+}
+
+.map__mark--6 {
+  top: 100% * 257 / 550;
+  left: 100% * 284 / 977;
+}
+
+.map__mark--7 {
+  top: 100% * 369 / 550;
+  left: 100% * 294 / 977;
+}
+
+.map__mark--8 {
+  top: 100% * 103 / 550;
+  left: 100% * 449 / 977;
+}
+
+.map__mark--9 {
+  top: 100% * 180 / 550;
+  left: 100% * 425 / 977;
+}
+
+.map__mark--10 {
+  top: 100% * 254 / 550;
+  left: 100% * 509 / 977;
+}
+
+.map__mark--11 {
+  top: 100% * 371 / 550;
+  left: 100% * 575 / 977;
+}
+
+.map__mark--12 {
+  top: 100% * 447 / 550;
+  left: 100% * 493 / 977;
+}
+
+.map__mark--13 {
+  top: 100% * 67 / 550;
+  left: 100% * 744 / 977;
+}
+
+.map__mark--14 {
+  top: 100% * 174 / 550;
+  left: 100% * 774 / 977;
+}
+
+.map__mark--15 {
+  top: 100% * 281 / 550;
+  left: 100% * 714 / 977;
+}
+
+.map__mark--16 {
+  top: 100% * 347 / 550;
+  left: 100% * 804 / 977;
+}
+
+.map__mark--17 {
+  top: 100% * 417 / 550;
+  left: 100% * 778 / 977;
+}

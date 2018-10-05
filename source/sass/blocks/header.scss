@@ -4,6 +4,15 @@
   width: 100%;
   background-color: $background__hover;
   z-index: 2;
+}
+
+.header > .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  border-top: 1px solid $border__header;
+  border-bottom: 1px solid $border__header;
 
   &::before {
     content: "";
@@ -19,20 +28,11 @@
     content: "";
     position: absolute;
     top: -20px;
-    right: 100% * 14 / 320;
+    right: 100% * 15 / 320;
     width: 1px;
     height: 100vh;
     background-color: $border__main;
   }
-}
-
-.header > .container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 50px;
-  border-top: 1px solid $border__header;
-  border-bottom: 1px solid $border__header;
 }
 
 .header__link {
@@ -61,6 +61,10 @@
   .header {
     top: 35px;
     right: 0;
+  }
+
+  .header > .container {
+    min-height: 60px;
 
     &::before {
       top: -35px;
@@ -75,10 +79,6 @@
       height: 100vh;
       box-shadow: -314px 0 0 0 $border__main;
     }
-  }
-
-  .header > .container {
-    min-height: 60px;
   }
 
   .header__sidebar {
