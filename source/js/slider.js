@@ -7,7 +7,9 @@
   let controlPromo = document.querySelector('.control');
   let controlItemsPromo = controlPromo.querySelectorAll('.control__item > input');
   let buttonPrevPromo = controlPromo.querySelector('.control__button--prev');
+  let iconPrevPromo = buttonPrevPromo.querySelector('.control__icon');
   let buttonNextPromo = controlPromo.querySelector('.control__button--next');
+  let iconNextPromo = buttonNextPromo.querySelector('.control__icon');
   let selectedControlPromo = 'control__item--selected';
 
   let slider = {
@@ -32,6 +34,22 @@
       return next;
     },
 
+    toggleButtons: function (sliderItems, activeSlide) {
+      switch (activeSlide) {
+        case 0:
+          buttonPrevPromo.classList.add('control__button--block');
+          buttonNextPromo.classList.remove('control__button--block');
+          break;
+        case (sliderItems.length - 1):
+          buttonNextPromo.classList.add('control__button--block');
+          buttonPrevPromo.classList.remove('control__button--block');
+          break;
+        default:
+          buttonNextPromo.classList.remove('control__button--block');
+          buttonPrevPromo.classList.remove('control__button--block');
+      }
+    },
+
     switchSlide: function (sliderItems, selectedClass, nextSelection, controlItems, controlClass) {
       let next = this.findNextSlide(sliderItems, selectedClass, nextSelection);
       let active = this.findSelection(sliderItems, selectedClass);
@@ -41,6 +59,8 @@
       controlItems[active].parentNode.classList.remove(controlClass);
       controlItems[next].parentNode.classList.add(controlClass);
       controlItems[next].checked = 'true';
+
+      this.toggleButtons(sliderItems, next);
     }
   }
 

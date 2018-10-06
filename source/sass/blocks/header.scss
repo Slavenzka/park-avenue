@@ -42,6 +42,17 @@
   z-index: 3;
 }
 
+.header__icon {
+  margin-left: 1px;
+  width: 72px;
+  height: 40px;
+}
+
+.header__icon use {
+  fill: $icon-color__light;
+  opacity: 0.8;
+}
+
 @media (min-width: $width__tablet) {
   .header > .container {
     justify-content: space-between;
@@ -79,6 +90,17 @@
       height: 100vh;
       box-shadow: -314px 0 0 0 $border__main;
     }
+  }
+
+  .header__link {
+    align-self: flex-start;
+    margin-top: 6px;
+  }
+
+  .header__icon {
+    margin-left: 0;
+    width: 79px;
+    height: 44px;
   }
 
   .header__sidebar {

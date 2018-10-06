@@ -9,7 +9,7 @@
   font-family: $font-family__main;
   background-color: $background__menu--mobile;
   transition-duration: 0.5s;
-  z-index: 2;
+  z-index: 1;
 }
 
 .nav-main__toggle {
@@ -71,10 +71,12 @@
 
 .header__nav--closed .nav-main__wrapper {
   transform: translateY(-569px);
+  opacity: 0.5;
 }
 
 .header__nav--opened .nav-main__wrapper {
   transform: translateY(-1px);
+  opacity: 1;
 }
 
 .nav-main__list {

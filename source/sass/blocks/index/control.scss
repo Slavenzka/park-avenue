@@ -74,7 +74,6 @@
     font-size: 0;
     background-color: transparent;
     border: none;
-    background-image: url("https://via.placeholder.com/7x12");
     cursor: pointer;
   }
 
@@ -82,8 +81,21 @@
     margin-left: 35px;
   }
 
+  .control__button--prev .control__icon {
+    transform: rotate(180deg);
+  }
+
+  .control__button--block {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
   .control__button--next {
     margin-left: 30px;
+  }
+
+  .control__icon use {
+    fill: $icon-color__light;
   }
 }
 
