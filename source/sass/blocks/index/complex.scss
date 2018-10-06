@@ -48,12 +48,19 @@
 }
 
 .complex__link {
+  position: relative;
   display: block;
   margin-top: 26px;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
   color: $font-color__highlight;
+}
+
+.complex__icon {
+  position: absolute;
+  top: 6px;
+  right: 0;
 }
 
 .complex__frame {
@@ -102,6 +109,11 @@
 
   .complex__link {
     display: inline-block;
+  }
+
+  .complex__icon {
+    top: 6px;
+    right: -42px;
   }
 
   .complex__frame {
