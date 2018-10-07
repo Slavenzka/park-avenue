@@ -483,6 +483,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 227px;
   width: 100%;
   min-height: 568px; }
@@ -506,7 +509,7 @@ a {
           order: 2;
   margin: 0;
   margin-top: 8px;
-  max-width: 270px;
+  width: 290px;
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 24px;
   font-weight: 700;
@@ -519,7 +522,7 @@ a {
       -ms-flex-order: 1;
           order: 1;
   margin: 0;
-  max-width: 270px;
+  width: 290px;
   font-size: 14px;
   font-weight: 500;
   line-height: 13px; }
@@ -530,7 +533,7 @@ a {
           order: 3;
   margin: 0;
   margin-top: 40px;
-  max-width: 270px;
+  width: 290px;
   font-size: 15px;
   font-weight: 400;
   line-height: 23px; }
@@ -539,15 +542,19 @@ a {
   position: absolute; }
 
 @media (min-width: 768px) {
+  .promo__item .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .promo__title {
     margin-top: 8px;
-    max-width: 370px;
+    width: 370px;
     font-size: 34px;
     line-height: 32px; }
   .promo__subtitle {
-    max-width: 370px; }
+    width: 370px; }
   .promo__descriptor {
-    max-width: 370px; } }
+    width: 370px; } }
 
 @media (min-width: 1440px) {
   .promo__item .container {
@@ -563,16 +570,16 @@ a {
     padding-bottom: 259px; }
   .promo__title {
     margin-top: 10px;
-    max-width: 500px;
+    width: 500px;
     font-size: 48px;
     line-height: 46px;
     letter-spacing: 0.4px; }
   .promo__subtitle {
     padding-left: 1px;
-    max-width: 500px; }
+    width: 500px; }
   .promo__descriptor {
     margin-top: 30px;
-    max-width: 500px; } }
+    width: 500px; } }
 
 .control {
   display: none; }
@@ -665,8 +672,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 290px;
   list-style: none; }
 
 .service__item {
@@ -743,11 +751,14 @@ a {
 @media (min-width: 768px) {
   .service {
     margin-top: -71px; }
-  .service__item {
-    width: 300px; }
   .service__list {
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%; }
+  .service__item {
+    width: 300px; }
   .service__item--select .service__link::before {
     top: 2px;
     left: 262px; }
@@ -829,8 +840,9 @@ a {
   min-height: 955px; }
 
 .complex__text-content {
+  margin: 0 auto;
   padding-top: 39px;
-  max-width: 290px; }
+  width: 290px; }
 
 .complex__chapter {
   margin: 0;
@@ -914,8 +926,8 @@ a {
             justify-content: space-between;
     min-height: auto; }
   .complex__text-content {
+    margin-left: 0;
     padding-top: 100px;
-    max-width: 100%;
     width: 48.17708%; }
   .complex__slogan {
     font-size: 24px; }
@@ -1489,3 +1501,125 @@ a {
   .benefits__content {
     width: 100%;
     padding-right: 10px; } }
+
+.thesis {
+  background-image: url("../img/index__thesis-bg.svg");
+  background-size: 560px 1275px;
+  background-position: calc(50% + 127px) -173px;
+  background-repeat: no-repeat; }
+
+.thesis__list {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 290px;
+  list-style: none; }
+
+.thesis__item:not(:last-of-type) {
+  margin-bottom: 40px; }
+
+.thesis__title {
+  margin: 0;
+  margin-left: -1px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #272327; }
+
+.thesis__descriptor {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: -1px;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: gray; }
+
+@media (min-width: 768px) {
+  .thesis {
+    padding-bottom: 11px;
+    background-size: 681px 618px;
+    background-position: calc(100%) 60px;
+    background-repeat: no-repeat; }
+  .thesis__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    width: 100%; }
+  .thesis__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%; }
+  .thesis__item:last-of-type {
+    margin-right: auto;
+    margin-left: auto; }
+  .thesis__item:not(:last-of-type) {
+    margin-bottom: 110px; }
+  .thesis__title,
+  .thesis__descriptor {
+    width: 290px; }
+  .thesis__title {
+    font-size: 24px;
+    line-height: 24px; } }
+
+@media (min-width: 1440px) {
+  .thesis__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 290px; }
+  .thesis__item:not(:nth-of-type(2)) {
+    margin-right: 150px; }
+  .thesis__item:nth-of-type(2) {
+    margin-right: 300px; }
+  .thesis__item:last-of-type {
+    margin-right: 150px;
+    margin-left: 0; }
+  .thesis__item--1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .thesis__item--2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .thesis__item.thesis__item--3 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    margin-right: 0; }
+  .thesis__item--4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .thesis__item--5 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .thesis__title {
+    margin: 0;
+    margin-left: 5px; }
+  .thesis__descriptor {
+    margin-top: 25px; } }

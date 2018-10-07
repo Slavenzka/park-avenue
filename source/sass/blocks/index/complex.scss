@@ -9,8 +9,9 @@
 }
 
 .complex__text-content {
+  margin: 0 auto;
   padding-top: 39px;
-  max-width: 290px;
+  width: 290px;
 }
 
 .complex__chapter {
@@ -98,8 +99,8 @@
   }
 
   .complex__text-content {
+    margin-left: 0;
     padding-top: 100px;
-    max-width: 100%;
     width: 100% * 370 / 768;
   }
 
