@@ -49,10 +49,52 @@ a {
   cursor: pointer;
 }
 
+.chapter {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+  color: $font-color__darker;
+}
+
+.heading {
+  margin: 0;
+  font-family: $font-family__heading;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__darker;
+}
+
+.descriptor {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  text-indent: 4px;
+  color: $font-color__dark;
+}
+
+.link {
+  position: relative;
+  display: block;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $font-color__highlight;
+}
+
 @media (min-width: $width__tablet) {
   .container {
     min-width: $width__tablet;
     padding: 0 100% * 36 / 768;
+  }
+
+  .heading {
+    font-size: 24px;
   }
 }
 
