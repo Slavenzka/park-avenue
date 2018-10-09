@@ -27,7 +27,7 @@
   padding-bottom: 50px;
   width: 100%;
   background-size: cover;
-  transition-duration: 2s;
+  transition-duration: 1s;
   opacity: 0;
   z-index: -1;
 }
@@ -39,7 +39,11 @@
 }
 
 .advantages__item--1 {
-  background-image: url("../img/advantages__item-bg@1x.jpg");
+  background-image: url("../img/index__advantages-bg@1x.jpg");
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/index__advantages-bg@2x.jpg");
+  }
 }
 
 .advantages__counter {
