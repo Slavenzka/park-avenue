@@ -63,7 +63,7 @@
 
 .service__link {
   display: block;
-  padding: 8px 0 9px 0;
+  padding: 9px 0 8px 0;
   font-family: $font-family__main;
   font-size: 15px;
   font-weight: 400;
@@ -183,12 +183,19 @@
     display: block;
   }
 
+  .service__item--select .service__link {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+
   .service__item--preview .service__link {
-    margin-left: 9px;
+    margin-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 8px;
   }
 
   .service__item--counter .service__link {
-    padding: 19px 0 29px 40px;
+    padding: 20px 0 28px 40px;
     width: 316px;
     background-color: white;
     opacity: 1;
