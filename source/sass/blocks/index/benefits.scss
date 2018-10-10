@@ -112,7 +112,7 @@
 .benefits__content {
   position: absolute;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 11px;
   padding-right: 70px;
   width: 340px;
   font-family: $font-family__main;
@@ -127,10 +127,11 @@
 }
 
 .benefits__switch:checked ~ .benefits__content {
-  position: static;
+  position: relative;
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+  z-index: 1;
 }
 
 .benefits__switch:checked + .benefits__feature {
@@ -187,7 +188,7 @@
     position: relative;
     margin-top: 30px;
     padding-right: 0;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
     padding-left: 0;
     text-align: left;
 
@@ -199,6 +200,7 @@
       width: 50vw;
       height: 100%;
       background-color: $background__dark;
+      z-index: 0;
     }
 
     &::after {
@@ -209,6 +211,7 @@
       width: 50vw;
       height: 100%;
       background-color: $background__dark;
+      z-index: 0;
     }
   }
 
@@ -226,7 +229,7 @@
   }
 
   .benefits__slogan {
-    margin-top: 30px;
+    margin-top: 31px;
     padding-left: 1px;
   }
 
@@ -236,7 +239,7 @@
   }
 
   .benefits__list:first-of-type {
-    margin-top: 43px;
+    margin-top: 42px;
   }
 
   .benefits__item {
