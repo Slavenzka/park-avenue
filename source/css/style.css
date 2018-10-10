@@ -200,7 +200,7 @@ a {
               box-shadow: 315px 0 0 0 rgba(216, 217, 221, 0.3); }
     .header > .container::after {
       top: -35px;
-      right: 5.20833%;
+      right: 5.13889%;
       height: 100vh;
       -webkit-box-shadow: -314px 0 0 0 rgba(216, 217, 221, 0.3);
               box-shadow: -314px 0 0 0 rgba(216, 217, 221, 0.3); }
@@ -1978,7 +1978,7 @@ a {
 
 .developer .container {
   padding-top: 45px;
-  padding-bottom: 30px; }
+  padding-bottom: 50px; }
 
 .developer__wrapper {
   margin: 0 auto;
@@ -2040,9 +2040,10 @@ a {
 
 @media (min-width: 1440px) {
   .developer .container {
-    margin-left: 2px;
-    padding-top: 119px; }
+    padding-top: 119px;
+    padding-bottom: 120px; }
   .developer__wrapper {
+    margin-left: 2px;
     width: 975px; }
   .developer__slogan {
     margin-top: 12px; }
@@ -2051,14 +2052,160 @@ a {
     margin-left: -1px;
     padding-right: 220px; }
   .developer__frame {
-    width: calc(100% - 975px); }
+    width: calc(100% - 977px); }
   .developer__logo {
     margin: 0;
     margin-top: 23px;
     margin-left: 52px; }
   .developer__link {
     margin-top: 65px;
-    margin-left: -3px;
+    margin-left: -1px;
     width: auto; }
   .developer__icon {
     margin-left: 32px; } }
+
+.news {
+  background-color: #f1f1f1;
+  overflow: hidden; }
+
+.news__list {
+  margin: 0;
+  padding: 40px 0 20px 0;
+  list-style: none; }
+
+.news__item {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 16px;
+  width: 290px;
+  min-height: 150px;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  background-color: white; }
+  .news__item::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #2a2728;
+    z-index: 1; }
+
+.news__item:not(:last-of-type) {
+  margin-bottom: 20px; }
+
+.news__item:last-of-type {
+  margin-bottom: 20px; }
+
+.news__date {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-left: 15px;
+  z-index: 1; }
+
+.news__day {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #2a2728; }
+
+.news__month,
+.news__year {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: gray;
+  z-index: 1; }
+
+.news__month {
+  top: 4px;
+  right: -79px; }
+
+.news__year {
+  top: 20px;
+  right: -51px; }
+
+.news__content {
+  position: relative;
+  margin-top: 17px;
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: 21px;
+  text-indent: 0;
+  z-index: 1; }
+
+@media (max-width: 767px) {
+  .news__item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 100%;
+    background-color: white; } }
+
+@media (min-width: 768px) {
+  .news__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+  .news__item {
+    margin: 0 10px; } }
+
+@media (min-width: 1440px) {
+  .news {
+    border-bottom: 1px solid whitesmoke; }
+  .news__list {
+    position: relative;
+    padding: 110px 0 50px 0;
+    z-index: 1; }
+    .news__list::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 315px;
+      width: 100vw;
+      height: 60px;
+      background-color: white; }
+  .news__item {
+    margin: 0;
+    width: 300px; }
+    .news__item::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+  .news__item:not(:last-of-type) {
+    margin-bottom: 0; }
+  .news__item:last-of-type {
+    margin-bottom: 0; }
+  .news__item--1::before {
+    display: none; }
+  .news__item--1::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -15px;
+    width: 100vw;
+    height: 250px;
+    background-color: white;
+    z-index: 0; }
+  .news__day {
+    position: relative;
+    margin-left: 5px; }
+  .news__content {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 1; } }
