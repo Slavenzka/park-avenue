@@ -44,6 +44,11 @@
   right: 0;
 }
 
+.complex__icon use {
+  fill: $icon-color__highlight;
+  stroke: $icon-color__highlight;
+}
+
 .complex__frame {
   position: absolute;
   left: 0;
