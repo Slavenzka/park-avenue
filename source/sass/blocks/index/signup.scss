@@ -1,0 +1,223 @@
+.signup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background__modal--hover;
+  z-index: 5;
+}
+
+.signup-active {
+  display: block;
+}
+
+.signup__wrapper {
+  position: relative;
+  margin: 104px auto 0 auto;
+  padding: 260px 50px 30px 50px;
+  width: 740px;
+  font-size: 0;
+  background-color: $background__light;
+  background-image: url("../img/index__signup-bg@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover 220px;
+}
+
+.signup__toggle {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 2px;
+    background-color: $icon-color__light;
+    opacity: 0.7;
+    transform-origin: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 2px;
+    width: 18px;
+    height: 2px;
+    background-color: $icon-color__light;
+    opacity: 0.7;
+    transform-origin: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.signup__title {
+  margin: 0;
+  font-family: $font-family__heading;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__darker;
+}
+
+.signup__descriptor {
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 29px;
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__dark;
+}
+
+.signup fieldset {
+  position: relative;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.signup input {
+  margin-bottom: 20px;
+  padding: 34px 19px 11px 19px;
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__darker;
+  border: 1px solid $border__input--modal;
+}
+
+
+.signup input + label {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-family: $font-family__aux;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  color: $font-color__darker;
+}
+
+.signup__name,
+.signup__phone {
+  padding: 34px 19px 11px 19px;
+  width: 310px;
+}
+
+.signup__name:focus + label,
+.signup__phone:focus + label {
+  color: $font-color__highlight;
+}
+
+
+.signup fieldset:first-of-type {
+  margin-right: 20px;
+}
+
+.signup input::placeholder {
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__medium;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .signup input:-ms-input-placeholder {
+    font-family: $font-family__main;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: $font-color__medium;
+  }
+}
+
+input.signup__date,
+input.signup__time {
+  padding-right: 50px;
+  width: 155px;
+}
+
+.signup__time {
+  margin-left: -1px;
+}
+
+.signup__icon {
+  position: absolute;
+  bottom: 34px;
+  right: 20px;
+  pointer-events: none;
+}
+
+.signup__icon use {
+  fill: $icon-color__darker;
+}
+
+.signup__date:hover ~ .signup__icon use,
+.signup__date:focus ~ .signup__icon use,
+.signup__time:hover ~ .signup__icon use,
+.signup__time:focus ~ .signup__icon use {
+  fill: $icon-color__highlight;
+}
+
+.signup__date:hover + label,
+.signup__date:focus + label,
+.signup__time:hover + label,
+.signup__time:focus + label {
+  color: $font-color__highlight;
+}
+
+input.signup__success {
+  color: $font-color__highlight;
+  border: 1px solid $border__highlight;
+}
+
+input.signup__error {
+  border: 1px solid $border__input--error;
+}
+
+.signup__error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  max-width: 100%;
+  font-family: $font-family__aux;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  color: $font-color__error;
+}
+
+.signup__error--disabled {
+  display: none;
+}
+
+.signup__success {
+  color: $font-color__highlight;
+  border: 1px solid $border__highlight;
+}
+
+.signup__submit {
+  display: inline-block;
+  padding: 25px 25px 24px 25px;
+  margin-left: 20px;
+  width: 310px;
+  vertical-align: top;
+}
