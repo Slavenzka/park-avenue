@@ -2340,18 +2340,104 @@ a {
     padding-left: 20px;
     z-index: 1; } }
 
+@-webkit-keyframes modal-open {
+  0% {
+    top: -200vh; }
+  80% {
+    top: 30px; }
+  100% {
+    top: 0; } }
+
+@keyframes modal-open {
+  0% {
+    top: -200vh; }
+  80% {
+    top: 30px; }
+  100% {
+    top: 0; } }
+
+@-webkit-keyframes modal-bg-open {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modal-bg-open {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes modal-close {
+  0% {
+    top: 0; }
+  100% {
+    top: -200vh; } }
+
+@keyframes modal-close {
+  0% {
+    top: 0; }
+  100% {
+    top: -200vh; } }
+
+@-webkit-keyframes modal-bg-close {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes modal-bg-close {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .signup {
   position: fixed;
-  top: 0;
+  top: -200vh;
   left: 0;
-  display: none;
   width: 100vw;
-  height: 100vh;
-  background-color: rgba(39, 35, 39, 0.7);
-  z-index: 5; }
+  height: 200vh;
+  z-index: 5;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+  .signup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 35, 39, 0.7);
+    opacity: 0;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
 
-.signup-active {
-  display: block; }
+.signup-open {
+  -webkit-animation-name: modal-open;
+          animation-name: modal-open; }
+  .signup-open::before {
+    -webkit-animation-name: modal-bg-open;
+            animation-name: modal-bg-open;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+
+.signup-close {
+  -webkit-animation-name: modal-close;
+          animation-name: modal-close; }
+  .signup-close::before {
+    -webkit-animation-name: modal-bg-close;
+            animation-name: modal-bg-close;
+    -webkit-animation-delay: none;
+            animation-delay: none;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s; }
 
 .signup__wrapper {
   position: relative;
@@ -2363,7 +2449,12 @@ a {
   background-image: url("../img/index__signup-bg@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: cover 220px; }
+  background-size: cover 100%;
+  -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.5); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .signup__wrapper {
+      background-image: url("../img/index__signup-bg@2x.png"); } }
 
 .signup__toggle {
   position: absolute;
@@ -2548,3 +2639,45 @@ input.signup__error {
   margin-left: 20px;
   width: 310px;
   vertical-align: top; }
+
+@media (max-width: 1439px) {
+  .signup__wrapper {
+    margin: 36px auto 0 auto; } }
+
+@media (max-width: 767px) {
+  .signup__wrapper {
+    margin: 15px auto 0 auto;
+    padding: 48px 20px 20px 20px;
+    width: 290px;
+    background-image: none; }
+  .signup__toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    background-color: transparent;
+    border: none; }
+    .signup__toggle::before {
+      top: 0;
+      left: 0;
+      width: 14.5px;
+      background-color: rgba(0, 0, 0, 0.39); }
+    .signup__toggle::after {
+      bottom: 0;
+      left: 0;
+      width: 15px;
+      background-color: rgba(0, 0, 0, 0.39); }
+  .signup__descriptor {
+    margin-bottom: 19px; }
+  .signup__name,
+  .signup__phone {
+    width: 100%; }
+  input.signup__date,
+  input.signup__time {
+    width: 125px; }
+  .signup__submit {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%; } }

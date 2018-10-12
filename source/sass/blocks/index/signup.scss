@@ -1,16 +1,89 @@
-.signup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background-color: $background__modal--hover;
-  z-index: 5;
+@keyframes modal-open {
+  0% {
+    top: -200vh;
+  }
+
+  80% {
+    top: 30px;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
-.signup-active {
-  display: block;
+@keyframes modal-bg-open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-close {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -200vh;
+  }
+}
+
+@keyframes modal-bg-close {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.signup {
+  position: fixed;
+  top: -200vh;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  z-index: 5;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background__modal--hover;
+    opacity: 0;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.signup-open {
+  animation-name: modal-open;
+
+  &::before {
+    animation-name: modal-bg-open;
+    animation-delay: 0.4s;
+  }
+}
+
+.signup-close {
+  animation-name: modal-close;
+
+  &::before {
+    animation-name: modal-bg-close;
+    animation-delay: none;
+    animation-duration: 0.3s;
+  }
 }
 
 .signup__wrapper {
@@ -23,7 +96,12 @@
   background-image: url("../img/index__signup-bg@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: cover 220px;
+  background-size: cover 100%;
+  box-shadow: 0 2px 30px 0 $shadow__modal;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/index__signup-bg@2x.png");
+  }
 }
 
 .signup__toggle {
@@ -220,4 +298,64 @@ input.signup__error {
   margin-left: 20px;
   width: 310px;
   vertical-align: top;
+}
+
+@media (max-width: 1439px) {
+  .signup__wrapper {
+    margin: 36px auto 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .signup__wrapper {
+    margin: 15px auto 0 auto;
+    padding: 48px 20px 20px 20px;
+    width: 290px;
+    background-image: none;
+  }
+
+  .signup__toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 14.5px;
+      background-color: rgba(0, 0, 0, 0.39);
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      width: 15px;
+      background-color: rgba(0, 0, 0, 0.39);
+    }
+  }
+
+  .signup__descriptor {
+    margin-bottom: 19px;
+  }
+
+  .signup__name,
+  .signup__phone {
+    width: 100%;
+  }
+
+  input.signup__date,
+  input.signup__time {
+    width: 125px;
+  }
+
+  .signup__submit {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
 }
