@@ -34,6 +34,12 @@
   background-color: #fff;
 }
 
+@media (max-width: 767px) {
+  .chung-timepicker {
+    margin-left: -35px;
+  }
+}
+
 /* .chung-timepicker:before {
 	content: '';
 	position: absolute;
