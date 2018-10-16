@@ -109,7 +109,7 @@
 
   <header class="header">
     <div class="container">
-      <a href="#" class="header__link">
+      <a class="header__link">
         <svg class="header__icon" width="79" height="44" viewbox="0 0 79 44">
           <use xlink:href="#header__logo"></use>
         </svg>
@@ -121,12 +121,12 @@
         <div class="nav-main__wrapper">
           <ul class="nav-main__list">
             <li class="nav-main__item nav-main__item--main">
-              <a href="#" class="nav-main__link">
+              <a class="nav-main__link">
                 Главная
               </a>
             </li>
             <li class="nav-main__item nav-main__item--complex">
-              <a href="#" class="nav-main__link">
+              <a href="complex.html" class="nav-main__link">
                 О комплексе
               </a>
             </li>
@@ -294,7 +294,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="service__item service__item--preview">
+              <li class="service__item service__item--preview signup-trigger">
                 <a href="#" class="service__link">
                   <span>
                     Записаться на просмотр
@@ -338,7 +338,7 @@
               Добро пожаловать в семью Park Avenue VIP!
             </span>
           </p>
-          <a class="complex__link" href="#">
+          <a class="complex__link" href="complex.html">
             Детальнее о комплексе
             <svg class="complex__icon" width="6" height="10" viewbox="0 0 7 12">
               <use xlink:href="#promo__control-arrow"></use>
@@ -671,12 +671,7 @@
               2.5 гектара собственного парка на закрытой и охраняемой территории
             </p>
           </li>
-          <li class="thesis__item thesis__item--5
-
-
-
-
-          ">
+          <li class="thesis__item thesis__item--5">
             <h3 class="thesis__title">
               охрана 24/7/365
             </h3>
@@ -903,19 +898,19 @@
         </div>
         <div class="advantages__services">
           <div class="container">
-            <a href="#" class="button advantages__button advantages__button--request">
+            <a href="#" class="button advantages__button advantages__button--request signup-trigger">
               Заполнить заявку
               <svg class="advantages__icon-mail" width="21" height="15" viewbox="0 0 21 15">
                 <use xlink:href="#advantages__mail"></use>
               </svg>
             </a>
-            <a href="#" class="button advantages__button advantages__button--call">
+            <a href="#" class="button advantages__button advantages__button--call signup-trigger">
               Заказать звонок
               <svg class="advantages__icon-phone" width="21" height="21" viewbox="0 0 21 21">
                 <use xlink:href="#advantages__phone"></use>
               </svg>
             </a>
-            <a href="#" class="link advantages__link">
+            <a href="https://goo.gl/maps/ZZo2s9mYuS62" class="link advantages__link" target="_blank">
               Приехать в офис продаж
               <svg class="advantages__icon-location" width="15" height="21" viewbox="0 0 15 21">
                 <use xlink:href="#advantages__location"></use>
@@ -944,8 +939,6 @@
         <div class="developer__frame">
           <img class="developer__logo" src="img/developer__logo.png" width="220" height="97" alt="Логотип компании-застройщика Seven Hills">
         </div>
-
-
         <a href="#" class="link developer__link">
           Узнать больше о Seven Hills
           <svg class="developer__icon" width="6" height="10" viewbox="0 0 7 12">
@@ -1101,6 +1094,7 @@
     </div>
   </footer>
 
+<!-- По умолчанию модалка сверстана для записи на просмотр. Через modal-toggle.js она переоформляется в модалку для обратного звонка в случае, если нажат соответствующий элемент. -->
   <div class="signup">
     <div class="signup__wrapper">
       <button class="signup__toggle">
@@ -1112,7 +1106,7 @@
       <p class="signup__descriptor">
         Вы можете сразу выбрать время дату визита или обсудить это с нашим менеджером при подтверждении заявки
       </p>
-      <form action="#">
+      <form action="#" method="post">
         <fieldset>
           <input class="signup__name" type="text" placeholder="Введите Ваше имя" id="signup-name" required>
           <label for="signup-name">
@@ -1131,7 +1125,7 @@
             Сообщение об ошибке
           </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="signup__date-fieldset">
           <input class="signup__date" id="datepicker" type="text" placeholder="дд мм" required>
           <label for="datepicker">
             Дата
@@ -1143,7 +1137,7 @@
             Сообщение об ошибке
           </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="signup__time-fieldset">
           <input class="signup__time" id="timepicker" type="text" placeholder="чч мм" required>
           <label for="timepicker">
             Время
@@ -1164,8 +1158,9 @@
 
   <script src="js/menu-toggle.js"></script>
   <script src="js/slider-main.js"></script>
+  <!-- <script src="js/slide-in.js"></script> -->
   <script src="js/map.js"></script>
-  <script src="js/modal-toggle.js"></script>
+  <script src="js/modal.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
