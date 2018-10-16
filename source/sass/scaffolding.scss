@@ -12,7 +12,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 3000px;
 }
 
 a {
@@ -85,6 +84,18 @@ a {
   font-weight: 500;
   line-height: 21px;
   color: $font-color__highlight;
+}
+
+.slidein-start {
+  transition-duration: 0.5s;
+  transform: translateY(-200px);
+  opacity: 0;
+}
+
+.slidein-end {
+  transition-duration: 0.5s;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media (min-width: $width__tablet) {

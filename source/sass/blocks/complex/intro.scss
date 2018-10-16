@@ -1,0 +1,110 @@
+.intro {
+  background-color: $background__hover;
+  background-image: url("../img/complex__intro-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: calc(cover) 100%;
+  background-position: 50% 0;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/complex__intro-bg@2x.jpg");
+  }
+}
+
+.intro .container {
+  padding-top: 227px;
+  padding-bottom: 48px;
+}
+
+.intro__title {
+  margin: 0 auto;
+  width: 290px;
+  font-family: $font-family__heading;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__light;
+  text-transform: uppercase;
+}
+
+.intro__title span {
+  display: block;
+  margin-bottom: 8px;
+  font-family: $font-family__main;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+  color: $font-color__light;
+  text-transform: none;
+}
+
+.intro__link {
+  display: none;
+}
+
+@media (min-width: $width__tablet) {
+  .intro .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 251px;
+    padding-bottom: 80px;
+  }
+
+  .intro__title {
+    margin: 0;
+    width: auto;
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .intro__title span {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .intro {
+    overflow: hidden;
+  }
+
+  .intro .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 251px;
+    padding-bottom: 0;
+  }
+
+  .intro__link {
+    position: relative;
+    display: block;
+    align-self: flex-end;
+    padding: 30px 110px 29px 88px;
+    font-family: $font-family__main;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $font-color__highlight;
+    text-transform: lowercase;
+    background-color: $background__light;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 50vw;
+      height: 80px;
+      background-color: $background__light;
+      z-index: -1;
+    }
+  }
+
+  .intro__icon {
+    position: absolute;
+    top: 36px;
+    right: 89px;
+    transform: rotate(90deg);
+    fill: $icon-color__highlight;
+    stroke: $icon-color__highlight;
+  }
+}
