@@ -3401,6 +3401,9 @@ input.signup__error {
 .construction__details {
   display: none; }
 
+.construction__icon {
+  display: none; }
+
 .construction__announcement {
   margin: 30px auto 0 auto;
   width: 290px;
@@ -3504,7 +3507,6 @@ div.construction__buttons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .construction__item {
-    position: relative;
     margin-left: 56px;
     padding-left: 250px;
     width: 100%;
@@ -3558,6 +3560,22 @@ div.construction__buttons {
     position: relative;
     margin-left: 0;
     padding-left: 16px; }
+    .construction__item::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: 1px;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #7b6542; }
+  .construction__icon {
+    position: absolute;
+    display: block;
+    top: 6px;
+    right: 9px;
+    opacity: 1; }
+  .construction__icon use {
+    fill: #7b6542; }
   .construction__img-house {
     margin-top: 4px; }
   .construction__data td {
