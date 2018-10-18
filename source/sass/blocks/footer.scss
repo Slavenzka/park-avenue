@@ -1,6 +1,7 @@
 .footer .container {
   display: flex;
   padding-top: 52px;
+  padding-bottom: 50px;
 }
 
 .footer__social {
@@ -80,9 +81,27 @@
   .footer__menu {
     margin: 0 auto;
   }
+
+  .footer__developer + a {
+    display: block;
+  }
 }
 
 @media (max-width: 767px) {
+  .footer {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: $border__input--modal;
+    }
+  }
+
   .footer .container {
     align-items: center;
     padding-top: 22px;
@@ -94,7 +113,7 @@
     margin-right: 3px;
   }
 
-  .footer__copyright span:not(.footer__developer) {
+  .footer__developer + a {
     display: none;
   }
 }

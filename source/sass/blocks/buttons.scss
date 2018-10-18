@@ -1,0 +1,98 @@
+.buttons__button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0 24px 40px;
+  width: 290px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+}
+
+.buttons__button--request {
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.buttons__button--call {
+  margin-top: 15px;
+}
+
+.buttons__link {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 25px 0 24px 34px;
+  width: 290px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+}
+
+.buttons__icon-mail {
+  position: absolute;
+  top: 28px;
+  left: 50px;
+  fill: $icon-color__light;
+}
+
+.buttons__icon-phone {
+  position: absolute;
+  top: 25px;
+  left: 56px;
+  fill: $icon-color__light;
+}
+
+.buttons__icon-location {
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  fill: $icon-color__highlight;
+}
+
+@media (min-width: $width__tablet) {
+  .buttons {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .buttons__button--request {
+    margin: 0;
+  }
+
+  .buttons__button--call {
+    margin: 0;
+  }
+
+  .buttons__link {
+    margin: 0;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .buttons {
+    padding-left: 75px;
+  }
+
+  .buttons__button--request,
+  .buttons__button--call {
+    width: 300px;
+  }
+
+  .buttons__button--request {
+    padding-left: 30px;
+  }
+
+  .advantages__icon-phone {
+    left: 61px;
+  }
+
+  .advantages__link {
+    margin-left: 7px;
+  }
+}

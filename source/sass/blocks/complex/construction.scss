@@ -1,0 +1,256 @@
+.construction {
+  border-bottom: 1px solid $border__input--modal;
+}
+
+.construction .container {
+  padding-top: 68px;
+  padding-bottom: 46px;
+}
+
+.construction__chapter {
+  margin: 0 auto;
+  width: 290px;
+}
+
+.construction__title {
+  margin: 6px auto 0 auto;
+  width: 290px;
+}
+
+.construction__slogan {
+  margin: 30px auto 0 auto;
+  width: 290px;
+  text-indent: 0;
+}
+
+.construction__slogan:not(.construction__slogan--mobile) {
+  display: none;
+}
+
+.construction__overview {
+  margin: 40px auto 0 auto;
+  width: 289px;
+  height: 149px;
+  background-image: url("../img/complex__construction-overview-bg@1x.png");
+  background-size: cover;
+  background-position: 0 50%;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/complex__construction-overview-bg@2x.png");
+  }
+}
+
+.construction__buildings {
+  display: none;
+}
+
+.construction__details {
+  display: none;
+}
+
+.construction__announcement {
+  margin: 30px auto 0 auto;
+  width: 290px;
+  font-family: $font-family__main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $font-color__medium;
+}
+
+div.construction__buttons {
+  margin-top: 51px;
+}
+
+@media (min-width: $width__tablet) {
+  .construction {
+    padding-top: 51px;
+  }
+
+  .construction__chapter {
+    margin: 0;
+    margin-left: 1px;
+    width: 635px;
+  }
+
+  .construction__title {
+    margin: 10px 0 0 1px;
+    width: 635px;
+  }
+
+  .construction__slogan:not(.construction__slogan--mobile) {
+    display: block;
+    margin: 41px 0 0 1px;
+    width: 635px;
+  }
+
+  .construction__slogan--mobile {
+    display: none;
+  }
+
+  .construction__announcement {
+    display: none;
+  }
+
+  .construction__overview {
+    width: 100%;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .construction__overview {
+    position: relative;
+    margin-top: 62px;
+    margin-left: 2px;
+    width: 959px;
+    height: 495px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+
+  .construction__buildings {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+
+  .construction__mark {
+    position: absolute;
+  }
+
+  .construction__mark--1 {
+    left: 767px;
+    top: 53px;
+  }
+
+  .construction__mark--2 {
+    left: 862px;
+    top: 357px;
+  }
+
+  .construction__mark--3 {
+    left: 451px;
+    top: 191px;
+  }
+
+  .construction__mark--4 {
+    left: 79px;
+    top: 394px;
+  }
+
+  .construction__mark--5 {
+    left: 64px;
+    top: 175px;
+  }
+
+  .construction__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    font-family: $font-family__main;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 13px;
+    color: $font-color__light;
+    text-align: center;
+    border: 2px solid $border__light-opacity;
+    border-radius: 2px;
+  }
+
+  .construction__details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .construction__item {
+    position: relative;
+    margin-left: 56px;
+    padding-left: 250px;
+    width: 100%;
+    font-family: $font-family__main;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $font-color__highlight;
+  }
+
+  .construction__img-house {
+    margin-left: 57px;
+    width: 201px;
+    height: 322px;
+  }
+
+  .construction__data {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 51px;
+    width: 300px;
+    font-family: $font-family__main;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    border-top: 1px solid $border__input--modal;
+    border-bottom: 1px solid $border__input--modal;
+  }
+
+  .construction__key {
+    width: 205px;
+    color: $font-color__darker;
+  }
+
+  .construction__value {
+    width: 104px;
+    color: $font-color__dark;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .construction .container {
+    padding-bottom: 120px;
+  }
+
+  .construction__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .construction__details {
+    flex-direction: column;
+    padding-top: 9px;
+    padding-left: 15px;
+    width: calc(100% - 959px - 2px);
+  }
+
+  .construction__item {
+    position: relative;
+    margin-left: 0;
+    padding-left: 16px;
+  }
+
+  .construction__img-house {
+    margin-top: 4px;
+  }
+
+  .construction__data td {
+    padding: 9px 0;
+  }
+
+  div.construction__buttons {
+    margin-top: 75px;
+    padding-left: 0;
+  }
+}

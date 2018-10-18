@@ -26,3 +26,9 @@
     width: 635px;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .video {
+    padding-bottom: 118px;
+  }
+}
