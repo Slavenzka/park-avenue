@@ -1,0 +1,381 @@
+.contacts {
+  padding-bottom: 70px;
+  font-family: $font-family__main;
+  color: $font-color__light;
+  border-bottom: 1px solid $border__input--modal;
+}
+
+.contacts__complex {
+  position: relative;
+  padding: 227px 0 31px 0;
+  background-color: $background__dark;
+  background-image: url("../img/index__promo-slide1@1x.jpg");
+  background-size: cover;
+  background-position: -200px 0;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background__hover;
+    z-index: 0;
+  }
+}
+
+.contacts__company {
+  position: relative;
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 290px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+.contacts__title {
+  position: relative;
+  margin: 8px auto 0 auto;
+  width: 290px;
+  font-family: $font-family__heading;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  position: relative;
+  display: block;
+  margin: 21px auto 0 auto;
+  width: 290px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.contacts__underground {
+  position: relative;
+  margin: 30px auto 0 auto;
+  padding: 0;
+  width: 290px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  list-style: none;
+}
+
+.contacts__station {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__station:not(:last-of-type) {
+  margin-bottom: 11px;
+}
+
+.contacts__destination {
+  margin-left: 11px;
+}
+
+.contacts__time {
+  margin-left: 10px;
+}
+
+.contacts__map,
+.contacts__route {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  width: 290px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.contacts__map {
+  margin-top: 47px;
+}
+
+.contacts__route {
+  margin-top: 17px;
+}
+
+.contacts__icon-metro {
+  width: 19px;
+  height: 19px;
+  fill: none;
+}
+
+.metro-m {
+  fill: $icon-color__light;
+  transform: translate(1px, 1px);
+}
+
+.metro-circle {
+  stroke: $icon-color__light;
+  stroke-width: 2px;
+  transform: translate(1px, 1px);
+}
+
+.contacts__icon-travel {
+  margin-top: -2px;
+  fill: $icon-color__light;
+  transform: scale(-1, 1);
+}
+
+.contacts__icon-travel--walk {
+  margin-left: 10px;
+  width: 15px;
+  height: 18px;
+}
+
+.contacts__icon-travel--bus {
+  margin-left: 10px;
+}
+
+.contacts__icon-location {
+  margin-right: 20px;
+  width: 13px;
+  height: 18px;
+  fill: $icon-color__light;
+}
+
+.contacts__sales {
+  padding-top: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__dark;
+  background-color: $background__light;
+}
+
+.contacts__subheading {
+  margin: 0 auto 0 auto;
+  width: 290px;
+  font-family: $font-family__heading;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__darker;
+}
+
+.contacts__office,
+.contacts__hours,
+.contacts__phone {
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 35px;
+  width: 290px;
+}
+
+.contacts__office {
+  margin-top: 31px;
+}
+
+.contacts__hours {
+  margin-top: 15px;
+}
+
+.contacts__phone {
+  margin-top: 15px;
+}
+
+.contacts__icon-mark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  fill: $icon-color__darker;
+}
+
+.contacts__icon-time {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 16px;
+  fill: $icon-color__darker;
+}
+
+.contacts__icon-phone {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  fill: $icon-color__darker;
+}
+
+.contacts__links {
+  margin: 0 auto 0 auto;
+  width: 290px;
+}
+
+@media (min-width: $width__tablet) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__sales > .container {
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__complex {
+    padding: 396px 0 99px 0;
+  }
+
+  .contacts__complex .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .contacts__company {
+    margin: 0;
+    width: 100%;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .contacts__address {
+    margin: 31px 0 0 0;
+    width: 100%;
+  }
+
+  .contacts__underground {
+    margin: 81px 0 0 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .contacts__station:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+
+  .contacts__icon-metro {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+  }
+
+  .contacts__icon-travel--walk {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 20px;
+  }
+
+  .contacts__icon-travel--bus {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    width: 17px;
+    height: 20px;
+  }
+
+  .contacts__destination {
+    margin-left: 0;
+    padding-left: 38px;
+  }
+
+  .contacts__wrapper {
+    margin-top: 78px;
+    margin-left: 145px;
+  }
+
+  .contacts__map,
+  .contacts__route {
+    margin: 0;
+    width: auto;
+    max-width: 250px;
+  }
+
+  .contacts__map {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts__route {
+    margin-top: 0;
+  }
+
+  .contacts__icon-location {
+    margin-right: 18px;
+    width: 15px;
+    height: 21px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .contacts {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .contacts__sales {
+    position: absolute;
+    bottom: 0;
+    right: 100% * 36 / 768;
+    padding: 40px;
+    z-index: 0;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .contacts__sales > .container {
+    padding: 0;
+    width: auto;
+  }
+
+  .contacts__sales {
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 645px);
+    padding: 50px 64px 0 50px;
+    width: 520px;
+    min-height: 381px;
+  }
+
+  .contacts__subheading {
+    margin: 0;
+    margin-bottom: 41px;
+    width: auto;
+    font-size: 24px;
+  }
+
+  .contacts__office,
+  .contacts__hours,
+  .contacts__phone {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 35px;
+    width: auto;
+  }
+
+  .contacts__office {
+    margin-top: 31px;
+  }
+
+  .contacts__hours {
+    margin-top: 15px;
+  }
+
+  .contacts__phone {
+    margin-top: 15px;
+  }
+}

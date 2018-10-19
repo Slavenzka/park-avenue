@@ -1,0 +1,54 @@
+.links {
+  padding-top: 46px;
+}
+
+.links__request,
+.links__call {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+}
+
+.links__call {
+  margin-top: 30px;
+}
+
+.links__icon-mail,
+.links__icon-call {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $icon-color__highlight;
+}
+
+.links__icon-mail {
+  top: 3px;
+  left: 1px;
+}
+
+.links__icon-call {
+  left: 1px;
+}
+
+@media (min-width: $width__desktop) {
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 74px;
+    width: auto;
+  }
+
+  .links a {
+    width: auto;
+  }
+
+  .links__request {
+    margin-left: -1px;
+  }
+
+  .links__call {
+    margin-top: 0;
+  }
+}
