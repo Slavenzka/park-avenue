@@ -1,0 +1,77 @@
+.team {
+  display: none;
+}
+
+@media (min-width: $width__tablet) {
+  .team {
+    display: block;
+    border-bottom: 1px solid $border__news;
+  }
+
+  .team > .container {
+    padding-top: 119px;
+    padding-bottom: 110px;
+  }
+
+  .team__heading {
+    margin-top: 10px;
+  }
+
+  .team__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .team__member {
+    margin: 0 5px 20px 5px;
+    font-family: $font-family__main;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: $font-color__dark;
+  }
+
+  .team__profile {
+    margin: 0;
+    padding: 0;
+  }
+
+  .team__img {
+    width: 300px;
+    height: 340px;
+  }
+
+  .team__name {
+    display: block;
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $font-color__darker;
+  }
+
+  .team__rank {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .team__mail {
+    display: block;
+    margin-top: 20px;
+    color: inherit;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .team__list {
+    justify-content: space-between;
+  }
+
+  .team__member {
+    margin: 0 0 20px 0;
+  }
+}
