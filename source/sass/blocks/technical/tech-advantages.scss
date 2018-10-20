@@ -1,0 +1,131 @@
+.tech-advantages .container {
+  padding-top: 17px;
+  padding-bottom: 42px;
+}
+
+.tech-advantages__img,
+.tech-advantages__chapter,
+.tech-advantages__title,
+.tech-advantages__list {
+  margin: 0 auto;
+  width: 290px;
+}
+
+.tech-advantages__img {
+  display: block;
+  height: 212px;
+}
+
+.tech-advantages__chapter {
+  margin-top: 29px;
+}
+
+.tech-advantages__title {
+  margin-top: 8px;
+  padding-right: 80px;
+}
+
+.tech-advantages__list {
+  margin-top: 30px;
+  padding: 0;
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__dark;
+  list-style: none;
+}
+
+.tech-advantages__item {
+  position: relative;
+  padding-top: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $background-color__darker2;
+  }
+}
+
+.tech-advantages__item:not(:last-of-type) {
+  margin-bottom: 29px;
+}
+
+@media (min-width: $width__tablet) {
+  .tech-advantages .container {
+    padding-bottom: 81px;
+  }
+
+  .tech-advantages__img,
+  .tech-advantages__chapter,
+  .tech-advantages__title,
+  .tech-advantages__list {
+    margin: 0;
+  }
+
+  .tech-advantages__chapter,
+  .tech-advantages__title {
+    margin-left: 400px;
+    width: auto;
+  }
+
+  .tech-advantages__img {
+    float: left;
+  }
+
+  .tech-advantages__chapter {
+    margin-top: 0;
+  }
+
+  .tech-advantages__title {
+    margin-top: 10px;
+  }
+
+  .tech-advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 400px;
+    width: auto;
+  }
+
+  .tech-advantages__item {
+    width: 301px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .tech-advantages__img {
+    margin-left: 1px;
+    width: 520px;
+    height: 380px;
+  }
+
+  .tech-advantages__chapter,
+  .tech-advantages__title {
+    margin-left: 990px;
+    width: auto;
+  }
+
+  .tech-advantages__chapter {
+    margin-top: -1px;
+  }
+
+  .tech-advantages__list {
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 661px;
+  }
+
+  .tech-advantages__item:not(:last-of-type) {
+    margin-bottom: 69px;
+  }
+
+  .tech-advantages__item {
+    padding-left: 1px;
+  }
+}
