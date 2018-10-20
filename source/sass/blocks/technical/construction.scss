@@ -2,6 +2,10 @@
   background-image: url("../img/technical__intro-bg@1x.jpg");
   background-size: cover;
   background-position: -20px 0;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/technical__intro-bg@2x.jpg");
+  }
 }
 
 .construction__intro .intro__title {

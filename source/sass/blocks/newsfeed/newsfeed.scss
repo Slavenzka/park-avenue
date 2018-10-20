@@ -1,0 +1,15 @@
+.newsfeed__intro {
+  background-image: url("../img/newsfeed-bg@1x.jpg");
+  background-size: cover;
+  background-position: -20px 0;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/newsfeed-bg@2x.jpg");
+  }
+}
+
+@media (min-width: $width__tablet) {
+  .newsfeed__intro {
+    background-position: 0 0;
+  }
+}
