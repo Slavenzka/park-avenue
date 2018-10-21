@@ -193,189 +193,116 @@
   </header>
 
   <main>
-    <section class="intro newsfeed__intro">
+    <section class="content">
+      <div class="content__intro"></div>
       <div class="container">
-        <h1 class="intro__title">
-          <span>
-            Последние
+        <div class="content__wrapper">
+          <a href="newsfeed.html" class="link content__link">
+            <svg class="content__icon" width="6" height="10" viewbox="0 0 7 12">
+              <use xlink:href="#promo__control-arrow"></use>
+            </svg>
+            к разделу новостей
+          </a>
+          <h2 class="heading content__title">
+            Открытие Парка Наук на территории комплекса
+          </h2>
+          <span class="content__date">
+            5 октября 2017
           </span>
-          Новости
-        </h1>
-        <a href="#" class="intro__link">
-          Узнать больше
-          <svg class="intro__icon" width="6" height="10" viewbox="0 0 7 12">
-            <use xlink:href="#promo__control-arrow"></use>
-          </svg>
-        </a>
+          <img src="img/newspage__img--1@1x.png" srcset="img/newspage__img--1@1x.png 1x, img/newspage__img--1@2x.png 2x" alt="Иллюстрация к новости #1" class="content__img">
+          <p class="descriptor content__descriptor">
+            В Park Avenue VIP состоялось открытие уникального интерактивного Парка наук. Проект создан совместно со специалистами израильского музея природных наук Madatech.
+          </p>
+          <img src="img/newspage__img--2@1x.png" srcset="img/newspage__img--2@1x.png 1x, img/newspage__img--2@2x.png 2x" alt="Иллюстрация к новости #2" class="content__img">
+          <img src="img/newspage__img--3@1x.png" srcset="img/newspage__img--3@1x.png 1x, img/newspage__img--3@2x.png 2x" alt="Иллюстрация к новости #3" class="content__img">
+          <p class="descriptor content__descriptor">
+            Тут расположились 8 аттракционов, и все они доступны для жителей комплекса. Каждый аттракцион отображает изобретения величайших ученых в истории, таких как Архимед, Леонардо да Винчи, Исаак Ньютон, Даниил Бернулли, Пифагор.
+          </p>
+          <a href="newsfeed.html" class="link content__link">
+            <svg class="content__icon" width="6" height="10" viewbox="0 0 7 12">
+              <use xlink:href="#promo__control-arrow"></use>
+            </svg>
+            к разделу новостей
+          </a>
+        </div>
+        <aside class="recommend">
+          <h2 class="recomment__title">
+            Вас может заинтересовать
+          </h2>
+          <ul class="feed__list recommend__list">
+            <li class="feed__item feed__item--1 recommend__item">
+              <a href="newspage.html" class="feed__link">
+                <div class="feed__frame">
+                  <img src="img/newsfeed__feed-item--1@1x.png" srcset="img/newsfeed__feed-item--1@1x.png 1x, img/newsfeed__feed-item--1@2x.png 2x" alt="Иллюстрация к новости 1" class="feed__img">
+                </div>
+                <div class="feed__date">
+                  <span class="feed__day">
+                    20
+                  </span>
+                  <div class="feed__wrapper">
+                    <span class="feed__month">
+                      апреля
+                    </span>
+                    <span class="feed__year">
+                      2018
+                    </span>
+                  </div>
+                </div>
+                <p class="descriptor feed__descriptor">
+                  Весна — самое время начинать новую жизнь. И мы знаем, где именно она начнется.
+                </p>
+              </a>
+            </li>
+            <li class="feed__item feed__item--2 recommend__item">
+              <a href="" class="feed__link">
+                <div class="feed__frame">
+                  <img src="img/newsfeed__feed-item--2@1x.png" srcset="img/newsfeed__feed-item--2@1x.png 1x, img/newsfeed__feed-item--2@2x.png 2x" alt="Иллюстрация к новости 2" class="feed__img">
+                </div>
+                <div class="feed__date">
+                  <span class="feed__day">
+                    07
+                  </span>
+                  <div class="feed__wrapper">
+                    <span class="feed__month">
+                      апреля
+                    </span>
+                    <span class="feed__year">
+                      2018
+                    </span>
+                  </div>
+                </div>
+                <p class="descriptor feed__descriptor">
+                  В этот праздник рядом те, с кем мы жаловались на запоздалую весну, потому что очень уж хотелось…
+                </p>
+              </a>
+            </li>
+            <li class="feed__item feed__item--3 recommend__item">
+              <a href="" class="feed__link">
+                <div class="feed__frame">
+                  <img src="img/newsfeed__feed-item--3@1x.png" srcset="img/newsfeed__feed-item--3@1x.png 1x, img/newsfeed__feed-item--3@2x.png 2x" alt="Иллюстрация к новости 3" class="feed__img">
+                </div>
+                <div class="feed__date">
+                  <span class="feed__day">
+                    08
+                  </span>
+                  <div class="feed__wrapper">
+                    <span class="feed__month">
+                      марта
+                    </span>
+                    <span class="feed__year">
+                      2018
+                    </span>
+                  </div>
+                </div>
+                <p class="descriptor feed__descriptor">
+                  Девушки, вы — воплощение весны. Вы также приходите с опозданием и от этого мы ждём вас только сильнее…
+                </p>
+              </a>
+            </li>
+          </ul>
+        </aside>
       </div>
     </section>
-    <article class="feed">
-      <div class="container">
-        <ul class="feed__list">
-          <li class="feed__item feed__item--1">
-            <a href="newspage.html" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--1@1x.png" srcset="img/newsfeed__feed-item--1@1x.png 1x, img/newsfeed__feed-item--1@2x.png 2x" alt="Иллюстрация к новости 1" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  20
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    апреля
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                Весна — самое время начинать новую жизнь. И мы знаем, где именно она начнется.
-              </p>
-            </a>
-          </li>
-          <li class="feed__item feed__item--2">
-            <a href="" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--2@1x.png" srcset="img/newsfeed__feed-item--2@1x.png 1x, img/newsfeed__feed-item--2@2x.png 2x" alt="Иллюстрация к новости 2" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  07
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    апреля
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                В этот праздник рядом те, с кем мы жаловались на запоздалую весну, потому что очень уж хотелось…
-              </p>
-            </a>
-          </li>
-          <li class="feed__item feed__item--3">
-            <a href="" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--3@1x.png" srcset="img/newsfeed__feed-item--3@1x.png 1x, img/newsfeed__feed-item--3@2x.png 2x" alt="Иллюстрация к новости 3" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  08
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    марта
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                Девушки, вы — воплощение весны. Вы также приходите с опозданием и от этого мы ждём вас только сильнее…
-              </p>
-            </a>
-          </li>
-          <li class="feed__item feed__item--4">
-            <a href="" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--4@1x.png" srcset="img/newsfeed__feed-item--4@1x.png 1x, img/newsfeed__feed-item--4@2x.png 2x" alt="Иллюстрация к новости 4" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  19
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    февраля
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                В этот праздник рядом те, с кем мы жаловались на запоздалую весну, потому что очень уж хотелось…
-              </p>
-            </a>
-          </li>
-          <li class="feed__item feed__item--5 feed__item--double">
-            <a href="" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--5@1x.png" srcset="img/newsfeed__feed-item--5@1x.png 1x, img/newsfeed__feed-item--5@2x.png 2x" alt="Иллюстрация к новости 5" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  20
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    апреля
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                В преддверии весны — светлый интерьер вам в ленту. Апартаменты, где зеленые акценты намекают проснуться после зимней спячки, идеальная гардеробная — добавить образам красок, а 2 ванные комнаты — больше времени уделять себе.
-              </p>
-            </a>
-          </li>
-          <li class="feed__item feed__item--6 feed__item--nonmobile">
-            <a href="" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--6@1x.png" srcset="img/newsfeed__feed-item--6@1x.png 1x, img/newsfeed__feed-item--6@2x.png 2x" alt="Иллюстрация к новости 6" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  08
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    марта
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                Девушки, вы — воплощение весны. Вы также приходите с опозданием и от этого мы ждём вас только сильнее…
-              </p>
-            </a>
-          </li>
-          <li class="feed__item feed__item--7 feed__item--nonmobile">
-            <a href="" class="feed__link">
-              <div class="feed__frame">
-                <img src="img/newsfeed__feed-item--7@1x.png" srcset="img/newsfeed__feed-item--7@1x.png 1x, img/newsfeed__feed-item--7@2x.png 2x" alt="Иллюстрация к новости 7" class="feed__img">
-              </div>
-              <div class="feed__date">
-                <span class="feed__day">
-                  19
-                </span>
-                <div class="feed__wrapper">
-                  <span class="feed__month">
-                    февраля
-                  </span>
-                  <span class="feed__year">
-                    2018
-                  </span>
-                </div>
-              </div>
-              <p class="descriptor feed__descriptor">
-                В этот праздник рядом те, с кем мы жаловались на запоздалую весну, потому что очень уж хотелось…
-              </p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </article>
   </main>
 
   <footer class="footer">
