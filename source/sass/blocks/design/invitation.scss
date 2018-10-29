@@ -1,0 +1,86 @@
+.invitation {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $border__input--modal;
+}
+
+.invitation__wrapper {
+  padding: 179px 10px 149px 10px;
+  background-color: $background__hover;
+  background-image: url("../img/design__invitation-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -300px;
+}
+
+.invitation__slogan,
+.invitation__descriptor {
+  width: 270px;
+}
+
+.invitation__slogan {
+  margin: 0 auto;
+  font-family: $font-family__heading;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__light;
+}
+
+.invitation__descriptor {
+  display: block;
+  margin: 14px auto 0 auto;
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__light;
+}
+
+.invitation__button--request {
+  margin-top: 30px;
+}
+
+@media (min-width: $width__tablet) {
+  .invitation__wrapper {
+    padding: 270px 40px 90px 40px;
+    background-position: 0;
+    background-size: cover;
+  }
+
+  .invitation__slogan,
+  .invitation__descriptor {
+    width: 550px;
+  }
+
+  .invitation__slogan {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .invitation__descriptor {
+    margin: 17px 0 0 0;
+  }
+
+  .invitation__services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .invitation__button--request {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .invitation {
+    padding-top: 112px;
+    padding-bottom: 68px;
+  }
+
+  .invitation__wrapper {
+    padding: 270px 70px 87px 70px;
+  }
+}

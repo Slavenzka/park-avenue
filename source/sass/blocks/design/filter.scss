@@ -1,0 +1,142 @@
+.filter {
+  position: relative;
+  padding-top: 19px;
+  font-family: $font-family__main;
+  font-size: 0;
+  font-weight: 400;
+}
+
+.filter__section {
+  margin: 20px auto 0 auto;
+  padding: 0;
+  width: 290px;
+  border: none;
+}
+
+.filter__subtitle {
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $font-color__dark;
+}
+
+.filter__subtitle sup {
+  font-size: 8px;
+  line-height: 0;
+}
+
+.filter__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+.filter__input--bedrooms + label {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-top: 12px;
+  width: 60px;
+  height: 40px;
+  font-size: 14px;
+  color: $font-color__dark;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $background__news;
+}
+
+.filter__input--bedrooms:checked + label {
+  color: $font-color__light;
+  background-color: $background__highlight;
+}
+
+.filter__input--bedrooms + label:not(:nth-of-type(4n)) {
+  margin-right: 15px;
+}
+
+.filter__section--space {
+  margin-top: 5px;
+}
+
+.filter__section--space > span {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid $font-color__dark;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    pointer-events: none;
+  }
+}
+
+.filter__section--space span:last-of-type {
+  margin-left: 15px;
+}
+
+.filter__section--space select {
+  width: 135px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $font-color__dark;
+  text-align-last: center;
+  background-color: $background__news;
+  border: none;
+  appearance: none;
+}
+
+.filter__input--comissioned + label {
+  display: inline-block;
+  padding-top: 12px;
+  width: 135px;
+  height: 40px;
+  font-size: 14px;
+  color: $font-color__dark;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $background__news;
+}
+
+.filter__input--comissioned + label:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.filter__input--comissioned:checked + label {
+  color: $font-color__light;
+  background-color: $background__highlight;
+}
+
+@media (min-width: $width__tablet) {
+  .filter__section {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .filter {
+    display: flex;
+    padding-top: 29px;
+    padding-left: 1px;
+  }
+
+  .filter__section:not(:last-of-type) {
+    margin-right: 40px;
+  }
+}
