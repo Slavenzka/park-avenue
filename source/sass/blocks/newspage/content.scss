@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/newsfeed-bg@2x.jpg");
+  }
 }
 
 .content > .container {
