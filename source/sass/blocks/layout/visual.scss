@@ -123,4 +123,9 @@
   .visual__photo-img {
     width: 630px;
   }
+
+  .visual__photo-img {
+    max-height: 430px;
+    object-fit: contain;
+  }
 }

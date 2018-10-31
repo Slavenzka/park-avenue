@@ -5313,6 +5313,8 @@ div.construction__buttons {
     width: 300px; } }
 
 @media (min-width: 1440px) {
+  .data {
+    padding-bottom: 200px; }
   .data__notice {
     margin: 30px 0 0 0;
     padding-right: 10px; }
@@ -5419,7 +5421,11 @@ div.construction__buttons {
   .visual__3d-img,
   .visual__plan-img,
   .visual__photo-img {
-    width: 630px; } }
+    width: 630px; }
+  .visual__photo-img {
+    max-height: 430px;
+    -o-object-fit: contain;
+       object-fit: contain; } }
 
 .options {
   padding: 7px 4px 0 4px;
