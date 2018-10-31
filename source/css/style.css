@@ -813,7 +813,8 @@ a {
   background-color: transparent;
   background-image: url("../img/slider__arrow--brown.svg");
   background-repeat: no-repeat;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .slider .slick-prev {
   right: 12px;
@@ -845,7 +846,8 @@ a {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #7b6542;
-  opacity: 0.7; }
+  opacity: 0.7;
+  cursor: pointer; }
 
 .slider .slick-active button {
   opacity: 1; }
