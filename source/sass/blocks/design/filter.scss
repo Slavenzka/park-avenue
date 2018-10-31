@@ -44,10 +44,10 @@
 .filter__input--bedrooms + label {
   display: inline-block;
   margin-bottom: 15px;
-  padding-top: 12px;
   width: 60px;
   height: 40px;
   font-size: 14px;
+  line-height: 40px;
   color: $font-color__dark;
   text-align: center;
   vertical-align: middle;
@@ -99,6 +99,7 @@
   text-align-last: center;
   background-color: $background__news;
   border: none;
+  border-radius: none;
   appearance: none;
 }
 

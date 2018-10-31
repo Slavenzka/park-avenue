@@ -71,7 +71,7 @@
 
 .header__nav--closed .nav-main__wrapper {
   transform: translateY(-569px);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .header__nav--opened .nav-main__wrapper {
@@ -126,6 +126,7 @@
     background-color: transparent;
     transition-duration: 0;
     transform: translateY(0);
+    opacity: 1;
   }
 
   .nav-main__list {
@@ -161,6 +162,18 @@
     font-weight: 400;
     line-height: 20px;
     opacity: 0.7;
+  }
+
+  .nav-main__link[href]:hover {
+    opacity: 0.85;
+  }
+
+  .nav-main__link[href]:active {
+    opacity: 1;
+  }
+
+  .nav-main__link:not([href]) {
+    opacity: 1;
   }
 
   .nav-main__contacts {

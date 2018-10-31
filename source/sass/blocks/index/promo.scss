@@ -18,6 +18,10 @@
   position: absolute;
   top: 0;
   width: 100%;
+  background-color: black;
+  background-position: calc(50%) calc(50% + 1px);
+  background-size: cover;
+  background-repeat: no-repeat;
   opacity: 0;
   transition-duration: 2s;
 
@@ -48,19 +52,15 @@
 }
 
 .promo__item--1 {
-  background-color: black;
   background-image: url("../img/index__promo-slide1@1x.jpg");
-  background-position: calc(50%) calc(50% + 1px);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .promo__item--2 {
-  background-color: brown;
+  background-image: url("../img/index__promo-slide2@1x.jpg");
 }
 
 .promo__item--3 {
-  background-color: green;
+  background-image: url("../img/index__promo-slide3@1x.jpg");
 }
 
 .promo__title {
@@ -83,6 +83,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 13px;
+  letter-spacing: 1px;
 }
 
 .promo__descriptor {

@@ -34,6 +34,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 13px;
+  letter-spacing: 1px;
 }
 
 .contacts__title {
@@ -217,6 +218,12 @@
   width: 290px;
 }
 
+@media (min-width: $width__tablet), (max-width: 1439px) {
+  .contacts__links {
+    margin: 0;
+  }
+}
+
 @media (min-width: $width__tablet) {
   .contacts {
     position: relative;
@@ -225,7 +232,6 @@
   .contacts__sales > .container {
     min-width: auto;
     margin: 0;
-    padding: 0;
   }
 
   .contacts__complex {
@@ -319,6 +325,32 @@
     width: 15px;
     height: 21px;
   }
+
+  .contacts__sales {
+    padding: 40px;
+  }
+
+  .contacts__subheading {
+    margin: 0;
+  }
+
+  .contacts__office,
+  .contacts__hours,
+  .contacts__phone {
+    margin: 0;
+  }
+
+  .contacts__office {
+    margin-top: 31px;
+  }
+
+  .contacts__hours {
+    margin-top: 15px;
+  }
+
+  .contacts__phone {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -331,7 +363,6 @@
     position: absolute;
     bottom: 0;
     right: 100% * 36 / 768;
-    padding: 40px;
     z-index: 0;
   }
 }
