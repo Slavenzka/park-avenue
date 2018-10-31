@@ -4437,9 +4437,9 @@ div.construction__buttons {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .quality__item {
     margin: 0 calc(100% * 20 / 696);
     width: 300px; }
