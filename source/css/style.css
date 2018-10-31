@@ -1012,7 +1012,7 @@ a {
   .control {
     position: absolute;
     bottom: 110px;
-    left: calc(100% * 36 / 768 + 15px);
+    left: calc(100% * 36 / 768);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1070,7 +1070,7 @@ a {
     border: none;
     cursor: pointer; }
   .control__button--prev {
-    margin-left: 35px; }
+    margin-left: 0; }
   .control__button--prev .control__icon {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
@@ -1176,13 +1176,16 @@ a {
   .service {
     margin-top: -71px; }
   .service__list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-right: 0;
     margin-left: 0;
     width: 100%; }
   .service__item {
     width: 300px; }
+  .service__item--preview {
+    margin-left: 13%; }
   .service__item--select .service__link::before {
     top: 2px;
     left: 262px; }
@@ -1211,6 +1214,8 @@ a {
             justify-content: space-between; }
   .service__item {
     width: calc(100% / 3); }
+  .service__item--preview {
+    margin-left: auto; }
   .service__item--counter {
     position: relative;
     display: -webkit-box;

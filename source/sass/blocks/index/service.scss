@@ -103,7 +103,7 @@
   }
 
   .service__list {
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-right: 0;
     margin-left: 0;
     width: 100%;
@@ -111,6 +111,10 @@
 
   .service__item {
     width: 300px;
+  }
+
+  .service__item--preview {
+    margin-left: 13%;
   }
 
   .service__item--select .service__link {
@@ -159,6 +163,10 @@
 
   .service__item {
     width: calc(100% / 3);
+  }
+
+  .service__item--preview {
+    margin-left: auto;
   }
 
   .service__item--counter {

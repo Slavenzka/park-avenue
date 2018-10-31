@@ -6,7 +6,7 @@
   .control {
     position: absolute;
     bottom: 110px;
-    left: calc(100% * 36 / 768 + 15px);
+    left: calc(100% * 36 / 768);
     display: flex;
     align-items: center;
     font-family: $font-family__main;
@@ -78,7 +78,7 @@
   }
 
   .control__button--prev {
-    margin-left: 35px;
+    margin-left: 0;
   }
 
   .control__button--prev .control__icon {
