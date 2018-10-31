@@ -34,6 +34,48 @@
   display: none;
 }
 
+.options__link {
+  position: relative;
+  padding-left: 41px;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $font-color__highlight;
+}
+
+.options__notice,
+a.options__link--comissioned {
+  display: none;
+}
+
+.layout__options--comissioned .options__list {
+  display: none;
+}
+
+.layout__options--comissioned .options__notice,
+.layout__options--comissioned .options__link--comissioned {
+  display: block;
+}
+
+.layout__options--comissioned .options__notice {
+  margin-top: 30px;
+  text-indent: 0;
+}
+
+.layout__options--comissioned .options__link--comissioned {
+  margin-top: 50px;
+}
+
+.layout__options--comissioned .layout__icon-construction {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  fill: $icon-color__highlight;
+  stroke: $icon-color__highlight;
+  transform: rotate(180deg);
+}
+
 .options .slick-dots {
   margin-top: 16px;
   max-width: 120px;
