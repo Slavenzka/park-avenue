@@ -1085,7 +1085,9 @@ a {
 @media (min-width: 1440px) {
   .control {
     bottom: 188px;
-    left: calc(50% - 631px); } }
+    left: calc(50% - 631px); }
+  .control__button--prev {
+    margin-left: 35px; } }
 
 .service {
   margin-top: -104px; }
