@@ -11,6 +11,7 @@
   background-image: url("../img/slider__arrow--brown.svg");
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 }
 
 .slider .slick-prev {
@@ -42,6 +43,7 @@
   border: none;
   border-bottom: 1px solid $background__highlight;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .slider .slick-active button {
