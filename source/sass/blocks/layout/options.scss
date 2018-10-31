@@ -65,15 +65,15 @@ a.options__link--comissioned {
 
 .layout__options--comissioned .options__link--comissioned {
   margin-top: 50px;
+  padding-left: 0;
 }
 
 .layout__options--comissioned .layout__icon-construction {
   position: absolute;
   top: 7px;
-  left: 0;
+  right: 5px;
   fill: $icon-color__highlight;
   stroke: $icon-color__highlight;
-  transform: rotate(180deg);
 }
 
 .options .slick-dots {

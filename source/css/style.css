@@ -5517,16 +5517,15 @@ a.options__link--comissioned {
   text-indent: 0; }
 
 .layout__options--comissioned .options__link--comissioned {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding-left: 0; }
 
 .layout__options--comissioned .layout__icon-construction {
   position: absolute;
   top: 7px;
-  left: 0;
+  right: 5px;
   fill: #7b6542;
-  stroke: #7b6542;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  stroke: #7b6542; }
 
 .options .slick-dots {
   margin-top: 16px;
