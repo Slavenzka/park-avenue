@@ -68,11 +68,11 @@
   .quality__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   .quality__item {
-    margin: 0 20px;
+    margin: 0 calc(100% * 20 / 696);
     width: 300px;
   }
 
