@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="main" transform="translate(-251.000000, -591.000000)" fill="rgb(123, 101, 66)">
-            <g id="slider-copy-2" transform="translate(74.000000, 591.000000)">
-                <polygon id="arrow" points="183.036913 5.12922465 183.036913 5.12922465 177.986577 0 177 0.978131213 182.050336 6.10735586 177.234899 11.0218688 178.197987 12 184 6.10735586"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="7" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M6.037 5.13L.987 0 0 .978l5.05 5.13-4.815 4.914.963.978L7 6.107z" fill="#7B6542" fill-rule="evenodd"/></svg>
