@@ -96,9 +96,14 @@
 @media (min-width: $width__tablet) {
   .company .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 0;
   }
+
+  .company__part1 {
+    width: 350px;
+  }
+
 
   .company__chapter {
     margin: 0;
@@ -108,12 +113,12 @@
 
   .company__title {
     margin: 8px 0 0 0;
-    width: 400px;
+    width: 350px;
   }
 
   .company__slogan {
     margin: 41px 0 0 0;
-    width: 400px;
+    width: 350px;
   }
 
   .company__slogan--mobile {
@@ -126,7 +131,7 @@
 
   .company__list {
     margin: 0;
-    width: 400px;
+    width: 350px;
   }
 
   .company__descriptor:not(.company__descriptor--mobile) {
