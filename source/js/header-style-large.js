@@ -1,10 +1,12 @@
 'use strict';
 
 (function () {
-  let header = document.querySelector('.header');
+  const header = document.querySelector('.header');
+  const langs = header.querySelectorAll('.language__link');
+  const socials = header.querySelectorAll('.social__link');
 
   function toggleHeaderBackground () {
-    if (window.pageYOffset >= 800) {
+    if (window.pageYOffset >= 630) {
       header.classList.add('header-dark');
     } else {
       if (header.classList.contains('header-dark')) {
@@ -16,7 +18,6 @@
   toggleHeaderBackground();
 
   document.addEventListener('scroll', function () {
-    console.log(window.pageYOffset);
     toggleHeaderBackground();
   })
 })();
