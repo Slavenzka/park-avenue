@@ -22,11 +22,24 @@
 
   function toggleModal (modalContent) {
 
-    function closeModal () {
-      modalContent.modal.classList.remove(modalContent.classOpen);
-      modalContent.modal.classList.add(modalContent.classClose);
-      modalContent.closeBtn.removeEventListener('click', closeModal);
+    function closeModal (evt) {
+      if ((evt.target.classList.contains('signup-open')) ||
+      evt.target.classList.contains('signup__toggle')) {
+        modalContent.modal.classList.remove(modalContent.classOpen);
+        modalContent.modal.classList.add(modalContent.classClose);
+        modalContent.closeBtn.removeEventListener('click', closeModal);
+      }
     };
+
+    function closeModalKey (evt) {
+      const escKey = 27;
+
+      if (evt.keyCode === escKey) {
+        modalContent.modal.classList.remove(modalContent.classOpen);
+        modalContent.modal.classList.add(modalContent.classClose);
+        document.removeEventListener('keydown', closeModalKey)
+      }
+    }
 
     function openModal () {
       if (modalContent.modal.classList.contains(modalContent.classClose)) {
@@ -34,7 +47,8 @@
       }
       modalContent.modal.classList.add(modalContent.classOpen);
       modalContent.closeBtn.focus();
-      modalContent.closeBtn.addEventListener('click', closeModal);
+      modalContent.modal.addEventListener('click', closeModal);
+      document.addEventListener('keydown', closeModalKey)
     };
 
     openModal.switchCall = function (formContent) {
