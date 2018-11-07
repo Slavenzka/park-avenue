@@ -6,7 +6,7 @@
   const socials = header.querySelectorAll('.social__link');
 
   function toggleHeaderBackground () {
-    if (window.pageYOffset >= 40) {
+    if (window.pageYOffset >= 25) {
       header.classList.add('header-dark');
     } else {
       if (header.classList.contains('header-dark')) {
