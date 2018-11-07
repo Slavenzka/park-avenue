@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
+  <link rel="preload" href="plugins/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="plugins/slick/slick.css"></noscript>
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
@@ -322,8 +324,8 @@
             <label class="galleries__type" for="gallery-status">Ход строительства</label>
           </div>
           <div class="galleries__slider galleries__slider--architect gallery">
-            <ul class="gallery__list">
-              <li class="gallery__item gallery__item--1 gallery__item--selected">
+            <ul class="slider gallery__list">
+              <li class="gallery__item gallery__item--1">
                 <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
               </li>
               <li class="gallery__item gallery__item--2">
@@ -339,52 +341,6 @@
                 <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №5">
               </li>
             </ul>
-            <div class="control gallery__control">
-              <ul class="control__list">
-                <li class="control__item control__item--1 control__item--selected">
-                  <input type="radio" name="sliderAdv" id="advSlide1" value="1">
-                  <label class="control__switch" for="advSlide1">
-                    1
-                  </label>
-                </li>
-                <li class="control__item control__item--2">
-                  <input type="radio" name="sliderAdv" id="advSlide2" value="2">
-                  <label class="control__switch" for="advSlide2">
-                    2
-                  </label>
-                </li>
-                <li class="control__item control__item--3">
-                  <input type="radio" name="sliderAdv" id="advSlide3" value="3">
-                  <label class="control__switch" for="advSlide3">
-                    3
-                  </label>
-                </li>
-                <li class="control__item control__item--4">
-                  <input type="radio" name="sliderAdv" id="advSlide4" value="4">
-                  <label class="control__switch" for="advSlide4">
-                    4
-                  </label>
-                </li>
-                <li class="control__item control__item--5">
-                  <input type="radio" name="sliderAdv" id="advSlide5" value="5">
-                  <label class="control__switch" for="advSlide5">
-                    5
-                  </label>
-                </li>
-              </ul>
-              <button class="control__button control__button--prev control__button--block" type="button">
-                Предыдущий слайд
-                <svg class="control__icon" width="7" height="12" viewbox="0 0 7 12">
-                  <use xlink:href="#promo__control-arrow"></use>
-                </svg>
-              </button>
-              <button class="control__button control__button--next" type="button">
-                Следующий слайд
-                <svg class="control__icon" width="7" height="12" viewbox="0 0 7 12">
-                  <use xlink:href="#promo__control-arrow"></use>
-                </svg>
-              </button>
-            </div>
           </div>
           <div class="galleries__slider galleries__slider--hall gallery">
 
@@ -640,6 +596,12 @@
       </form>
     </div>
   </div>
+
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="js/slider-init.js"></script>
 
   <!-- <script src="js/menu-toggle.js"></script>
   <script src="js/slider-main.js"></script>

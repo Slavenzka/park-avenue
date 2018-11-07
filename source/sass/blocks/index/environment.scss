@@ -137,6 +137,19 @@
 
 @media (max-width: 1439px) {
   .environment__descriptor {
+    padding-top: 79px;
+    padding-left: 10px;
+    width: calc(100% - 977px);
+    font-family: $font-family__main;
+  }
+
+  .environment__button {
+    margin-left: calc(977px - 316px);
+  }
+}
+
+@media (max-width: 1279px) {
+  .environment__descriptor {
     display: none;
   }
 

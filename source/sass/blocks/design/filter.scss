@@ -125,16 +125,22 @@
 }
 
 @media (min-width: $width__tablet) {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 29px;
+    padding-left: 1px;
+  }
+
   .filter__section {
     margin: 20px 0 0 0;
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $width__notebook) {
   .filter {
-    display: flex;
-    padding-top: 29px;
-    padding-left: 1px;
+    justify-content: flex-start;
   }
 
   .filter__section:not(:last-of-type) {

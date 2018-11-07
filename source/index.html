@@ -8,6 +8,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVBGhM5fibvi-duOZW31OTj8BSaFUOFAM"></script>
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
+  <link rel="preload" href="plugins/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="plugins/slick/slick.css"></noscript>
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
@@ -205,8 +207,8 @@
         Материалы о проекте Park Avenue VIP
       </h2>
       <div class="promo__slider">
-        <ul class="promo__list">
-          <li class="promo__item promo__item--1 promo__item--selected">
+        <ul class="slider promo__list">
+          <li class="promo__item promo__item--1">
             <div class="container">
               <h3 class="promo__title">
                 Park Avenue VIP
@@ -219,7 +221,7 @@
               </p>
             </div>
           </li>
-          <li class="promo__item promo__item--2 promo__item--next">
+          <li class="promo__item promo__item--2">
             <div class="container">
               <h3 class="promo__title">
                 Заголовок №2
@@ -232,7 +234,7 @@
               </p>
             </div>
           </li>
-          <li class="promo__item promo__item--3 promo__item--next">
+          <li class="promo__item promo__item--3">
             <div class="container">
               <h3 class="promo__title">
                 Заголовок №3
@@ -247,42 +249,7 @@
           </li>
         </ul>
       </div>
-      <div class="promo__aux">
-        <div class="promo__control control">
-          <ul class="control__list">
-            <li class="control__item control__item--1 control__item--selected">
-              <input type="radio" name="sliderPromo" id="promoSlide1" value="1">
-              <label class="control__switch" for="promoSlide1">
-                1
-              </label>
-            </li>
-            <li class="control__item control__item--2">
-              <input type="radio" name="sliderPromo" id="promoSlide2" value="2">
-              <label class="control__switch" for="promoSlide2">
-                2
-              </label>
-            </li>
-            <li class="control__item control__item--3">
-              <input type="radio" name="sliderPromo" id="promoSlide3" value="3">
-              <label class="control__switch" for="promoSlide3">
-                3
-              </label>
-            </li>
-          </ul>
-          <button class="control__button control__button--prev control__button--block" type="button">
-            Предыдущий слайд
-            <svg class="control__icon" width="7" height="12" viewbox="0 0 7 12">
-              <use xlink:href="#promo__control-arrow"></use>
-            </svg>
-          </button>
-          <button class="control__button control__button--next" type="button">
-            Следующий слайд
-            <svg class="control__icon" width="7" height="12" viewbox="0 0 7 12">
-              <use xlink:href="#promo__control-arrow"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="promo__service service">
+      <div class="promo__service service">
           <div class="container">
             <ul class="service__list">
               <li class="service__item service__item--select">
@@ -319,7 +286,6 @@
             </ul>
           </div>
         </div>
-      </div>
     </section>
     <section class="complex">
       <h2 class="visually-hidden">
@@ -374,7 +340,7 @@
                 <a href="#" class="map__link">
                   Аптека
                   <svg class="environment__icon environment__icon--list" width="10" height="10" viewbox="0 0 8 8">
-                    <use xlink:href="#"></use>
+                    <use xlink:href="#Three__plus"></use>
                   </svg>
                 </a>
               </li>
@@ -689,8 +655,8 @@
       </h2>
       <div class="container">
         <div class="advantages__slider">
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--1 advantages__item--selected">
+          <ul class="slider advantages__list">
+            <li class="advantages__item advantages__item--1">
               <span class="advantages__counter">
                 <span>1</span> /10
               </span>
@@ -801,82 +767,6 @@
               </p>
             </li>
           </ul>
-          <div class="control advantages__control">
-            <ul class="control__list">
-              <li class="control__item control__item--1 control__item--selected">
-                <input type="radio" name="sliderAdv" id="advSlide1" value="1">
-                <label class="control__switch" for="advSlide1">
-                  1
-                </label>
-              </li>
-              <li class="control__item control__item--2">
-                <input type="radio" name="sliderAdv" id="advSlide2" value="2">
-                <label class="control__switch" for="advSlide2">
-                  2
-                </label>
-              </li>
-              <li class="control__item control__item--3">
-                <input type="radio" name="sliderAdv" id="advSlide3" value="3">
-                <label class="control__switch" for="advSlide3">
-                  3
-                </label>
-              </li>
-              <li class="control__item control__item--4">
-                <input type="radio" name="sliderAdv" id="advSlide4" value="4">
-                <label class="control__switch" for="advSlide4">
-                  4
-                </label>
-              </li>
-              <li class="control__item control__item--5">
-                <input type="radio" name="sliderAdv" id="advSlide5" value="5">
-                <label class="control__switch" for="advSlide5">
-                  5
-                </label>
-              </li>
-              <li class="control__item control__item--6">
-                <input type="radio" name="sliderAdv" id="advSlide6" value="6">
-                <label class="control__switch" for="advSlide6">
-                  6
-                </label>
-              </li>
-              <li class="control__item control__item--7">
-                <input type="radio" name="sliderAdv" id="advSlide7" value="7">
-                <label class="control__switch" for="advSlide7">
-                  7
-                </label>
-              </li>
-              <li class="control__item control__item--8">
-                <input type="radio" name="sliderAdv" id="advSlide8" value="8">
-                <label class="control__switch" for="advSlide8">
-                  8
-                </label>
-              </li>
-              <li class="control__item control__item--9">
-                <input type="radio" name="sliderAdv" id="advSlide9" value="9">
-                <label class="control__switch" for="advSlide9">
-                  9
-                </label>
-              </li>
-              <li class="control__item control__item--10">
-                <input type="radio" name="sliderAdv" id="advSlide10" value="10">
-                <label class="control__switch" for="advSlide10">
-                  10
-                </label>
-              </li>
-            </ul>
-            <button class="control__button control__button--prev control__button--block" type="button">
-              Предыдущий слайд
-              <svg class="control__icon" width="7" height="12" viewbox="0 0 7 12">
-                <use xlink:href="#promo__control-arrow"></use>
-              </svg>
-            </button>
-            <button class="control__button control__button--next" type="button">
-              Следующий слайд
-              <svg class="control__icon" width="7" height="12" viewbox="0 0 7 12">
-                <use xlink:href="#promo__control-arrow"></use>
-              </svg>
-            </button>
-          </div>
         </div>
         <div class="advantages__details">
           <div class="container">
@@ -1158,15 +1048,18 @@
   </div>
 
   <script src="js/menu-toggle.js"></script>
-  <script src="js/slider-main.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="js/slider-init.js"></script>
   <!-- <script src="js/slide-in.js"></script> -->
   <script src="js/map.js"></script>
   <script src="js/modal.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
   <script src="plugins/timepicker/js/chung-timepicker.js"></script>
   <script>
     $('#timepicker').chungTimePicker();
