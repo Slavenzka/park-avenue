@@ -37,6 +37,11 @@
   fill: $icon-color__social;
 }
 
+.footer__social-link:hover > .footer__icon-facebook use,
+.footer__social-link:hover > .footer__icon-youtube use {
+  fill: $icon-color__highlight;
+}
+
 .footer__address,
 .footer__phone {
   display: block;

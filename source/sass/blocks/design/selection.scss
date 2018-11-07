@@ -105,6 +105,17 @@
   }
 }
 
+@media (min-width: $width__notebook) {
+  .selection__img {
+    width: 100%;
+    filter: grayscale(1);
+  }
+
+  .selection__item:hover .selection__img {
+    filter: none;
+  }
+}
+
 @media (min-width: $width__desktop) {
   .selection > .container {
     padding-top: 119px;
@@ -138,15 +149,6 @@
     margin-top: 12px;
     font-size: 15px;
     line-height: 23px;
-  }
-
-  .selection__img {
-    width: 100%;
-    filter: grayscale(1);
-  }
-
-  .selection__item:hover .selection__img {
-    filter: none;
   }
 
   .selection__item:hover .selection__name {

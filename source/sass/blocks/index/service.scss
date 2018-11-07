@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $width__notebook) {
   .service__list {
     justify-content: space-between;
   }
@@ -178,7 +178,7 @@
       content: "";
       position: absolute;
       top: -9px;
-      right: calc(-30vw - 84px);
+      right: calc(-30vw - 10px);
       width: calc(400px + 30vw);
       height: 80px;
       background-color: $background__light;
@@ -232,5 +232,20 @@
     font-weight: 500;
     line-height: 21px;
     color: $font-color__highlight;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .service__item--counter {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      right: calc(-30vw - 84px);
+      width: calc(400px + 30vw);
+      height: 80px;
+      background-color: $background__light;
+      z-index: 1;
+    }
   }
 }

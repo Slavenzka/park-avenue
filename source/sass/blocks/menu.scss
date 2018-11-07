@@ -19,6 +19,10 @@
   color: $font-color__dark;
 }
 
+.menu__link:hover {
+  color: $font-color__darker2;
+}
+
 @media (max-width: 1439px) {
   .menu__list {
     width: 380px;
