@@ -2,6 +2,8 @@
   position: fixed;
   top: 20px;
   width: 100%;
+  border-top: 1px solid $border__header;
+  border-bottom: 1px solid $border__header;
   z-index: 2;
 
   &::before {
@@ -29,8 +31,6 @@
   display: flex;
   align-items: center;
   min-height: 50px;
-  border-top: 1px solid $border__header;
-  border-bottom: 1px solid $border__header;
 
   &::before {
     content: "";
