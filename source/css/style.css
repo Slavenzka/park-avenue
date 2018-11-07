@@ -5585,3 +5585,104 @@ a.options__link--comissioned {
     top: 0;
     left: 0;
     fill: #7b6542; } }
+
+.print-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 60px 20px 88px 20px;
+  width: 595px; }
+  .print-container::before {
+    content: "";
+    position: absolute;
+    bottom: 21px;
+    left: 19px;
+    width: 558px;
+    height: 47px;
+    background-image: url("../img/print__decoration.svg"); }
+
+.text {
+  width: 195px;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 62.5%; }
+
+.text__title {
+  margin: 0;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 1.9em;
+  font-weight: 900;
+  line-height: 100%; }
+
+.text__space {
+  display: block;
+  margin-top: calc(1.2em / 1.6);
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 100%;
+  color: gray; }
+
+.text__space sup {
+  font-size: calc(0.7em / 1.1); }
+
+.text__descriptor {
+  margin: 0;
+  margin-top: 2.5em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 160%;
+  color: gray; }
+
+.text__data {
+  margin-top: 2.5em;
+  width: 100%;
+  font-size: 1em;
+  color: #272327;
+  border-collapse: collapse;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1; }
+
+.text__data tr:first-of-type td {
+  padding-top: 1.5em; }
+
+.text__data tr:last-of-type td {
+  padding-bottom: 1.5em; }
+
+.text__data tr:not(:first-of-type):not(:last-of-type) td {
+  padding: 0.75em 0; }
+
+.text__value {
+  color: gray; }
+
+.text__title--contacts {
+  margin-top: 4.5em; }
+
+.illustrations {
+  width: calc(555px - 195px - 20px); }
+
+.images__img {
+  width: 100%; }
+
+.text__contact {
+  position: relative;
+  margin: 0;
+  margin-top: calc(2em / 1.1);
+  padding-right: 26px;
+  padding-left: 26px;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 150%;
+  color: gray; }
+
+.text__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #272327; }
+
+.text__icon--phone {
+  top: 2px; }
+
+.text__icon--mail {
+  top: 4px; }

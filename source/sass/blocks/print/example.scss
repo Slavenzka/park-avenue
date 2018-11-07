@@ -1,0 +1,118 @@
+.print-container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding: 60px 20px 88px 20px;
+  width: 595px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 21px;
+    left: 19px;
+    width: 558px;
+    height: 47px;
+    background-image: url("../img/print__decoration.svg");
+  }
+}
+
+.text {
+  width: 195px;
+  font-family: $font-family__main;
+  font-size: 62.5%;
+}
+
+.text__title {
+  margin: 0;
+  font-family: $font-family__heading;
+  font-size: 1.9em;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.text__space {
+  display: block;
+  margin-top: calc(1.2em / 1.6);
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 100%;
+  color: $font-color__dark;
+}
+
+.text__space sup {
+  font-size: calc(0.7em / 1.1);
+}
+
+.text__descriptor {
+  margin: 0;
+  margin-top: 2.5em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 160%;
+  color: $font-color__dark;
+}
+
+.text__data {
+  margin-top: 2.5em;
+  width: 100%;
+  font-size: 1em;
+  color: $font-color__darker;
+  border-collapse: collapse;
+  border-top: 1px solid $border__input--modal;
+  border-bottom: 1px solid $border__input--modal;
+}
+
+.text__data tr:first-of-type td {
+  padding-top: 1.5em;
+}
+
+.text__data tr:last-of-type td {
+  padding-bottom: 1.5em;
+}
+
+.text__data tr:not(:first-of-type):not(:last-of-type) td {
+  padding: 0.75em 0;
+}
+
+.text__value {
+  color: $font-color__dark;
+}
+
+.text__title--contacts {
+  margin-top: 4.5em;
+}
+
+.illustrations {
+  width: calc(555px - 195px - 20px);
+}
+
+.images__img {
+  width: 100%;
+}
+
+.text__contact {
+  position: relative;
+  margin: 0;
+  margin-top: calc(2em / 1.1);
+  padding-right: 26px;
+  padding-left: 26px;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 150%;
+  color: $font-color__dark;
+}
+
+.text__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $icon-color__darker;
+}
+
+.text__icon--phone {
+  top: 2px;
+}
+
+.text__icon--mail {
+  top: 4px;
+}
