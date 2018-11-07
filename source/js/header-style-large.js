@@ -15,9 +15,29 @@
     }
   }
 
+  function toggleHeaderSidemenuColor () {
+    langs.forEach((item, index) => {
+      if (window.pageYOffset >= 993 + 25 * index) {
+        item.style.color = 'rgb(123, 101, 66)';
+      } else {
+        item.style.color = 'rgb(255, 255, 255)';
+      }
+    })
+
+    socials.forEach((item, index) => {
+      if (window.pageYOffset >= 781 + 70 * index) {
+        item.style.color = 'rgb(123, 101, 66)';
+      } else {
+        item.style.color = 'rgb(255, 255, 255)';
+      }
+    })
+  }
+
   toggleHeaderBackground();
+  toggleHeaderSidemenuColor();
 
   document.addEventListener('scroll', function () {
     toggleHeaderBackground();
+    toggleHeaderSidemenuColor();
   })
 })();

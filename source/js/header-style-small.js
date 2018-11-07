@@ -24,7 +24,6 @@
   toggleHeaderSidemenuColor();
 
   document.addEventListener('scroll', function () {
-    console.log(window.pageYOffset);
     toggleHeaderBackground();
   })
 })();
