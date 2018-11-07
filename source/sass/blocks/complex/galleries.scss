@@ -44,7 +44,7 @@
 
 .galleries__selector {
   position: absolute;
-  top: 0;
+  top: 50%;
   margin: 0;
   padding: 0;
   width: 10px;
@@ -83,15 +83,17 @@
   }
 }
 
+.galleries__slider--architect,
 .galleries__slider--hall,
 .galleries__slider--infrastructure,
 .galleries__slider--construction {
   display: none;
 }
 
-.galleries__slider {
-  position: relative;
+.galleries__slider--architect {
+  display: block;
 }
+
 
 @media (max-width: 767px) {
   .galleries__wrapper {
@@ -116,7 +118,7 @@
 
   .galleries__title {
     margin: 8px 0 0 0;
-    width: 635px;
+    width: 100%;
   }
 
   .galleries__descriptor:not(.galleries__descriptor--mobile) {
@@ -140,16 +142,17 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $width__notebook) {
   .galleries .container {
     display: flex;
   }
 
   .galleries__text {
     order: 2;
+    margin: 0 auto;
     padding-top: 0;
     padding-left: 31px;
-    width: auto;
+    width: 433px;
   }
 
   .galleries__title {
@@ -159,6 +162,13 @@
 
   .galleries__descriptor:not(.galleries__descriptor--mobile) {
     margin: 31px 0 0 0;
+    width: auto;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .galleries__text {
+    margin: 0;
     width: auto;
   }
 

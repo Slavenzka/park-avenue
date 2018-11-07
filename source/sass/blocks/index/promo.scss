@@ -15,15 +15,10 @@
 }
 
 .promo__item {
-  position: absolute;
-  top: 0;
+  position: relative;
   width: 100%;
-  background-color: black;
-  background-position: calc(50%) calc(50% + 1px);
   background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition-duration: 2s;
+  z-index: 1;
 
   &::before {
     content: "";
@@ -34,11 +29,6 @@
     height: 100%;
     background-color: $background__hover;
   }
-}
-
-.promo__item--selected {
-  position: relative;
-  opacity: 1;
 }
 
 .promo__item .container {
@@ -119,6 +109,19 @@
   .promo__descriptor {
     width: 370px;
   }
+
+  .promo__list .slick-arrow {
+    position: absolute;
+    display: block;
+    bottom: 170px;
+    left: 100% * 36 / 768;
+    background-image: url("../img/slider__arrow--light.svg");
+    z-index: 1;
+  }
+
+  .promo__list .slick-next {
+    left: calc(100% * 36 / 768 + 37px);
+  }
 }
 
 @media (min-width: $width__desktop) {
@@ -127,7 +130,7 @@
     flex-direction: column;
     width: $width__desktop;
     padding-top: 396px;
-    padding-bottom: 258px;
+    padding-bottom: 283px;
   }
 
   .promo__title {
@@ -146,5 +149,27 @@
   .promo__descriptor {
     margin-top: 31px;
     width: 500px;
+  }
+
+  .promo__list .slick-dots {
+    position: absolute;
+    bottom: 213px;
+    left: calc(50% - 646px);
+  }
+
+  .promo__list .slick-dots button {
+    font-weight: 400;
+    color: $font-color__light;
+    border-bottom: 1px solid $border__light;
+  }
+
+  .promo__list .slick-arrow {
+    bottom: 222px;
+    left: calc(50% - 469px);
+  }
+
+  .promo__list .slick-prev {
+    right: auto;
+    left: calc(50% - 506px);
   }
 }

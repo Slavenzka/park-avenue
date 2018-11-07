@@ -2,10 +2,55 @@
   display: none;
 }
 
+@media (min-width: $width__notebook) {
+  .recommend {
+    display: block;
+  }
+
+  .recommend .feed__item {
+    margin: 0;
+  }
+
+  .recommend .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recomment__title {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    width: 300px;
+    font-family: $font-family__main;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $font-color__darker;
+  }
+
+  .recommend__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 51px;
+    width: 300px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .recommend__item:not(:last-of-type) {
+    margin-bottom: 49px;
+  }
+}
+
 @media (min-width: $width__desktop) {
   .recommend {
     display: block;
-    // width: 300px;
   }
 
   .recommend .container {

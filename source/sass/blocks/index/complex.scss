@@ -59,6 +59,17 @@
   width: 100%;
   max-height: 500px;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: calc(50% - 231px);
+    width: 462px;
+    height: 100%;
+    background-color: $background__hover;
+  }
 }
 
 @media (min-width: $width__tablet) {
@@ -100,9 +111,14 @@
   }
 
   .complex__frame {
-    position: static;
+    position: relative;
     margin-top: 0;
     width: 390px;
+
+    &::before {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 }
 
