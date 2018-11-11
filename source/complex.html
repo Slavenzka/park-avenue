@@ -314,43 +314,86 @@
         </div>
         <div class="galleries__images">
           <div class="galleries__wrapper">
-            <input class="galleries__selector galleries__selector--architect" type="radio" name="galleries" id="gallery-architect" checked>
-            <label class="galleries__type" for="gallery-architect">Архитектура</label>
-            <input class="galleries__selector galleries__selector--hall" type="radio" name="galleries" id="gallery-hall">
-            <label class="galleries__type" for="gallery-hall">Холл</label>
-            <input class="galleries__selector galleries__selector--infrastructure" type="radio" name="galleries" id="gallery-infrastructure">
-            <label class="galleries__type" for="gallery-infrastructure">Инфраструктура</label>
-            <input class="galleries__selector galleries__selector--construction" type="radio" name="galleries" id="gallery-status">
-            <label class="galleries__type" for="gallery-status">Ход строительства</label>
+            <!-- Сюда slick будет заливать элементы управления слайдером, названия которых формируются из data-title атрибутов страниц ниже -->
           </div>
-          <div class="galleries__slider galleries__slider--architect gallery">
-            <ul class="slider gallery__list">
-              <li class="gallery__item gallery__item--1">
-                <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
-              </li>
-              <li class="gallery__item gallery__item--2">
-                <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
-              </li>
-              <li class="gallery__item gallery__item--3">
-                <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №3">
-              </li>
-              <li class="gallery__item gallery__item--4">
-                <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №4">
-              </li>
-              <li class="gallery__item gallery__item--5">
-                <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №5">
-              </li>
-            </ul>
-          </div>
-          <div class="galleries__slider galleries__slider--hall gallery">
-
-          </div>
-          <div class="galleries__slider galleries__slider--infrastructure gallery">
-
-          </div>
-          <div class="galleries__slider galleries__slider--construction gallery">
-
-          </div>
+          <ul class="galleries__list">
+            <li class="galleries__slider galleries__slider--architect gallery" data-title="Архитектура">
+              <ul class="slider gallery__list gallery__list--architect">
+                <li class="gallery__item gallery__item--1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                </li>
+                <li class="gallery__item gallery__item--2">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
+                </li>
+                <li class="gallery__item gallery__item--3">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №3">
+                </li>
+                <li class="gallery__item gallery__item--4">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №4">
+                </li>
+                <li class="gallery__item gallery__item--5">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №5">
+                </li>
+              </ul>
+            </li>
+            <li class="galleries__slider galleries__slider--hall gallery" data-title="Холл">
+              <ul class="slider gallery__list gallery__list--hall">
+                <li class="gallery__item gallery__item--1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                </li>
+                <li class="gallery__item gallery__item--2">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
+                </li>
+                <li class="gallery__item gallery__item--3">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №3">
+                </li>
+                <li class="gallery__item gallery__item--4">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №4">
+                </li>
+                <li class="gallery__item gallery__item--5">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №5">
+                </li>
+              </ul>
+            </li>
+            <li class="galleries__slider galleries__slider--infrastructure gallery" data-title="Инфраструктура">
+              <ul class="slider gallery__list gallery__list--infrastructure">
+                <li class="gallery__item gallery__item--1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                </li>
+                <li class="gallery__item gallery__item--2">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
+                </li>
+                <li class="gallery__item gallery__item--3">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №3">
+                </li>
+                <li class="gallery__item gallery__item--4">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №4">
+                </li>
+                <li class="gallery__item gallery__item--5">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №5">
+                </li>
+              </ul>
+            </li>
+            <li class="galleries__slider galleries__slider--construction gallery" data-title="Ход строительства">
+              <ul class="slider gallery__list gallery__list--construction">
+                <li class="gallery__item gallery__item--1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                </li>
+                <li class="gallery__item gallery__item--2">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
+                </li>
+                <li class="gallery__item gallery__item--3">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №3">
+                </li>
+                <li class="gallery__item gallery__item--4">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №4">
+                </li>
+                <li class="gallery__item gallery__item--5">
+                  <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №5">
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -372,39 +415,50 @@
           <div class="construction__overview">
             <ul class="construction__buildings">
               <li class="construction__mark construction__mark--1 construction__mark--selected">
-                <a href="#" class="construction__link">
-                  1
+                <a href="#" class="construction__link" data-textonly="false"  data-src="img/complex__construction__img-house@1x.png" data-status="Заселен" data-comission="2009 г." data-floors="24">
+                  <span class="construction__building">
+                    1
+                  </span>
                 </a>
               </li>
               <li class="construction__mark construction__mark--2">
-                <a href="#" class="construction__link">
-                  2
+                <a href="#" class="construction__link" data-textonly="false"  data-src="img/complex__company-img@1x.png" data-status="Достривается" data-comission="I кв. 2019 г." data-floors="32">
+                  <span class="construction__building">
+                    2
+                  </span>
                 </a>
               </li>
               <li class="construction__mark construction__mark--3">
-                <a href="#" class="construction__link">3
+                <a href="#" class="construction__link" data-textonly="false"  data-src="img/technical__tech-advantages-img@1x.png" data-status="Достривается" data-comission="III кв. 2019 г." data-floors="56">
+                  <span class="construction__building">
+                    3
+                  </span>
                 </a>
               </li>
               <li class="construction__mark construction__mark--4">
-                <a href="#" class="construction__link">
-                  4
+                <a href="#" class="construction__link" data-textonly="false"  data-src="img/complex__construction__img-house@1x.png" data-status="Заселен" data-comission="2018 г." data-floors="30">
+                  <span class="construction__building">
+                    4
+                  </span>
                 </a>
               </li>
               <li class="construction__mark construction__mark--5">
-                <a href="#" class="construction__link">
-                  5
+                <a href="#" class="construction__link" data-textonly="false"  data-src="img/complex__construction__img-house@1x.png" data-status="Достривается" data-comission="I кв. 2019 г." data-floors="32">
+                  <span class="construction__building">
+                    5
+                  </span>
                 </a>
               </li>
             </ul>
           </div>
           <div class="construction__details">
-            <p class="construction__item">
+            <h3 class="construction__item">
               1 Дом
-              <svg class="construction__icon" width="8" height="8" viewbox="0 0 8 8">
-                <use xlink:href="#Three__plus"></use>
-              </svg>
-            </p>
-            <img class="construction__img-house" src="img/complex__construction__img-house@1x.png" srcset="img/complex__construction__img-house@1x.png 1x, img/complex__construction__img-house@2x.png 2x" alt="Фотография здания комплекса Park Avenue VIP">
+            </h3>
+            <svg class="construction__icon" width="8" height="8" viewbox="0 0 8 8">
+              <use xlink:href="#Three__plus"></use>
+            </svg>
+            <img class="construction__img-house" src="img/complex__construction__img-house@1x.png" alt="Фотография здания комплекса Park Avenue VIP">
             <table class="construction__data">
               <tr>
                 <td class="construction__key">
@@ -597,25 +651,21 @@
     </div>
   </div>
 
+  <script src="js/menu-toggle.js"></script>
   <script src="js/header-style-medium.js"></script>
   <script src="js/menu-toggle.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script src="plugins/slick/slick.min.js"></script>
   <script src="js/slider-init.js"></script>
-
-  <!-- <script src="js/menu-toggle.js"></script>
-  <script src="js/slider-main.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/modal-toggle.js"></script>
+  <script src="js/modal.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
   <script src="plugins/timepicker/js/chung-timepicker.js"></script>
   <script>
     $('#timepicker').chungTimePicker();
   </script> -->
+  <script src="js/marks.js"></script>
+
 </body>
 </html>

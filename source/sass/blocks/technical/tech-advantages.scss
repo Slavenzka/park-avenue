@@ -98,6 +98,23 @@
   }
 }
 
+@media (min-width: $width__notebook) {
+  .tech-advantages__chapter,
+  .tech-advantages__title {
+    margin-left: 100% * 500 / 1160;
+  }
+
+  .tech-advantages__img {
+    width: 100% * 400 / 1160;
+    height: auto;
+  }
+
+  .tech-advantages__list {
+    margin-top: 60px;
+    margin-left: 100% * 500 / 1160;
+  }
+}
+
 @media (min-width: $width__desktop) {
   .tech-advantages__img {
     margin-left: 1px;
