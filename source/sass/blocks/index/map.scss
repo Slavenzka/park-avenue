@@ -136,3 +136,21 @@
   top: 100% * 417 / 550;
   left: 100% * 778 / 977;
 }
+
+.map__comment {
+  display: none;
+}
+
+@media (min-width: $width__notebook) {
+  .map {
+    width: calc(977px * 0.9);
+    height: calc(550px * 0.9);
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .map {
+    width: 977px;
+    height: 550px;
+  }
+}

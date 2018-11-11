@@ -55,19 +55,34 @@
   opacity: 0;
 }
 
-.galleries__type {
+.galleries__wrapper .slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.galleries__wrapper .slick-dots li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.galleries__wrapper .slick-dots li:not(:last-of-type) {
+  margin-right: 26px;
+}
+
+.galleries__wrapper .slick-dots button {
+  margin: 0;
+  padding: 0;
   font-family: $font-family__main;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
   color: $font-color__medium;
+  background-color: transparent;
+  border: none;
 }
 
-.galleries__type:not(:last-of-type) {
-  margin-right: 26px;
-}
-
-.galleries__selector:checked + .galleries__type {
+.galleries__wrapper .slick-active button {
   position: relative;
   padding-bottom: 21px;
   color: $font-color__highlight;
@@ -83,17 +98,11 @@
   }
 }
 
-.galleries__slider--architect,
-.galleries__slider--hall,
-.galleries__slider--infrastructure,
-.galleries__slider--construction {
-  display: none;
+.galleries__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.galleries__slider--architect {
-  display: block;
-}
-
 
 @media (max-width: 767px) {
   .galleries__wrapper {
@@ -101,11 +110,18 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
+      left: calc(100vw - 100px);
       width: 100px;
       height: 100%;
-      background-image: linear-gradient(to right, transparent 0%, white 100%);
+      background-image: linear-gradient(to right, transparent 0%, white 70%);
       pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  .galleries__wrapper--clear {
+    &::before {
+      display: none;
     }
   }
 }
@@ -139,6 +155,10 @@
 
   .galleries__descriptor .descriptor:not(:first-of-type) {
     margin-top: 23px;
+  }
+
+  .galleries__images {
+    max-width: 960px;
   }
 }
 

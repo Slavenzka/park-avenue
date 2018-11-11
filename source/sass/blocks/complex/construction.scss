@@ -45,6 +45,7 @@
 }
 
 .construction__details {
+  position: relative;
   display: none;
 }
 
@@ -132,28 +133,28 @@ div.construction__buttons {
   }
 
   .construction__mark--1 {
-    left: 767px;
-    top: 53px;
+    left: 100% * 767 / 959;
+    top: 100% * 53 / 495;
   }
 
   .construction__mark--2 {
-    left: 862px;
-    top: 357px;
+    left: 100% * 862 / 959;
+    top: 100% * 357 / 495;
   }
 
   .construction__mark--3 {
-    left: 451px;
-    top: 191px;
+    left: 100% * 451 / 959;
+    top: 100% * 191 / 495;
   }
 
   .construction__mark--4 {
-    left: 79px;
-    top: 394px;
+    left: 100% * 79 / 959;
+    top: 100% * 394 / 495;
   }
 
   .construction__mark--5 {
-    left: 64px;
-    top: 175px;
+    left: 100% * 64 / 959;
+    top: 100% * 175 / 495;
   }
 
   .construction__link {
@@ -192,7 +193,7 @@ div.construction__buttons {
   .construction__img-house {
     margin-left: 57px;
     width: 201px;
-    height: 322px;
+    max-height: 322px;
   }
 
   .construction__data {
@@ -211,31 +212,35 @@ div.construction__buttons {
   }
 
   .construction__key {
-    width: 205px;
+    width: 180px;
     color: $font-color__darker;
   }
 
   .construction__value {
-    width: 104px;
+    padding: 0;
+    width: 120px;
     color: $font-color__dark;
   }
 }
 
-@media (min-width: $width__desktop) {
-  .construction .container {
-    padding-bottom: 120px;
+@media (min-width: $width__notebook) {
+  .construction__overview {
+    margin-right: 0;
+    width: calc(959px * 0.85);
+    height: calc(495px * 0.85);
   }
 
   .construction__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .construction__details {
     flex-direction: column;
     padding-top: 9px;
     padding-left: 15px;
-    width: calc(100% - 959px - 2px);
+    width: auto;
   }
 
   .construction__item {
@@ -257,13 +262,37 @@ div.construction__buttons {
   .construction__icon {
     position: absolute;
     display: block;
-    top: 6px;
+    top: 31px;
     right: 9px;
     opacity: 1;
   }
 
   .construction__icon use {
     fill: $icon-color__highlight;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .construction .container {
+    padding-bottom: 120px;
+  }
+
+  .construction__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .construction__overview {
+    margin-right: 0;
+    width: calc(959px * 1);
+    height: calc(495px * 1);
+  }
+
+  .construction__details {
+    flex-direction: column;
+    padding-top: 9px;
+    padding-left: 15px;
+    width: calc(100% - 959px - 2px);
   }
 
   .construction__img-house {
