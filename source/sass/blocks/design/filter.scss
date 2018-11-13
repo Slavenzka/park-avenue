@@ -124,6 +124,16 @@
   background-color: $background__highlight;
 }
 
+.filter__warning {
+  margin: 60px auto 0 auto;
+  width: 300px;
+  font-family: $font-family__main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: $font-color__dark;
+}
+
 @media (min-width: $width__tablet) {
   .filter {
     display: flex;
@@ -136,6 +146,12 @@
   .filter__section {
     margin: 20px 0 0 0;
   }
+
+  .filter__warning {
+    margin: 60px 0 0 0;
+    width: 696px;
+    color: $font-color__dark;
+  }
 }
 
 @media (min-width: $width__notebook) {
@@ -145,5 +161,10 @@
 
   .filter__section:not(:last-of-type) {
     margin-right: 40px;
+  }
+
+  .filter__warning {
+    width: 100%;
+    text-align: center;
   }
 }
