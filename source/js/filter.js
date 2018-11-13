@@ -2,26 +2,41 @@
 
 (function () {
   const filter = document.querySelector('.filter');
-  const filterItems = filter.querySelectorAll('.filter__item');
   const fieldsetRooms = filter.querySelector('.filter__section--bedrooms')
-  const selectSpaceMin = filter.querySelector('.filter__item--space-min');
-  const selectSpaceMax = filter.querySelector('.filter__item--space-max');
-  const selectStatus = filter.querySelectorAll('.filter__input--comissioned');
 
   const catalog = document.querySelector('.selection__list');
   const cards = catalog.querySelectorAll('.selection__item');
   let selectedRooms = [];
 
   function renderFilter () {
-    cards.forEach(item => {
+    let allRooms = [];
+
+    function findRooms () {
+      cards.forEach(item => {
+        if (allRooms.indexOf(item.dataset.rooms) < 0) {
+          allRooms.push(item.dataset.rooms);
+        }
+      });
+      allRooms.sort((a,b) => a - b);
+      console.log(allRooms);
+    }
+
+    findRooms();
+
+    allRooms.forEach((item, i) => {
+      i++;
       let room = document.createElement('INPUT');
       room.classList.add('filter__item', 'filter__input', 'filter__input--bedrooms');
-      rooms.id = ""
+      room.id = 'bedrooms' + i;
+      room.type = 'checkbox';
+      room.name = 'bedrooms';
+      room.value = item;
 
       let label = document.createElement('LABEL');
+      label.htmlFor = room.id;
+      console.log(label);
 
-      room.textContent = item.dataset.rooms;
-      label.textContent = room.textContent;
+      label.textContent = item;
 
       fieldsetRooms.appendChild(room);
       fieldsetRooms.appendChild(label);
@@ -132,6 +147,11 @@
   }
 
   renderFilter();
+
+  const filterItems = filter.querySelectorAll('.filter__item');
+  const selectSpaceMin = filter.querySelector('.filter__item--space-min');
+  const selectSpaceMax = filter.querySelector('.filter__item--space-max');
+  const selectStatus = filter.querySelectorAll('.filter__input--comissioned');
 
   filterItems.forEach(item => {
     item.addEventListener('change', applyFilter);
