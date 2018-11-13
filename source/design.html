@@ -235,13 +235,13 @@
             <legend class="filter__subtitle">
               Количество спальных комнат:
             </legend>
-            <input type="checkbox" class="filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms1" value="1">
+            <input type="checkbox" class="filter__item filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms1" value="1">
             <label for="bedrooms1">1</label>
-            <input type="checkbox" class="filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms2" value="2">
+            <input type="checkbox" class="filter__item filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms2" value="2">
             <label for="bedrooms2">2</label>
-            <input type="checkbox" class="filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms3" value="3">
+            <input type="checkbox" class="filter__item filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms3" value="3">
             <label for="bedrooms3">3</label>
-            <input type="checkbox" class="filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms4" value="4">
+            <input type="checkbox" class="filter__item filter__input filter__input--bedrooms" name="bedrooms" id="bedrooms4" value="4">
             <label for="bedrooms4">4</label>
           </fieldset>
           <fieldset class="filter__section filter__section--space">
@@ -249,20 +249,20 @@
               Площадь, m<sup>2</sup>:
             </legend>
             <span>
-              <select name="space-min" id="space-min">
-                <option value="0" selected>от</option>
-                <option value="55">60</option>
-                <option value="60">60</option>
-                <option value="65">65</option>
-                <option value="70">69</option>
+              <select class="filter__item filter__item--space-min" name="space-min" id="space-min">
+                <option value="0.00" selected>0</option>
+                <option value="55.00">55</option>
+                <option value="60.00">60</option>
+                <option value="65.00">65</option>
+                <option value="69.00">69</option>
               </select>
             </span>
             <span>
-              <select name="space-max" id="space-max">
-                <option value="10000" selected>до</option>
-                <option value="60">60</option>
-                <option value="65">65</option>
-                <option value="70">69</option>
+              <select class="filter__item filter__item--space-max" name="space-max" id="space-max">
+                <option value="76.00" selected>76</option>
+                <option value="60.00">60</option>
+                <option value="65.00">65</option>
+                <option value="70.00">70</option>
               </select>
             </span>
           </fieldset>
@@ -270,14 +270,14 @@
             <legend class="filter__subtitle">
               Дом в эксплуатации:
             </legend>
-            <input type="radio" class="filter__input filter__input--comissioned" name="comissioned" id="comissioned-true" value="true">
+            <input type="radio" class="filter__item filter__input filter__input--comissioned" name="comissioned" id="comissioned-true" value="true">
             <label for="comissioned-true">да</label>
-            <input type="radio" class="filter__input filter__input--comissioned" name="comissioned" id="comissioned-false" value="false">
+            <input type="radio" class="filter__item filter__input filter__input--comissioned" name="comissioned" id="comissioned-false" value="false" data-finish="I кв. 2019">
             <label for="comissioned-false">I кв. 2019</label>
           </fieldset>
         </form>
         <ul class="selection__list">
-          <li class="selection__item" data-rooms="1" data-comissioned="true">
+          <li class="selection__item" data-rooms="1" data-comissioned="true" data-space="61.08">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--1@1x.png" srcset="img/design__selection-item--1@1x.png 1x, img/design__selection-item--1@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -292,7 +292,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="1" data-comissioned="true">
+          <li class="selection__item" data-rooms="2" data-comissioned="true" data-space="69.05">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--2@1x.png" srcset="img/design__selection-item--2@1x.png 1x, img/design__selection-item--2@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -302,27 +302,27 @@
                 69.05 m<sup>2</sup>
               </span>
               <span class="selection__info">
-                <span class="selection__rooms">1</span> комн.,
+                <span class="selection__rooms">2</span> комн.,
                 <span class="selection__status">дом в эксплуатации</span>
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="1" data-comissioned="false" data-date="дом вводится в эксплуатацию в I кв. 2019">
+          <li class="selection__item" data-rooms="2" data-comissioned="false" data-date="I кв. 2019" data-space="76.00">
             <a href="layout.html" class="selection__link">
               <img src="img/design__selection-item--3@1x.png" srcset="img/design__selection-item--3@1x.png 1x, img/design__selection-item--3@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
                 Лас-Вегас
               </h3>
               <span class="selection__space">
-                60.70 m<sup>2</sup>
+                76.00 m<sup>2</sup>
               </span>
               <span class="selection__info">
-                <span class="selection__rooms">1</span> комн.,
+                <span class="selection__rooms">2</span> комн.,
                 <span class="selection__status">дом вводится в эксплуатацию в I кв. 2019</span>
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="1" data-comissioned="false" data-date="дом вводится в эксплуатацию в II кв. 2019">
+          <li class="selection__item" data-rooms="4" data-comissioned="false" data-date="дII кв. 2019" data-space="58.89">
             <a href="layout.html" class="selection__link">
               <img src="img/design__selection-item--4@1x.png" srcset="img/design__selection-item--4@1x.png 1x, img/design__selection-item--4@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -332,12 +332,12 @@
                 58.89 m<sup>2</sup>
               </span>
               <span class="selection__info">
-                <span class="selection__rooms">1</span> комн.,
+                <span class="selection__rooms">4</span> комн.,
                 <span class="selection__status">дом вводится в эксплуатацию в II кв. 2019</span>
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="1" data-comissioned="true">
+          <li class="selection__item" data-rooms="1" data-comissioned="true" data-space="67.54">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--5@1x.png" srcset="img/design__selection-item--5@1x.png 1x, img/design__selection-item--5@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -352,7 +352,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="1" data-comissioned="true">
+          <li class="selection__item" data-rooms="4" data-comissioned="true" data-space="63.61">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--6@1x.png" srcset="img/design__selection-item--6@1x.png 1x, img/design__selection-item--6@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -362,7 +362,7 @@
                 63.61 m<sup>2</sup>
               </span>
               <span class="selection__info">
-                <span class="selection__rooms">1</span> комн.,
+                <span class="selection__rooms">4</span> комн.,
                 <span class="selection__status">дом в эксплуатации</span>
               </span>
             </a>
@@ -556,5 +556,6 @@
   <script>
     $('#timepicker').chungTimePicker();
   </script>
+  <script src="js/filter.js"></script>
 </body>
 </html>
