@@ -27,6 +27,11 @@
   line-height: 0;
 }
 
+.filter__item--space-min,
+.filter__item--space-max {
+  border-radius: 0;
+}
+
 .filter__input {
   position: absolute;
   top: 0;

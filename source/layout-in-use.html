@@ -10,6 +10,7 @@
   <link rel="preload" href="plugins/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="plugins/slick/slick.css"></noscript>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="plugins/fancybox/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -253,10 +254,14 @@
             Фото
           </label>
           <div class="visual__3d">
-            <img src="img/design__selection-item--1@1x.png" srcset="img/design__selection-item--1@1x.png 1x, img/design__selection-item--1@2x.png 2x" alt="Трехмерная модель квартиры" class="visual__3d-img">
+            <a href="img/design__selection-item--1@2x.png" data-fancybox>
+              <img src="img/design__selection-item--1@1x.png" srcset="img/design__selection-item--1@1x.png 1x, img/design__selection-item--1@2x.png 2x" alt="Трехмерная модель квартиры" class="visual__3d-img">
+            </a>
           </div>
           <div class="visual__plan">
-            <img src="img/layout__visual-plan-img.png" alt="План-схема квартиры" class="visual__plan-img">
+            <a href="img/layout__visual-plan-img.png" data-fancybox>
+              <img src="img/layout__visual-plan-img.png" alt="План-схема квартиры" class="visual__plan-img">
+            </a>
           </div>
           <div class="visual__photo">
             <ul class="slider visual__photo-list">
@@ -285,7 +290,7 @@
           <p class="descriptor options__notice">
             Перепланировка квартиры от Park Avenue VIP возможна только для домов, не введенных в эксплуатацию
           </p>
-          <a href="design.html" class="options__link options__link--comissioned">
+          <a href="layout.html" class="options__link options__link--comissioned">
             эта квартира в другом доме
             <svg class="layout__icon-construction" width="6" height="10" viewbox="0 0 7 12">
               <use xlink:href="#promo__control-arrow"></use>
@@ -484,6 +489,7 @@
   <script src="plugins/slick/slick.min.js"></script>
   <script src="js/slider-init.js"></script>
   <script src="js/menu-toggle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>

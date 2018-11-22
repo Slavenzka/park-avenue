@@ -202,33 +202,33 @@
 
   .advantages__details {
     order: 2;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 120px;
-    width: 290px;
+    width: 260px;
   }
 
   .advantages__details .container {
     margin: 0;
     padding: 0;
-    min-width: 290px;
-    width: 290px;
+    min-width: 260px;
+    width: 260px;
   }
 
   .advantages__chapter {
     margin: 0;
-    width: 290px;
+    width: 260px;
   }
 
   .advantages__title {
     margin: 0;
-    width: 290px;
+    width: 260px;
     margin-top: 6px;
   }
 
   .advantages__info {
     margin: 0;
     margin-top: 29px;
-    width: 290px;
+    width: 260px;
     text-indent: 0;
   }
 
@@ -310,6 +310,19 @@
 
   .advantages__list .slick-next {
     right: calc(390px - 37px);
+  }
+}
+
+@media (min-width: $width__notebook) {
+  .advantages__slider {
+    width: 940px;
+  }
+
+  .advantages__chapter,
+  .advantages__title,
+  .advantages__info,
+  .advantages__download {
+    width: 260px;
   }
 }
 
