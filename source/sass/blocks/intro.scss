@@ -62,15 +62,12 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $width__notebook) {
   .intro {
     overflow: hidden;
   }
 
-  .intro .container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 251px;
+  .intro > .container {
     padding-bottom: 0;
   }
 
@@ -107,5 +104,13 @@
     transform: rotate(90deg);
     fill: $icon-color__highlight;
     stroke: $icon-color__highlight;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .intro .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 251px;
   }
 }

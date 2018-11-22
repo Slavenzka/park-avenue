@@ -26,6 +26,32 @@
   display: none;
 }
 
+@media (min-width: $width__notebook) {
+  .design__intro .intro__link {
+    display: block;
+    padding-right: 88px;
+    padding-left: 30px;
+    text-transform: none;
+  }
+
+  .design__intro .intro__sold {
+    display: inline;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $font-color__dark;
+  }
+
+  .design__intro .intro__counter {
+    display: inline;
+  }
+
+  .design__intro .intro__icon {
+    right: 7px;
+  }
+}
+
 @media (min-width: $width__desktop) {
   .design__intro .intro__link {
     display: block;

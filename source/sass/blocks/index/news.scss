@@ -110,11 +110,12 @@
   .news__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
   }
 
   .news__item {
-    margin: 0 10px;
+    margin: 0 5px;
   }
 
   .news__item:nth-child(2) {

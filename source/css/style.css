@@ -789,18 +789,10 @@ a {
   .intro__title span {
     margin-bottom: 10px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .intro {
     overflow: hidden; }
-  .intro .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 251px;
+  .intro > .container {
     padding-bottom: 0; }
   .intro__link {
     position: relative;
@@ -833,6 +825,17 @@ a {
             transform: rotate(90deg);
     fill: #7b6542;
     stroke: #7b6542; } }
+
+@media (min-width: 1440px) {
+  .intro .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 251px; } }
 
 .slider .slick-slide {
   will-change: transform; }
@@ -1518,13 +1521,16 @@ a {
     top: 11px;
     left: 11px; }
   .environment__button {
-    margin-left: calc(977px * 0.9 - 316px); } }
+    margin-right: 0;
+    margin-left: calc(977px * 0.9);
+    width: 100%; } }
 
 @media (max-width: 1279px) {
   .environment__descriptor {
     display: none; }
   .environment__button {
-    margin-left: calc(977px - 316px); } }
+    margin-left: calc(977px - 316px);
+    width: 315px; } }
 
 @media (max-width: 1079px) {
   .environment > .container > .environment__google,
@@ -2271,25 +2277,25 @@ a {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 120px;
-    width: 290px; }
+    width: 260px; }
   .advantages__details .container {
     margin: 0;
     padding: 0;
-    min-width: 290px;
-    width: 290px; }
+    min-width: 260px;
+    width: 260px; }
   .advantages__chapter {
     margin: 0;
-    width: 290px; }
+    width: 260px; }
   .advantages__title {
     margin: 0;
-    width: 290px;
+    width: 260px;
     margin-top: 6px; }
   .advantages__info {
     margin: 0;
     margin-top: 29px;
-    width: 290px;
+    width: 260px;
     text-indent: 0; }
   .advantages__download {
     margin-top: 40px;
@@ -2346,6 +2352,15 @@ a {
     left: auto; }
   .advantages__list .slick-next {
     right: calc(390px - 37px); } }
+
+@media (min-width: 1280px) {
+  .advantages__slider {
+    width: 940px; }
+  .advantages__chapter,
+  .advantages__title,
+  .advantages__info,
+  .advantages__download {
+    width: 260px; } }
 
 @media (min-width: 1440px) {
   .advantages > .container {
@@ -2465,7 +2480,8 @@ a {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding-top: 70px; }
   .developer__wrapper {
     margin: 0;
     width: 400px; }
@@ -2603,9 +2619,11 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%; }
   .news__item {
-    margin: 0 10px; }
+    margin: 0 5px; }
   .news__item:nth-child(2) {
     display: block; } }
 
@@ -4990,6 +5008,24 @@ div.construction__buttons {
 .design__intro .intro__link {
   display: none; }
 
+@media (min-width: 1280px) {
+  .design__intro .intro__link {
+    display: block;
+    padding-right: 88px;
+    padding-left: 30px;
+    text-transform: none; }
+  .design__intro .intro__sold {
+    display: inline;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: gray; }
+  .design__intro .intro__counter {
+    display: inline; }
+  .design__intro .intro__icon {
+    right: 7px; } }
+
 @media (min-width: 1440px) {
   .design__intro .intro__link {
     display: block;
@@ -5165,6 +5201,10 @@ div.construction__buttons {
 .filter__subtitle sup {
   font-size: 8px;
   line-height: 0; }
+
+.filter__item--space-min,
+.filter__item--space-max {
+  border-radius: 0; }
 
 .filter__input {
   position: absolute;
@@ -5409,6 +5449,7 @@ div.construction__buttons {
         justify-content: space-around; }
   .layout__services {
     margin-top: 30px;
+    margin-right: auto;
     width: 396px; } }
 
 @media (min-width: 1440px) {
