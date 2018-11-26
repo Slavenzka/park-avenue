@@ -322,7 +322,11 @@
   .advantages__title,
   .advantages__info,
   .advantages__download {
-    width: 260px;
+    width: 240px;
+  }
+
+  .advantages__details {
+    padding-left: 20px;
   }
 }
 
@@ -377,6 +381,7 @@
   .advantages__details {
     margin-left: 24px;
     padding-top: 200px;
+    padding-left: 0;
   }
 
   .advantages__title {
