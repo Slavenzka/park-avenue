@@ -2,7 +2,7 @@
   background-color: $background__hover;
   background-image: url("../img/complex__intro-bg@1x.jpg");
   background-repeat: no-repeat;
-  background-size: calc(cover) 100%;
+  background-size: cover;
   background-position: 50% 0;
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
