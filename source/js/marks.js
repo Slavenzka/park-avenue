@@ -60,10 +60,11 @@
   }
 
   const construction = document.querySelector('.construction__wrapper');
-  const constructionMarks = construction.querySelectorAll('.construction__link');
-  const constructionDescriptor = construction.querySelector('.construction__details');
 
   if (construction) {
+    const constructionMarks = construction.querySelectorAll('.construction__link');
+    const constructionDescriptor = construction.querySelector('.construction__details');
+
     toggleDescription(constructionMarks, constructionDescriptor);
   }
 

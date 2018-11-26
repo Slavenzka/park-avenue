@@ -90,15 +90,39 @@ a {
   color: $font-color__highlight;
 }
 
-.slidein-start {
+.slide-text-start {
   transition-duration: 0.5s;
-  transform: translateY(-200px);
+  transform: translateX(-30px);
   opacity: 0;
 }
 
-.slidein-end {
+.slide-text-end {
   transition-duration: 0.5s;
-  transform: translateY(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-image-start {
+  &::before {
+    opacity: 0;
+  }
+}
+
+.slide-image-start img {
+  transform: translateX(300px);
+  opacity: 0;
+}
+
+.slide-image-end {
+  &::before {
+    opacity: 1;
+    transition-duration: 2s;
+  }
+}
+
+.slide-image-end img {
+  transition-duration: 0.8s;
+  transform: translateX(0);
   opacity: 1;
 }
 

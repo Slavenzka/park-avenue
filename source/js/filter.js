@@ -2,51 +2,131 @@
 
 (function () {
   const filter = document.querySelector('.filter');
-  const fieldsetRooms = filter.querySelector('.filter__section--bedrooms')
+  const fieldsetRooms = filter.querySelector('.filter__section--bedrooms');
+  const fieldsetSpace = filter.querySelector('.filter__section--space');
+  const fieldsetStatus = filter.querySelector('.filter__section--comissioned');
+  const spaceMin = filter.querySelector('.filter__item--space-min');
+  const spaceMax = filter.querySelector('.filter__item--space-max');
+
 
   const catalog = document.querySelector('.selection__list');
   const cards = catalog.querySelectorAll('.selection__item');
   let selectedRooms = [];
 
   function renderFilter () {
-    let allRooms = [];
-
-    function findRooms () {
+    function findUniques (containerArray, dataProperty) {
       cards.forEach(item => {
-        if (allRooms.indexOf(item.dataset.rooms) < 0) {
-          allRooms.push(item.dataset.rooms);
+        if ((containerArray.indexOf(item.getAttribute('data-' + dataProperty)) < 0)
+        && (item.getAttribute('data-' + dataProperty))) {
+          containerArray.push(item.getAttribute('data-' + dataProperty));
         }
       });
-      allRooms.sort((a,b) => a - b);
-      console.log(allRooms);
+      containerArray.sort((a,b) => a - b);
     }
 
-    findRooms();
+    renderFilter.rooms = function () {
+      let allRooms = [];
+      findUniques(allRooms, 'rooms');
 
-    allRooms.forEach((item, i) => {
-      i++;
-      let room = document.createElement('INPUT');
-      room.classList.add('filter__item', 'filter__input', 'filter__input--bedrooms');
-      room.id = 'bedrooms' + i;
-      room.type = 'checkbox';
-      room.name = 'bedrooms';
-      room.value = item;
+      allRooms.forEach((item, i) => {
+        i++;
+        let room = document.createElement('INPUT');
+        room.classList.add('filter__item', 'filter__input', 'filter__input--bedrooms');
+        room.id = 'bedrooms' + i;
+        room.type = 'checkbox';
+        room.name = 'bedrooms';
+        room.value = item;
 
-      let label = document.createElement('LABEL');
-      label.htmlFor = room.id;
-      console.log(label);
+        let label = document.createElement('LABEL');
+        label.htmlFor = room.id;
+        label.textContent = item;
 
-      label.textContent = item;
+        fieldsetRooms.appendChild(room);
+        fieldsetRooms.appendChild(label);
+      });
+    }
 
-      fieldsetRooms.appendChild(room);
-      fieldsetRooms.appendChild(label);
-    });
+    renderFilter.options = function () {
+      let allSpaces = [];
+      findUniques(allSpaces, 'space');
+
+      allSpaces.forEach((item, i) => {
+        let optionMin = document.createElement('OPTION');
+        optionMin.value = item;
+        optionMin.textContent = item;
+        if (i === 0) {
+          optionMin.selected = true;
+        }
+        spaceMin.appendChild(optionMin);
+
+        let optionMax = document.createElement('OPTION');
+        optionMax.value = item;
+        optionMax.textContent = item;
+        if (i === allSpaces.length - 1) {
+          optionMax.selected = true;
+        }
+        spaceMax.appendChild(optionMax);
+      });
+    }
+
+    renderFilter.status = function () {
+      let allStatuses = [];
+      findUniques(allStatuses, 'comissioned');
+
+      if ((allStatuses.length === 1) && (allStatuses[0] === 'true')) {
+        filedsetStatus.style = 'display: none';
+      }
+
+      let allDates = [];
+      findUniques(allDates, 'date');
+
+      if (allStatuses.indexOf('true') >= 0) {
+        let statusComissioned = document.createElement('INPUT');
+        statusComissioned.type = 'radio';
+        statusComissioned.classList.add('filter__item', 'filter__input' , 'filter__input--comissioned');
+        statusComissioned.name = 'comissioned';
+        statusComissioned.id = 'comissioned-true';
+        statusComissioned.value = 'true';
+        fieldsetStatus.appendChild(statusComissioned);
+
+        let label = document.createElement('LABEL');
+        label.htmlFor = statusComissioned.id;
+        label.textContent = 'да';
+        fieldsetStatus.appendChild(label);
+      }
+
+      allDates.forEach((item, i) => {
+        let date = document.createElement('INPUT');
+        date.type = 'radio';
+        date.classList.add('filter__item', 'filter__input' , 'filter__input--comissioned');
+        date.name = 'comissioned';
+        date.id = 'comissioned-false' + i;
+        date.value = item;
+        fieldsetStatus.appendChild(date);
+
+        let label = document.createElement('LABEL');
+        label.htmlFor = date.id;
+        label.textContent = item;
+        fieldsetStatus.appendChild(label);
+      });
+    }
+
+    renderFilter.options();
+    renderFilter.rooms();
+    renderFilter.status();
   }
 
   function applyFilter (evt) {
-    let flag = false;
 
     function checkResults () {
+      let flag = false;
+
+      cards.forEach(item => {
+        if (item.getAttribute('style').indexOf('display: none') < 0) {
+          flag = true;
+        }
+      });
+
       if (!flag) {
         let warning = document.createElement('LI');
         warning.classList.add('filter__warning');
@@ -68,31 +148,18 @@
     applyFilter.rooms = function (item) {
       if (selectedRooms.length > 0) {
         if (selectedRooms.indexOf(item.dataset.rooms) >= 0) {
-          flag = true;
           return true;
         } else {
           return false;
         }
       }
-      flag = true;
       return true;
     }
 
-    applyFilter.spaceMin = function (item) {
-      if (item.dataset.space >= selectSpaceMin.value) {
-        flag = true;
+    applyFilter.spaceMinMax = function (item) {
+      if ((item.dataset.space >= selectSpaceMin.value) && (item.dataset.space <= selectSpaceMax.value)) {
         return true;
       }
-      flag = false;
-      return false;
-    }
-
-    applyFilter.spaceMax = function (item) {
-      if (item.dataset.space <= selectSpaceMax.value) {
-        flag = true;
-        return true;
-      }
-      flag = false;
       return false;
     }
 
@@ -104,22 +171,17 @@
 
           case 'true':
             if (item.dataset.comissioned === 'true') {
-              flag = true;
               return true;
             }
-            flag = false;
             return false;
 
-          case 'false':
+          default:
             if (item.dataset.comissioned == 'false') {
-              if (item.dataset.date === comission.dataset.finish) {
-                flag = true;
+              if (item.dataset.date === comission.value) {
                 return true;
               }
-              flag = false;
               return false;
             }
-            flag = false;
             return false;
         }
       }
@@ -134,8 +196,7 @@
 
     cards.forEach(item => {
       if (applyFilter.rooms(item) &&
-          applyFilter.spaceMin(item) &&
-          applyFilter.spaceMax(item) &&
+          applyFilter.spaceMinMax(item) &&
           applyFilter.status(item)) {
         item.style = 'display: block';
       } else {
@@ -146,12 +207,34 @@
     checkResults();
   }
 
+  function limitSelect (evt) {
+    if (evt.target.classList.contains('filter__item--space-min')) {
+      for (let i = 0; i < spaceMax.children.length; i++) {
+        if (spaceMax.children[i].value < evt.target.value) {
+          spaceMax.children[i].style = 'display: none';
+        } else {
+          spaceMax.children[i].style = 'display: block';
+        }
+      }
+    } else {
+      for (let i = 0; i < spaceMin.children.length; i++) {
+        if (spaceMin.children[i].value > evt.target.value) {
+          spaceMin.children[i].style = 'display: none';
+        } else {
+          spaceMin.children[i].style = 'display: block';
+        }
+      }
+    }
+  }
+
   renderFilter();
 
   const filterItems = filter.querySelectorAll('.filter__item');
   const selectSpaceMin = filter.querySelector('.filter__item--space-min');
   const selectSpaceMax = filter.querySelector('.filter__item--space-max');
   const selectStatus = filter.querySelectorAll('.filter__input--comissioned');
+
+  fieldsetSpace.addEventListener('change', limitSelect);
 
   filterItems.forEach(item => {
     item.addEventListener('change', applyFilter);

@@ -108,18 +108,38 @@ a {
   line-height: 21px;
   color: #7b6542; }
 
-.slidein-start {
+.slide-text-start {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
   opacity: 0; }
 
-.slidein-end {
+.slide-text-end {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1; }
+
+.slide-image-start::before {
+  opacity: 0; }
+
+.slide-image-start img {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0; }
+
+.slide-image-end::before {
+  opacity: 1;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }
+
+.slide-image-end img {
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   opacity: 1; }
 
 @media (min-width: 768px) {
@@ -1246,7 +1266,8 @@ a {
 .complex {
   position: relative;
   font-family: "Gotham Pro", "Arial", sans-serif;
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
 
 .complex .container {
   min-height: 955px; }
@@ -1309,7 +1330,8 @@ a {
     margin-left: calc(50% - 231px);
     width: 462px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.65); }
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1; }
 
 @media (min-width: 768px) {
   .complex {
@@ -5277,6 +5299,7 @@ div.construction__buttons {
 .filter__input--comissioned + label {
   display: inline-block;
   padding-top: 12px;
+  margin-bottom: 15px;
   width: 135px;
   height: 40px;
   font-size: 14px;
@@ -5285,7 +5308,7 @@ div.construction__buttons {
   vertical-align: middle;
   background-color: #f1f1f1; }
 
-.filter__input--comissioned + label:not(:last-of-type) {
+.filter__input--comissioned + label:not(:nth-of-type(2n)) {
   margin-right: 15px; }
 
 .filter__input--comissioned:checked + label {
