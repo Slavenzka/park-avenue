@@ -90,19 +90,8 @@ a {
   color: $font-color__highlight;
 }
 
-.slide-text-start {
+.slide-left-start {
   transform: translateX(-60px);
-  opacity: 0;
-}
-
-.slide-text-end {
-  transition-duration: 1s;
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.slide-image-start {
-  transform: translateX(100px);
   opacity: 0;
 
   &::before {
@@ -110,8 +99,29 @@ a {
   }
 }
 
-.slide-image-end {
-  transition-duration: 0.8s;
+.slide-left-end {
+  transition-duration: 1s;
+  transform: translateX(0);
+  opacity: 1;
+
+  &::before {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
+  }
+}
+
+.slide-right-start {
+  transform: translateX(60px);
+  opacity: 0;
+
+  &::before {
+    opacity: 0;
+  }
+}
+
+.slide-right-end {
+  transition-duration: 1s;
   transform: translateX(0);
   opacity: 1;
 
