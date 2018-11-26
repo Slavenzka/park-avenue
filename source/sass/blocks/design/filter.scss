@@ -111,6 +111,7 @@
 .filter__input--comissioned + label {
   display: inline-block;
   padding-top: 12px;
+  margin-bottom: 15px;
   width: 135px;
   height: 40px;
   font-size: 14px;
@@ -120,7 +121,7 @@
   background-color: $background__news;
 }
 
-.filter__input--comissioned + label:not(:last-of-type) {
+.filter__input--comissioned + label:not(:nth-of-type(2n)) {
   margin-right: 15px;
 }
 
