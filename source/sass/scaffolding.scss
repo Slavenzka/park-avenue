@@ -91,39 +91,35 @@ a {
 }
 
 .slide-text-start {
-  transition-duration: 0.5s;
-  transform: translateX(-30px);
+  transform: translateX(-60px);
   opacity: 0;
 }
 
 .slide-text-end {
-  transition-duration: 0.5s;
+  transition-duration: 1s;
   transform: translateX(0);
   opacity: 1;
 }
 
 .slide-image-start {
+  transform: translateX(100px);
+  opacity: 0;
+
   &::before {
     opacity: 0;
   }
 }
 
-.slide-image-start img {
-  transform: translateX(300px);
-  opacity: 0;
-}
-
 .slide-image-end {
-  &::before {
-    opacity: 1;
-    transition-duration: 2s;
-  }
-}
-
-.slide-image-end img {
   transition-duration: 0.8s;
   transform: translateX(0);
   opacity: 1;
+
+  &::before {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
+  }
 }
 
 @media (min-width: $width__tablet) {
