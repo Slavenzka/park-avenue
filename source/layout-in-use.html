@@ -11,6 +11,7 @@
   <noscript><link rel="stylesheet" href="plugins/slick/slick.css"></noscript>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" type="text/css" href="plugins/fancybox/jquery.fancybox.min.css">
+  <script src="js/intersection-observer.js"></script>
 </head>
 
 <body>
@@ -188,16 +189,16 @@
       <div class="layout__intro"></div>
       <div class="container">
         <div class="layout__data data">
-          <h3 class="heading data__name">
+          <h3 class="heading data__name slide-left-start">
             Ванкувер
           </h3>
-          <p class="data__space">
+          <p class="data__space slide-left-start">
             61.08 m<sup>2</sup>
           </p>
-          <p class="descriptor data__notice">
+          <p class="descriptor data__notice slide-left-start">
             В процессе строительства могут быть изменения технических х-тик
           </p>
-          <table class="data__figures">
+          <table class="data__figures slide-left-start">
             <tr>
               <td class="data__key">
                 Дом
@@ -240,7 +241,7 @@
             </tr>
           </table>
         </div>
-        <div class="layout__visual visual">
+        <div class="layout__visual visual slide-left-start">
           <input class="visual__item visual__item--3d" type="radio" name="visual-options" id="visual-3d" checked>
           <label for="visual-3d">
             3D-модель
@@ -284,13 +285,13 @@
           </div>
         </div>
         <div class="layout__options layout__options--comissioned options">
-          <h3 class="options__title">
+          <h3 class="options__title slide-right-start">
             Альтернативные варианты перепланировки
           </h3>
-          <p class="descriptor options__notice">
+          <p class="descriptor options__notice slide-right-start">
             Перепланировка квартиры от Park Avenue VIP возможна только для домов, не введенных в эксплуатацию
           </p>
-          <a href="layout.html" class="options__link options__link--comissioned">
+          <a href="layout.html" class="options__link options__link--comissioned slide-right-start">
             эта квартира в другом доме
             <svg class="layout__icon-construction" width="6" height="10" viewbox="0 0 7 12">
               <use xlink:href="#promo__control-arrow"></use>
@@ -307,14 +308,14 @@
               <img src="img/options__img--1@1x.png" srcset="img/options__img--1@1x.png 1x, img/options__img--1@2x.png 2x" alt="Альтернативный вариант планировки" class="options__img">
             </li>
           </ul>
-          <div class="options__services">
+          <div class="options__services slide-right-start">
             <a href="#" class="options__link options__link--download">
               Скачать презентацию, pdf
               <svg class="options__icon" width="20" height="21" viewbox="0 0 28 29">
                 <use xlink:href="#download"></use>
               </svg>
             </a>
-            <a href="#" class="options__link options__link--print">
+            <a href="#" class="options__link options__link--print slide-right-start">
               Распечатать
               <svg class="options__icon" width="20" height="21" viewbox="0 0 27 29">
                 <use xlink:href="#print"></use>
@@ -323,19 +324,19 @@
           </div>
         </div>
         <div class="layout__services">
-          <a href="#" class="button advantages__button advantages__button--request layout__button layout__button--request signup-trigger">
+          <a href="#" class="button advantages__button advantages__button--request layout__button layout__button--request signup-trigger slide-left-start">
             Заполнить заявку
             <svg class="advantages__icon-mail layout__icon-mail" width="21" height="15" viewbox="0 0 21 15">
               <use xlink:href="#advantages__mail"></use>
             </svg>
           </a>
-          <a href="#" class="button advantages__button advantages__button--call layout__button layout__button--call signup-trigger">
+          <a href="#" class="button advantages__button advantages__button--call layout__button layout__button--call signup-trigger slide-left-start">
             Заказать звонок
             <svg class="advantages__icon-phone layout__icon-phone" width="21" height="21" viewbox="0 0 21 21">
               <use xlink:href="#advantages__phone"></use>
             </svg>
           </a>
-          <a href="design.html" class="link advantages__link layout__link">
+          <a href="design.html" class="link advantages__link layout__link slide-left-start">
             К подбору по параметрам
             <svg class="layout__icon-back" width="6" height="10" viewbox="0 0 7 12">
               <use xlink:href="#promo__control-arrow"></use>
@@ -349,7 +350,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__social">
-        <ul class="footer__icons">
+        <ul class="footer__icons slide-left-start">
           <li class="footer__icon">
             <a href="https://www.facebook.com/ParkAvenueVIP/" class="footer__social-link" target="_blank">
               Ссылка на аккаунт проекта в facebook
@@ -368,7 +369,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts slide-left-start">
         <span class="footer__address">
           просп. Голосеевский, 58а
         </span>
@@ -378,39 +379,39 @@
       </div>
       <div class="footer__menu menu">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="index.html" class="menu__link">
               Главная
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="complex.html" class="menu__link">
               О комплексе
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="design.html" class="menu__link">
               Планировки
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="technical.html" class="menu__link">
               Технические данные
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="newsfeed.html" class="menu__link">
               Новости
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="contacts.html" class="menu__link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright slide-right-start">
         <span class="footer__developer">
           © Park Avenue VIP, 2018
         </span>
@@ -497,5 +498,6 @@
   <script>
     $('#timepicker').chungTimePicker();
   </script>
+  <script src="js/slide-in.js"></script>
 </body>
 </html>

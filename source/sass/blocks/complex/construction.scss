@@ -111,7 +111,7 @@ div.construction__buttons {
     position: relative;
     margin-top: 62px;
     margin-left: 2px;
-    width: 959px;
+    width: 960px;
     height: 495px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -225,9 +225,10 @@ div.construction__buttons {
 
 @media (min-width: $width__notebook) {
   .construction__overview {
-    margin-right: 0;
-    width: calc(959px * 0.85);
-    height: calc(495px * 0.85);
+    margin-right: auto;
+    margin-left: 0;
+    width: calc(960px * 0.8);
+    height: calc(495px * 0.8);
   }
 
   .construction__wrapper {
@@ -284,8 +285,8 @@ div.construction__buttons {
 
   .construction__overview {
     margin-right: 0;
-    width: calc(959px * 1);
-    height: calc(495px * 1);
+    width: 960px;
+    height: 495px;
   }
 
   .construction__details {

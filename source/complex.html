@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
-  <link rel="preload" href="plugins/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="plugins/slick/slick.css"></noscript>
+  <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <script src="js/intersection-observer.js"></script>
 </head>
 
 <body>
@@ -201,7 +201,7 @@
   </header>
 
   <main>
-    <section class="intro">
+    <section class="intro slide-left-start">
       <div class="container">
         <h1 class="intro__title">
           <span>
@@ -220,48 +220,48 @@
     <section class="company">
       <div class="container">
         <div class="company__part1">
-          <p class="chapter company__chapter">
+          <p class="chapter company__chapter slide-left-start">
             01
           </p>
-          <h2 class="heading company__title">
+          <h2 class="heading company__title slide-left-start">
             Застройщик Seven Hills
           </h2>
-          <p class="company__slogan company__slogan--mobile">
+          <p class="company__slogan company__slogan--mobile slide-left-start">
             В портфеле группы - более 12,8 миллионов квадратных метров жилой и коммерческой площади в мировых столицах. Реализованные проекты группы Seven Hills за рубежом:
           </p>
-          <p class="company__slogan">
+          <p class="company__slogan slide-left-start">
             Застройщик Seven Hills входит в международную девелоперскую группу Scorpio Real Estate Ltd. В портфеле группы — более 12,8 млн квадратных метров жилой и коммерческой площади. Компания Seven Hills — это:
           </p>
           <ul class="company__list">
             <li class="company__item">
-              <p class="company__descriptor">
+              <p class="company__descriptor slide-left-start">
                 опытный и надежный девелопер из Израиля
               </p>
-              <p class="company__descriptor company__descriptor--mobile">
+              <p class="company__descriptor company__descriptor--mobile slide-left-start">
                 2 миллиона квадратных метров офисной площади (Манхеттен, Нью-Йорк, США)
               </p>
             </li>
             <li class="company__item">
-              <p class="company__descriptor">
+              <p class="company__descriptor slide-left-start">
                 международный застройщик с реализованными проектами жилых комплексов в странах восточной Европы (Чехия, Румыния, Латвия)
               </p>
-              <p class="company__descriptor company__descriptor--mobile">
+              <p class="company__descriptor company__descriptor--mobile slide-left-start">
                 здания в престижном деловом районе Canary Wharf (Лондон, Великобритания)
               </p>
             </li>
             <li class="company__item">
-              <p class="company__descriptor">
+              <p class="company__descriptor slide-left-start">
                 команда профессионалов, которая реализовывает масштабные проекты по всему миру — офисы IBM, здания в деловом районе Canary Wharf в Лондоне (Британия), офисные здания на Манхэттене (США)
               </p>
-              <p class="company__descriptor company__descriptor--mobile">
+              <p class="company__descriptor company__descriptor--mobile slide-left-start">
                 жилые комплексы в странах восточной европы – в Праге (Чехия), Бухаресте (Румыния) и Риге (Латвия).
               </p>
             </li>
             <li class="company__item">
-              <p class="company__descriptor">
+              <p class="company__descriptor slide-left-start">
                 экспертный конкурент на девелоперском рынке Украины с 2005 года
               </p>
-              <p class="company__descriptor company__descriptor--mobile">
+              <p class="company__descriptor company__descriptor--mobile slide-left-start">
                 крупнейший в Европе коммерческий и складской центр (аэропорте Charles de Gaulle, Париж, Франция);
               </p>
             </li>
@@ -269,9 +269,9 @@
         </div>
         <div class="company__part2">
           <picture>
-            <img class="company__img" src="img/complex__company-img@1x.png" srcset="img/complex__company-img@1x.png 1x, img/complex__company-img@2x.png 2x" alt="Иллюстрация к блоку о застройщике">
+            <img class="company__img slide-right-start" src="img/complex__company-img@1x.png" srcset="img/complex__company-img@1x.png 1x, img/complex__company-img@2x.png 2x" alt="Иллюстрация к блоку о застройщике">
           </picture>
-          <a href="https://sevenhills.com.ua" class="company__link">
+          <a href="https://sevenhills.com.ua" class="company__link slide-right-start">
             sevenhills.com.ua
             <svg class="company__icon" width="20" height="21" viewbox="0 0 27 28">
               <use xlink:href="#globe-icon"></use>
@@ -285,8 +285,8 @@
         Видео-презентация Scorpio Real Estate
       </h2>
       <div class="container">
-        <iframe class="video__content" src="https://www.youtube.com/embed/unsAX9PaRDw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <p class="video__slogan">
+        <iframe class="video__content slide-left-start" src="https://www.youtube.com/embed/unsAX9PaRDw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="video__slogan slide-left-start">
           В&nbsp;ближайшие 6&nbsp;лет Scorpio Real Estate Group планирует инвестировать в украинские проекты&nbsp;1&nbsp;миллиард долларов.
         </p>
       </div>
@@ -294,29 +294,29 @@
     <section class="galleries">
       <div class="container">
         <div class="galleries__text">
-          <p class="chapter galleries__chapter">
+          <p class="chapter galleries__chapter slide-right-start">
             02
           </p>
-          <h2 class="heading galleries__title">
+          <h2 class="heading galleries__title slide-right-start">
             Фотогалерея комплекса
           </h2>
-          <p class="descriptor galleries__descriptor galleries__descriptor--mobile">
+          <p class="descriptor galleries__descriptor galleries__descriptor--mobile slide-right-start">
             В портфеле группы - более 12,8 миллионов квадратных метров жилой и коммерческой площади в мировых столицах. Реализованные проекты группы Seven Hills за рубежом:
           </p>
           <div class="galleries__descriptor">
-            <p class="descriptor">
+            <p class="descriptor slide-right-start">
               Park Avenue VIP находится в 15 минутах от центра города, вблизи уютной зелени Голосеевского парка.
             </p>
-            <p class="descriptor">
+            <p class="descriptor slide-right-start">
               Элегантность внешнего оформления комплекса не уступает великолепной внутренней отделке. Большие и светлые пространства квартир созданные благодаря высоким потолкам. Из панорамных окон от пола до потолка открываются потрясающие виды на город
             </p>
           </div>
         </div>
         <div class="galleries__images">
-          <div class="galleries__wrapper">
+          <div class="galleries__wrapper slide-left-start">
             <!-- Сюда slick будет заливать элементы управления слайдером, названия которых формируются из data-title атрибутов страниц ниже -->
           </div>
-          <ul class="galleries__list">
+          <ul class="galleries__list slide-left-start">
             <li class="galleries__slider galleries__slider--architect gallery" data-title="Архитектура">
               <ul class="slider gallery__list gallery__list--architect">
                 <li class="gallery__item gallery__item--1">
@@ -399,20 +399,20 @@
     </section>
     <section class="construction">
       <div class="container">
-        <p class="chapter construction__chapter">
+        <p class="chapter construction__chapter slide-left-start">
           03
         </p>
-        <h2 class="heading construction__title">
+        <h2 class="heading construction__title slide-left-start">
           Ход строительства
         </h2>
-        <p class="descriptor construction__slogan">
+        <p class="descriptor construction__slogan slide-left-start">
           Продажа квартир в Park Avenue VIP стартовала в первом квартале 2010 года, первые четыре очереди уже сданы и заселены
         </p>
-        <p class="descriptor construction__slogan construction__slogan--mobile">
+        <p class="descriptor construction__slogan construction__slogan--mobile slide-left-start">
           Продажа квартир в ЖК Park Avenue давно стартовала, первые 4 очереди уже сданы.
         </p>
         <div class="construction__wrapper">
-          <div class="construction__overview">
+          <div class="construction__overview slide-left-start">
             <ul class="construction__buildings">
               <li class="construction__mark construction__mark--1 construction__mark--selected">
                 <a href="#" class="construction__link" data-textonly="false"  data-src="img/complex__construction__img-house@1x.png" data-status="Заселен" data-comission="2009 г." data-floors="24">
@@ -451,7 +451,7 @@
               </li>
             </ul>
           </div>
-          <div class="construction__details">
+          <div class="construction__details slide-right-start">
             <h3 class="construction__item">
               1 Дом
             </h3>
@@ -490,19 +490,19 @@
             Интерактивная модель с характеристиками домов доступна с экранов больше 1060px
           </p>
           <div class="construction__buttons buttons">
-            <a href="#" class="button buttons__button buttons__button--request signup-trigger">
+            <a href="#" class="button buttons__button buttons__button--request signup-trigger slide-left-start">
               Заполнить заявку
               <svg class="buttons__icon-mail" width="21" height="15" viewbox="0 0 21 15">
                 <use xlink:href="#advantages__mail"></use>
               </svg>
             </a>
-            <a href="#" class="button buttons__button buttons__button--call signup-trigger">
+            <a href="#" class="button buttons__button buttons__button--call signup-trigger slide-left-start">
               Заказать звонок
               <svg class="buttons__icon-phone" width="21" height="21" viewbox="0 0 21 21">
                 <use xlink:href="#advantages__phone"></use>
               </svg>
             </a>
-            <a href="https://goo.gl/maps/ZZo2s9mYuS62" class="link buttons__link" target="_blank">
+            <a href="https://goo.gl/maps/ZZo2s9mYuS62" class="link buttons__link slide-left-start" target="_blank">
               Приехать в офис продаж
               <svg class="buttons__icon-location" width="15" height="21" viewbox="0 0 15 21">
                 <use xlink:href="#advantages__location"></use>
@@ -517,7 +517,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__social">
-        <ul class="footer__icons">
+        <ul class="footer__icons slide-left-start">
           <li class="footer__icon">
             <a href="https://www.facebook.com/ParkAvenueVIP/" class="footer__social-link" target="_blank">
               Ссылка на аккаунт проекта в facebook
@@ -536,7 +536,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts slide-left-start">
         <span class="footer__address">
           просп. Голосеевский, 58а
         </span>
@@ -546,39 +546,39 @@
       </div>
       <div class="footer__menu menu">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="index.html" class="menu__link">
               Главная
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="complex.html" class="menu__link">
               О комплексе
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="design.html" class="menu__link">
               Планировки
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="technical.html" class="menu__link">
               Технические данные
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="newsfeed.html" class="menu__link">
               Новости
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="contacts.html" class="menu__link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright slide-right-start">
         <span class="footer__developer">
           © Park Avenue VIP, 2018
         </span>
@@ -666,6 +666,7 @@
     $('#timepicker').chungTimePicker();
   </script>
   <script src="js/marks.js"></script>
+  <script src="js/slide-in.js"></script>
 
 </body>
 </html>

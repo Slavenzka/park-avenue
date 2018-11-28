@@ -51,9 +51,16 @@
   }
 
   .layout__services {
-    margin-top: 30px;
-    margin-right: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
     width: 396px;
+  }
+}
+
+@media (min-width: $width__notebook) {
+  .layout__services {
+    margin-right: auto;
   }
 }
 

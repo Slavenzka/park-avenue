@@ -3,7 +3,6 @@
 (function () {
   window.addEventListener("load", function (event) {
     var texts = document.querySelectorAll('.slide-left-start');
-    console.log(texts);
 
     function createObserverText() {
       function handleIntersect(entries, observer) {
@@ -20,7 +19,7 @@
       var options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.7
+        threshold: 0.65
       };
 
       observer = new IntersectionObserver(handleIntersect, options);
@@ -35,7 +34,6 @@
 
   window.addEventListener("load", function (event) {
     var images = document.querySelectorAll('.slide-right-start');
-    console.log(images);
 
     function createObserverImage() {
       function handleIntersect(entries, observer) {
@@ -52,7 +50,7 @@
       var options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.7
+        threshold: 0.65
       };
 
       observer = new IntersectionObserver(handleIntersect, options);
@@ -64,6 +62,5 @@
     createObserverImage();
 
   }, false);
-
 
 })();

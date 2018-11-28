@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <script src="js/intersection-observer.js"></script>
 </head>
 
 <body>
@@ -186,7 +187,7 @@
 
   <main>
     <section class="contacts">
-      <div class="contacts__complex">
+      <div class="contacts__complex slide-left-start">
         <div class="container">
           <span class="contacts__company">
             ЖК Park Avenue VIP
@@ -257,7 +258,7 @@
           </div>
         </div>
       </div>
-      <div class="contacts__sales">
+      <div class="contacts__sales slide-right-start">
         <div class="container">
           <h2 class="contacts__subheading">
             Отдел продаж
@@ -299,14 +300,14 @@
     </section>
     <section class="team">
       <div class="container">
-        <p class="chapter team__chapter">
+        <p class="chapter team__chapter slide-left-start">
           01
         </p>
-        <h2 class="heading team__heading">
+        <h2 class="heading team__heading slide-left-start">
           Команда
         </h2>
         <ul class="team__list">
-          <li class="team__member">
+          <li class="team__member slide-left-start">
             <figure class="team__profile">
               <img class="team__img" src="img/contacts__team-img@1x.png" srcset="img/contacts__team-img@1x.png 1x, img/contacts__team-img@2x.png 2x" alt="Фотогафия сотрудника офиса продаж">
               <figcaption>
@@ -322,7 +323,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="team__member">
+          <li class="team__member slide-left-start">
             <figure class="team__profile">
               <img class="team__img" src="img/contacts__team-img@1x.png" srcset="img/contacts__team-img@1x.png 1x, img/contacts__team-img@2x.png 2x" alt="Фотогафия сотрудника офиса продаж">
               <figcaption>
@@ -338,7 +339,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="team__member">
+          <li class="team__member slide-left-start">
             <figure class="team__profile">
               <img class="team__img" src="img/contacts__team-img@1x.png" srcset="img/contacts__team-img@1x.png 1x, img/contacts__team-img@2x.png 2x" alt="Фотогафия сотрудника офиса продаж">
               <figcaption>
@@ -354,7 +355,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="team__member">
+          <li class="team__member slide-left-start">
             <figure class="team__profile">
               <img class="team__img" src="img/contacts__team-img@1x.png" srcset="img/contacts__team-img@1x.png 1x, img/contacts__team-img@2x.png 2x" alt="Фотогафия сотрудника офиса продаж">
               <figcaption>
@@ -378,7 +379,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__social">
-        <ul class="footer__icons">
+        <ul class="footer__icons slide-left-start">
           <li class="footer__icon">
             <a href="https://www.facebook.com/ParkAvenueVIP/" class="footer__social-link" target="_blank">
               Ссылка на аккаунт проекта в facebook
@@ -397,7 +398,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts slide-left-start">
         <span class="footer__address">
           просп. Голосеевский, 58а
         </span>
@@ -407,39 +408,39 @@
       </div>
       <div class="footer__menu menu">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="index.html" class="menu__link">
               Главная
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="complex.html" class="menu__link">
               О комплексе
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="design.html" class="menu__link">
               Планировки
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="technical.html" class="menu__link">
               Технические данные
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="newsfeed.html" class="menu__link">
               Новости
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="contacts.html" class="menu__link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright slide-right-start">
         <span class="footer__developer">
           © Park Avenue VIP, 2018
         </span>
@@ -524,5 +525,6 @@
   <script>
     $('#timepicker').chungTimePicker();
   </script>
+  <script src="js/slide-in.js"></script>
 </body>
 </html>
