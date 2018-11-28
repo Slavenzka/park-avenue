@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <script src="js/intersection-observer.js"></script>
 </head>
 
 <body>
@@ -198,28 +199,28 @@
       <div class="content__intro"></div>
       <div class="container">
         <div class="content__wrapper">
-          <a href="newsfeed.html" class="link content__link">
+          <a href="newsfeed.html" class="link content__link slide-left-start">
             <svg class="content__icon" width="6" height="10" viewbox="0 0 7 12">
               <use xlink:href="#promo__control-arrow"></use>
             </svg>
             к разделу новостей
           </a>
-          <h2 class="heading content__title">
+          <h2 class="heading content__title slide-left-start">
             Открытие Парка Наук на территории комплекса
           </h2>
-          <span class="content__date">
+          <span class="content__date slide-left-start">
             5 октября 2017
           </span>
-          <img src="img/newspage__img--1@1x.png" srcset="img/newspage__img--1@1x.png 1x, img/newspage__img--1@2x.png 2x" alt="Иллюстрация к новости #1" class="content__img">
-          <p class="descriptor content__descriptor">
+          <img src="img/newspage__img--1@1x.png" srcset="img/newspage__img--1@1x.png 1x, img/newspage__img--1@2x.png 2x" alt="Иллюстрация к новости #1" class="content__img slide-left-start">
+          <p class="descriptor content__descriptor slide-left-start">
             В Park Avenue VIP состоялось открытие уникального интерактивного Парка наук. Проект создан совместно со специалистами израильского музея природных наук Madatech.
           </p>
-          <img src="img/newspage__img--2@1x.png" srcset="img/newspage__img--2@1x.png 1x, img/newspage__img--2@2x.png 2x" alt="Иллюстрация к новости #2" class="content__img">
-          <img src="img/newspage__img--3@1x.png" srcset="img/newspage__img--3@1x.png 1x, img/newspage__img--3@2x.png 2x" alt="Иллюстрация к новости #3" class="content__img">
-          <p class="descriptor content__descriptor">
+          <img src="img/newspage__img--2@1x.png" srcset="img/newspage__img--2@1x.png 1x, img/newspage__img--2@2x.png 2x" alt="Иллюстрация к новости #2" class="content__img slide-left-start">
+          <img src="img/newspage__img--3@1x.png" srcset="img/newspage__img--3@1x.png 1x, img/newspage__img--3@2x.png 2x" alt="Иллюстрация к новости #3" class="content__img slide-left-start">
+          <p class="descriptor content__descriptor slide-left-start">
             Тут расположились 8 аттракционов, и все они доступны для жителей комплекса. Каждый аттракцион отображает изобретения величайших ученых в истории, таких как Архимед, Леонардо да Винчи, Исаак Ньютон, Даниил Бернулли, Пифагор.
           </p>
-          <a href="newsfeed.html" class="link content__link">
+          <a href="newsfeed.html" class="link content__link slide-left-start">
             <svg class="content__icon" width="6" height="10" viewbox="0 0 7 12">
               <use xlink:href="#promo__control-arrow"></use>
             </svg>
@@ -227,16 +228,16 @@
           </a>
         </div>
         <aside class="content__recommend recommend">
-          <h2 class="recomment__title">
+          <h2 class="recomment__title slide-right-start">
             Вас может заинтересовать
           </h2>
           <ul class="feed__list recommend__list">
             <li class="feed__item feed__item--1 recommend__item">
               <a href="newspage.html" class="feed__link">
                 <div class="feed__frame">
-                  <img src="img/newsfeed__feed-item--1@1x.png" srcset="img/newsfeed__feed-item--1@1x.png 1x, img/newsfeed__feed-item--1@2x.png 2x" alt="Иллюстрация к новости 1" class="feed__img">
+                  <img src="img/newsfeed__feed-item--1@1x.png" srcset="img/newsfeed__feed-item--1@1x.png 1x, img/newsfeed__feed-item--1@2x.png 2x" alt="Иллюстрация к новости 1" class="feed__img slide-right-start">
                 </div>
-                <div class="feed__date">
+                <div class="feed__date slide-right-start">
                   <span class="feed__day">
                     20
                   </span>
@@ -249,7 +250,7 @@
                     </span>
                   </div>
                 </div>
-                <p class="descriptor feed__descriptor">
+                <p class="descriptor feed__descriptor slide-right-start">
                   Весна — самое время начинать новую жизнь. И мы знаем, где именно она начнется.
                 </p>
               </a>
@@ -257,9 +258,9 @@
             <li class="feed__item feed__item--2 recommend__item">
               <a href="" class="feed__link">
                 <div class="feed__frame">
-                  <img src="img/newsfeed__feed-item--2@1x.png" srcset="img/newsfeed__feed-item--2@1x.png 1x, img/newsfeed__feed-item--2@2x.png 2x" alt="Иллюстрация к новости 2" class="feed__img">
+                  <img src="img/newsfeed__feed-item--2@1x.png" srcset="img/newsfeed__feed-item--2@1x.png 1x, img/newsfeed__feed-item--2@2x.png 2x" alt="Иллюстрация к новости 2" class="feed__img slide-right-start">
                 </div>
-                <div class="feed__date">
+                <div class="feed__date slide-right-start">
                   <span class="feed__day">
                     07
                   </span>
@@ -272,7 +273,7 @@
                     </span>
                   </div>
                 </div>
-                <p class="descriptor feed__descriptor">
+                <p class="descriptor feed__descriptor slide-right-start">
                   В этот праздник рядом те, с кем мы жаловались на запоздалую весну, потому что очень уж хотелось…
                 </p>
               </a>
@@ -280,9 +281,9 @@
             <li class="feed__item feed__item--3 recommend__item">
               <a href="" class="feed__link">
                 <div class="feed__frame">
-                  <img src="img/newsfeed__feed-item--3@1x.png" srcset="img/newsfeed__feed-item--3@1x.png 1x, img/newsfeed__feed-item--3@2x.png 2x" alt="Иллюстрация к новости 3" class="feed__img">
+                  <img src="img/newsfeed__feed-item--3@1x.png" srcset="img/newsfeed__feed-item--3@1x.png 1x, img/newsfeed__feed-item--3@2x.png 2x" alt="Иллюстрация к новости 3" class="feed__img slide-right-start">
                 </div>
-                <div class="feed__date">
+                <div class="feed__date slide-right-start">
                   <span class="feed__day">
                     08
                   </span>
@@ -295,7 +296,7 @@
                     </span>
                   </div>
                 </div>
-                <p class="descriptor feed__descriptor">
+                <p class="descriptor feed__descriptor slide-right-start">
                   Девушки, вы — воплощение весны. Вы также приходите с опозданием и от этого мы ждём вас только сильнее…
                 </p>
               </a>
@@ -309,7 +310,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__social">
-        <ul class="footer__icons">
+        <ul class="footer__icons slide-left-start">
           <li class="footer__icon">
             <a href="https://www.facebook.com/ParkAvenueVIP/" class="footer__social-link" target="_blank">
               Ссылка на аккаунт проекта в facebook
@@ -328,7 +329,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts slide-left-start">
         <span class="footer__address">
           просп. Голосеевский, 58а
         </span>
@@ -338,39 +339,39 @@
       </div>
       <div class="footer__menu menu">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="index.html" class="menu__link">
               Главная
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="complex.html" class="menu__link">
               О комплексе
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="design.html" class="menu__link">
               Планировки
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="technical.html" class="menu__link">
               Технические данные
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="newsfeed.html" class="menu__link">
               Новости
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="contacts.html" class="menu__link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright slide-right-start">
         <span class="footer__developer">
           © Park Avenue VIP, 2018
         </span>
@@ -383,5 +384,6 @@
 
   <script src="js/header-style-small.js"></script>
   <script src="js/menu-toggle.js"></script>
+  <script src="js/slide-in.js"></script>
 </body>
 </html>

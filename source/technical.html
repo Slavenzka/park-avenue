@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <script src="js/intersection-observer.js"></script>
 </head>
 
 <body>
@@ -194,7 +195,7 @@
   </header>
 
   <main>
-    <section class="intro construction__intro">
+    <section class="intro construction__intro slide-left-start">
       <div class="container">
         <h1 class="intro__title">
           <span>
@@ -212,13 +213,13 @@
     </section>
     <section class="parameters">
       <div class="container">
-        <p class="chapter parameters__chapter">
+        <p class="chapter parameters__chapter slide-left-start">
           01
         </p>
-        <h2 class="heading parameters__title">
+        <h2 class="heading parameters__title slide-left-start">
           Характеристики комплекса
         </h2>
-        <table class="parameters__data">
+        <table class="parameters__data slide-left-start">
           <tr>
             <td class="parameters__key">
               Общая площадь территории
@@ -291,24 +292,24 @@
         Технические преимущества проекта
       </h2>
       <div class="container">
-        <img class="tech-advantages__img" src="img/technical__tech-advantages-img@1x.png" srcset="img/technical__tech-advantages-img@1x.png 1x, img/technical__tech-advantages-img@2x.png 2x" alt="Фотография ЖК Park Avenue VIP">
-        <p class="chapter tech-advantages__chapter">
+        <img class="tech-advantages__img slide-left-start" src="img/technical__tech-advantages-img@1x.png" srcset="img/technical__tech-advantages-img@1x.png 1x, img/technical__tech-advantages-img@2x.png 2x" alt="Фотография ЖК Park Avenue VIP">
+        <p class="chapter tech-advantages__chapter slide-right-start">
           02
         </p>
-        <p class="heading tech-advantages__title">
+        <p class="heading tech-advantages__title slide-right-start">
           Технические преимущества
         </p>
         <ul class="tech-advantages__list">
-          <li class="tech-advantages__item tech-advantages__item--1">
+          <li class="tech-advantages__item tech-advantages__item--1 slide-right-start">
             вместительные лифтовые системы фирмы Shindler (Финляндия)
           </li>
-          <li class="tech-advantages__item tech-advantages__item--2">
+          <li class="tech-advantages__item tech-advantages__item--2 slide-right-start">
             автономная котельная на 3 котла Viessman (Германия)
           </li>
-          <li class="tech-advantages__item tech-advantages__item--3">
+          <li class="tech-advantages__item tech-advantages__item--3 slide-right-start">
             собственная трансформаторная подстанция
           </li>
-          <li class="tech-advantages__item tech-advantages__item--4">
+          <li class="tech-advantages__item tech-advantages__item--4 slide-right-start">
             подземный трехуровневый паркинг
           </li>
         </ul>
@@ -319,24 +320,24 @@
         О предусмотренных в проекте мерах по обеспечению безопасности жильцов и гостей
       </h2>
       <div class="container">
-        <img class="safety__img" src="img/technical__safety-img@1x.png" srcset="img/technical__safety-img@1x.png 1x, img/technical__safety-img@2x.png 2x" alt="Фотография интерьера ЖК Park Avenue VIP">
-        <p class="chapter safety__chapter">
+        <img class="safety__img slide-right-start" src="img/technical__safety-img@1x.png" srcset="img/technical__safety-img@1x.png 1x, img/technical__safety-img@2x.png 2x" alt="Фотография интерьера ЖК Park Avenue VIP">
+        <p class="chapter safety__chapter slide-left-start">
           03
         </p>
-        <p class="heading safety__title">
+        <p class="heading safety__title slide-left-start">
           Безопасность
         </p>
         <ul class="safety__list">
-          <li class="safety__item safety__item--1">
+          <li class="safety__item safety__item--1 slide-left-start">
             комплекс закрытого типа, охрана 24/7/365
           </li>
-          <li class="safety__item safety__item--2">
+          <li class="safety__item safety__item--2 slide-left-start">
             доступ на территорию комплекса по индивидуальным электронным картам
           </li>
-          <li class="safety__item safety__item--3">
+          <li class="safety__item safety__item--3 slide-left-start">
             система видеонаблюдения на 218 видеокамер по всей территории
           </li>
-          <li class="safety__item safety__item--4">
+          <li class="safety__item safety__item--4 slide-left-start">
             система пожаротушения Securiton (Швейцария)
           </li>
         </ul>
@@ -345,18 +346,18 @@
     <section class="quality">
       <div class="container">
         <div class="quality__wrapper">
-          <p class="chapter quality__chapter">
+          <p class="chapter quality__chapter slide-left-start">
             04
           </p>
-          <h2 class="heading quality__heading">
+          <h2 class="heading quality__heading slide-left-start">
             Качество строительства
           </h2>
-          <p class="descriptor quality__descriptor">
+          <p class="descriptor quality__descriptor slide-left-start">
             Мы позаботились о максимально качественных материалах для Вашего комфорта
           </p>
         </div>
         <ul class="quality__list">
-          <li class="quality__item quality__item--1">
+          <li class="quality__item quality__item--1  slide-left-start">
             <figure>
               <img src="img/technical__quality-item--1@1x.png" srcset="img/technical__quality-item--1@1x.png 1x, img/technical__quality-item--1@2x.png 2x" alt="квартиры максимально подготовлены к ремонту" class="quality__img">
               <figcaption class="quality__comment">
@@ -364,7 +365,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="quality__item quality__item--2">
+          <li class="quality__item quality__item--2 slide-right-start">
             <figure>
               <img src="img/technical__quality-item--2@1x.png" srcset="img/technical__quality-item--2@1x.png 1x, img/technical__quality-item--2@2x.png 2x" alt="отделка внутренних стен гипсовой штукатуркой Knauf MP-75" class="quality__img">
               <figcaption class="quality__comment">
@@ -372,7 +373,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="quality__item quality__item--3">
+          <li class="quality__item quality__item--3 slide-right-start">
             <figure>
               <img src="img/technical__quality-item--3@1x.png" srcset="img/technical__quality-item--3@1x.png 1x, img/technical__quality-item--3@2x.png 2x" alt="двойной контур звукоизоляции VERDANI" class="quality__img">
               <figcaption class="quality__comment">
@@ -380,7 +381,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="quality__item quality__item--4">
+          <li class="quality__item quality__item--4 slide-right-start">
             <figure>
               <img src="img/technical__quality-item--4@1x.png" srcset="img/technical__quality-item--4@1x.png 1x, img/technical__quality-item--4@2x.png 2x" alt="механическая вентиляция с системой естественного притока воздуха" class="quality__img">
               <figcaption class="quality__comment">
@@ -388,7 +389,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="quality__item quality__item--5">
+          <li class="quality__item quality__item--5 slide-right-start">
             <figure>
               <img src="img/technical__quality-item--5@1x.png" srcset="img/technical__quality-item--5@1x.png 1x, img/technical__quality-item--5@2x.png 2x" alt="окна REHAU и Reynaers" class="quality__img">
               <figcaption class="quality__comment">
@@ -396,7 +397,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="quality__item quality__item--6">
+          <li class="quality__item quality__item--6 slide-right-start">
             <figure>
               <img src="img/technical__quality-item--6@1x.png" srcset="img/technical__quality-item--6@1x.png 1x, img/technical__quality-item--6@2x.png 2x" alt="усиленные металлические двери Mult-T-Lock" class="quality__img">
               <figcaption class="quality__comment">
@@ -404,7 +405,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="quality__item quality__item--7">
+          <li class="quality__item quality__item--7 slide-right-start">
             <figure>
               <img src="img/technical__quality-item--7@1x.png" srcset="img/technical__quality-item--7@1x.png 1x, img/technical__quality-item--7@2x.png 2x" alt="радиаторы KERMI" class="quality__img">
               <figcaption class="quality__comment">
@@ -420,24 +421,24 @@
         Об использованных в проекте современных решениях
       </h2>
       <div class="container">
-        <img class="innovation__img" src="img/technical__innovation-img@1x.png" srcset="img/technical__innovation-img@1x.png 1x, img/technical__innovation-img@2x.png 2x" alt="Фотография интерьера ЖК Park Avenue VIP">
-        <p class="chapter innovation__chapter">
+        <img class="innovation__img slide-right-start" src="img/technical__innovation-img@1x.png" srcset="img/technical__innovation-img@1x.png 1x, img/technical__innovation-img@2x.png 2x" alt="Фотография интерьера ЖК Park Avenue VIP">
+        <p class="chapter innovation__chapter slide-left-start">
           05
         </p>
-        <p class="heading innovation__title">
+        <p class="heading innovation__title slide-left-start">
           Современные и инновационные технологии
         </p>
         <ul class="innovation__list">
-          <li class="innovation__item innovation__item--1">
+          <li class="innovation__item innovation__item--1 slide-left-start">
             система очистки воды
           </li>
-          <li class="innovation__item innovation__item--2">
+          <li class="innovation__item innovation__item--2 slide-left-start">
             скоростные бесшумные лифты с прямым доступом на паркинг
           </li>
-          <li class="innovation__item innovation__item--3">
+          <li class="innovation__item innovation__item--3 slide-left-start">
             светодиодные лампы для освещения территории
           </li>
-          <li class="innovation__item innovation__item--4">
+          <li class="innovation__item innovation__item--4 slide-left-start">
             WI-FI на территории комплекса
           </li>
         </ul>
@@ -448,7 +449,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__social">
-        <ul class="footer__icons">
+        <ul class="footer__icons slide-left-start">
           <li class="footer__icon">
             <a href="https://www.facebook.com/ParkAvenueVIP/" class="footer__social-link" target="_blank">
               Ссылка на аккаунт проекта в facebook
@@ -467,7 +468,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts slide-left-start">
         <span class="footer__address">
           просп. Голосеевский, 58а
         </span>
@@ -477,39 +478,39 @@
       </div>
       <div class="footer__menu menu">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="index.html" class="menu__link">
               Главная
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="complex.html" class="menu__link">
               О комплексе
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="design.html" class="menu__link">
               Планировки
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="technical.html" class="menu__link">
               Технические данные
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="newsfeed.html" class="menu__link">
               Новости
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="contacts.html" class="menu__link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright slide-right-start">
         <span class="footer__developer">
           © Park Avenue VIP, 2018
         </span>
@@ -522,5 +523,6 @@
 
   <script src="js/header-style-medium.js"></script>
   <script src="js/menu-toggle.js"></script>
+  <script src="js/slide-in.js"></script>
 </body>
 </html>

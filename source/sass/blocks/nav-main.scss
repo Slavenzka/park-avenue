@@ -106,6 +106,10 @@
   color: $font-color__light;
 }
 
+.nav-main__phone {
+  color: inherit;
+}
+
 @media (min-width: $width__tablet) {
   .nav-main {
     align-self: stretch;

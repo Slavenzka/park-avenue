@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
   <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <script src="js/intersection-observer.js"></script>
 </head>
 
 <body>
@@ -199,7 +200,7 @@
   </header>
 
   <main>
-    <section class="intro design__intro">
+    <section class="intro design__intro slide-left-start">
       <div class="container">
         <h1 class="intro__title">
           <span>
@@ -218,19 +219,19 @@
     </section>
     <section class="selection">
       <div class="container">
-        <p class="chapter selection__chapter">
+        <p class="chapter selection__chapter slide-left-start">
           01
         </p>
-        <h2 class="heading selection__title">
+        <h2 class="heading selection__title slide-left-start">
           Подбор планировки по парметрам
         </h2>
-        <p class="descriptor selection__descriptor">
+        <p class="descriptor selection__descriptor slide-left-start">
           В Park Avenue VIP мы предлагаем разработать персональный дизайн-проект для ваших апартаментов. У вас есть возможность перепланировки квартир для домов, которые еще не введены в эксплуатацию.
         </p>
-        <p class="descriptor selection__descriptor selection__descriptor--mobile">
+        <p class="descriptor selection__descriptor selection__descriptor--mobile slide-left-start">
           Мы даем Вам возможность перепланировки квартир для домов, которые еще не введены в эксплуатацию. Найдите найболее подходящий вариант и сделайте квартиру своей мечты
         </p>
-        <form class="selection__filter filter" action="#">
+        <form class="selection__filter filter slide-left-start" action="#">
           <fieldset class="filter__section filter__section--bedrooms">
             <legend class="filter__subtitle">
               Количество спальных комнат:
@@ -256,7 +257,7 @@
           </fieldset>
         </form>
         <ul class="selection__list">
-          <li class="selection__item" data-rooms="1" data-comissioned="true" data-space="61.08" data-date="2">
+          <li class="selection__item slide-left-start" data-rooms="1" data-comissioned="true" data-space="61.08" data-date="2">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--1@1x.png" srcset="img/design__selection-item--1@1x.png 1x, img/design__selection-item--1@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -271,7 +272,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="2" data-comissioned="false" data-space="67.54" data-date="2">
+          <li class="selection__item slide-left-start" data-rooms="2" data-comissioned="false" data-space="67.54" data-date="2">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--2@1x.png" srcset="img/design__selection-item--2@1x.png 1x, img/design__selection-item--2@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -286,7 +287,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="10" data-comissioned="false" data-date="3" data-space="76.00">
+          <li class="selection__item slide-left-start" data-rooms="10" data-comissioned="false" data-date="3" data-space="76.00">
             <a href="layout.html" class="selection__link">
               <img src="img/design__selection-item--3@1x.png" srcset="img/design__selection-item--3@1x.png 1x, img/design__selection-item--3@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -301,7 +302,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="4" data-comissioned="false" data-date="4" data-space="58.89">
+          <li class="selection__item slide-left-start" data-rooms="4" data-comissioned="false" data-date="4" data-space="58.89">
             <a href="layout.html" class="selection__link">
               <img src="img/design__selection-item--4@1x.png" srcset="img/design__selection-item--4@1x.png 1x, img/design__selection-item--4@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -316,7 +317,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="1" data-comissioned="false" data-space="67.54" data-date="6">
+          <li class="selection__item slide-left-start" data-rooms="1" data-comissioned="false" data-space="67.54" data-date="6">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--5@1x.png" srcset="img/design__selection-item--5@1x.png 1x, img/design__selection-item--5@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -331,7 +332,7 @@
               </span>
             </a>
           </li>
-          <li class="selection__item" data-rooms="4" data-comissioned="false" data-space="63.61">
+          <li class="selection__item slide-left-start" data-rooms="4" data-comissioned="false" data-space="63.61">
             <a href="layout-in-use.html" class="selection__link">
               <img src="img/design__selection-item--6@1x.png" srcset="img/design__selection-item--6@1x.png 1x, img/design__selection-item--6@2x.png 2x" alt="Планировка квартиры" class="selection__img">
               <h3 class="selection__name">
@@ -354,7 +355,7 @@
         <h2 class="visually-hidden">
           Приглашение посетить офис или позвонить специалисту
         </h2>
-        <div class="invitation__wrapper">
+        <div class="invitation__wrapper slide-right-start">
           <p class="invitation__slogan">
             Безупречные квартиры для вас — в Park Avenue VIP!
           </p>
@@ -363,19 +364,19 @@
           </span>
         </div>
         <div class="invitation__services">
-          <a href="#" class="button advantages__button advantages__button--request invitation__button invitation__button--request signup-trigger">
+          <a href="#" class="button advantages__button advantages__button--request invitation__button invitation__button--request signup-trigger slide-left-start">
             Заполнить заявку
             <svg class="advantages__icon-mail invitation__icon-mail" width="21" height="15" viewbox="0 0 21 15">
               <use xlink:href="#advantages__mail"></use>
             </svg>
           </a>
-          <a href="#" class="button advantages__button advantages__button--call invitation__button signup-trigger">
+          <a href="#" class="button advantages__button advantages__button--call invitation__button signup-trigger slide-left-start">
             Заказать звонок
             <svg class="advantages__icon-phone invitation__icon-phone" width="21" height="21" viewbox="0 0 21 21">
               <use xlink:href="#advantages__phone"></use>
             </svg>
           </a>
-          <a href="https://goo.gl/maps/ZZo2s9mYuS62" class="link advantages__link invitation__link" target="_blank">
+          <a href="https://goo.gl/maps/ZZo2s9mYuS62" class="link advantages__link invitation__link slide-left-start" target="_blank">
             Приехать в офис продаж
             <svg class="advantages__icon-location invitation__icon-location" width="15" height="21" viewbox="0 0 15 21">
               <use xlink:href="#advantages__location"></use>
@@ -389,7 +390,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__social">
-        <ul class="footer__icons">
+        <ul class="footer__icons slide-left-start">
           <li class="footer__icon">
             <a href="https://www.facebook.com/ParkAvenueVIP/" class="footer__social-link" target="_blank">
               Ссылка на аккаунт проекта в facebook
@@ -408,7 +409,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts slide-left-start">
         <span class="footer__address">
           просп. Голосеевский, 58а
         </span>
@@ -418,39 +419,39 @@
       </div>
       <div class="footer__menu menu">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="index.html" class="menu__link">
               Главная
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="complex.html" class="menu__link">
               О комплексе
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="design.html" class="menu__link">
               Планировки
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-left-start">
             <a href="technical.html" class="menu__link">
               Технические данные
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="newsfeed.html" class="menu__link">
               Новости
             </a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item slide-right-start">
             <a href="contacts.html" class="menu__link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright slide-right-start">
         <span class="footer__developer">
           © Park Avenue VIP, 2018
         </span>
@@ -536,5 +537,6 @@
     $('#timepicker').chungTimePicker();
   </script>
   <script src="js/filter.js"></script>
+  <script src="js/slide-in.js"></script>
 </body>
 </html>
