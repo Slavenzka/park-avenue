@@ -373,8 +373,8 @@ a {
   line-height: 23px;
   color: white; }
 
-.nav-main__phone {
-  color: white; }
+span.nav-main__phone {
+  color: inherit; }
 
 @media (min-width: 768px) {
   .nav-main {

@@ -106,8 +106,8 @@
   color: $font-color__light;
 }
 
-.nav-main__phone {
-  color: $font-color__light;
+span.nav-main__phone {
+  color: inherit;
 }
 
 @media (min-width: $width__tablet) {
