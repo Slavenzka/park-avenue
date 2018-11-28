@@ -845,7 +845,7 @@ a {
       top: 0;
       left: -10px;
       width: 50vw;
-      height: 80px;
+      height: 85px;
       background-color: white;
       z-index: -1; }
   .intro__icon {
@@ -1532,6 +1532,8 @@ a {
   text-align: center; }
 
 @media (max-width: 1439px) {
+  .environment__title:last-of-type {
+    margin-right: 500px; }
   .environment__3d {
     width: 100%;
     -webkit-box-pack: justify;
@@ -1651,6 +1653,14 @@ a {
     border: 2px solid white;
     opacity: 0.5; }
 
+a.map__link--selected {
+  border-color: white; }
+  a.map__link--selected::before {
+    opacity: 1; }
+
+.map__link--selected .environment__icon {
+  opacity: 1; }
+
 .map__mark--1 {
   top: 32.36364%;
   left: 8.80246%; }
@@ -1747,6 +1757,16 @@ a {
   font-weight: 400;
   line-height: 23px;
   color: gray; }
+
+@media (max-width: 1439px) {
+  .google__map {
+    width: calc(977px * 0.9);
+    height: calc(550px * 0.9); } }
+
+@media (max-width: 1259px) {
+  .google__map {
+    width: 977px;
+    height: 550px; } }
 
 @media (max-width: 1439px) {
   .google__comment {
@@ -1914,8 +1934,16 @@ a {
   color: gray; }
 
 @media (max-width: 1439px) {
+  .benefits {
+    width: calc(977px * 0.9);
+    min-height: calc(550px * 0.9); }
   .benefits__details {
     display: none; } }
+
+@media (max-width: 1259px) {
+  .benefits {
+    width: 977px;
+    min-height: 550px; } }
 
 @media (max-width: 1080px) {
   .benefits__wrapper {
@@ -5248,7 +5276,8 @@ div.construction__buttons {
 
 .filter__item--space-min,
 .filter__item--space-max {
-  border-radius: 0; }
+  border-radius: 0;
+  text-align: -webkit-center; }
 
 .filter__input {
   position: absolute;

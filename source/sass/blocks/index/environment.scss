@@ -137,6 +137,10 @@
 }
 
 @media (max-width: 1439px) {
+  .environment__title:last-of-type {
+    margin-right: 500px;
+  }
+
   .environment__3d {
     width: 100%;
     justify-content: space-between;

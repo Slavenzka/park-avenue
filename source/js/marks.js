@@ -24,12 +24,21 @@
     }
 
     initialSetup();
+
     marks.forEach((item, i) => {
       item.addEventListener('click', function (evt) {
         evt.preventDefault();
 
         let location = item.querySelector('span');
         let details = item.querySelector('p');
+
+        marks.forEach(item => {
+          if (item.classList.contains('map__link--selected')) {
+            item.classList.remove('map__link--selected');
+          }
+        });
+
+        item.classList.add('map__link--selected');
 
         if (item.dataset.textonly === 'true') {
           title.textContent = location.textContent;

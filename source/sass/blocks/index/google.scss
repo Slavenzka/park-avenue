@@ -17,6 +17,20 @@
 }
 
 @media (max-width: 1439px) {
+  .google__map {
+    width: calc(977px * 0.9);
+    height: calc(550px * 0.9);
+  }
+}
+
+@media (max-width: 1259px) {
+  .google__map {
+    width: 977px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 1439px) {
   .google__comment {
     display: none;
   }
