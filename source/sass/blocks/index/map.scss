@@ -52,6 +52,18 @@
   }
 }
 
+a.map__link--selected {
+  border-color: rgb(255, 255, 255);
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+.map__link--selected .environment__icon {
+  opacity: 1;
+}
+
 .map__mark--1 {
   top: 100% * 178 / 550;
   left: 100% * 86 / 977;

@@ -161,9 +161,22 @@
   color: $font-color__dark;
 }
 
+
 @media (max-width: 1439px) {
+  .benefits {
+    width: calc(977px * 0.9);
+    min-height: calc(550px * 0.9);
+  }
+
   .benefits__details {
     display: none;
+  }
+}
+
+@media (max-width: 1259px) {
+  .benefits {
+    width: 977px;
+    min-height: 550px;
   }
 }
 
