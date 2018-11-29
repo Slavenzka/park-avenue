@@ -56,6 +56,7 @@
         arrows: false,
         adaptiveHeight: true,
         speed: 500,
+        lazyLoad: 'ondemand',
         customPaging: function(slider, i) {
           return $('<button type="button" />').text(pages[i].dataset.title);
         },
