@@ -56,7 +56,9 @@
       formContent.title.textContent = 'Обратный звонок';
       formContent.descriptor.textContent = 'Оставьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время';
       formContent.date.style = 'display: none';
+      formContent.date.querySelector('.signup__date').required = false;
       formContent.time.style = 'display: none';
+      formContent.time.querySelector('.signup__time').required = false;
       formContent.button.style = 'margin-left: auto';
     };
 
@@ -65,7 +67,9 @@
       formContent.title.textContent = 'Запись на просмотр';
       formContent.descriptor.textContent = 'Вы можете сразу выбрать время дату визита или обсудить это с нашим менеджером при подтверждении заявки';
       formContent.date.style = 'display: block';
+      formContent.date.querySelector('.signup__date').required = true;
       formContent.time.style = 'display: block';
+      formContent.time.querySelector('.signup__time').required = true;
       formContent.button.style = 'margin-left: auto';
     };
 

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <title>Планировка квартиры в ЖК Park Avenue VIP</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
@@ -439,7 +440,7 @@
           </p>
         </fieldset>
         <fieldset>
-          <input class="signup__phone" type="tel" placeholder="+3 8(0XX) XXX XX XX" id="signup-phone" required>
+          <input class="signup__phone" type="tel" placeholder="+3 8(0XX) XXX XX XX" pattern="^[0-9-+s()]*$" id="signup-phone" required>
           <label for="signup-phone">
             Телефон
           </label>
