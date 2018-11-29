@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>Главная страница Park Avenue VIP</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVBGhM5fibvi-duOZW31OTj8BSaFUOFAM"></script>
-  <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
-  <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <script src="js/intersection-observer.js"></script>
+  <script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVBGhM5fibvi-duOZW31OTj8BSaFUOFAM"></script>
 </head>
 
 <body>
@@ -1072,6 +1070,8 @@
   </footer>
 
 <!-- По умолчанию модалка сверстана для записи на просмотр. Через modal-toggle.js она переоформляется в модалку для обратного звонка в случае, если нажат соответствующий элемент. -->
+  <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
+  <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <div class="signup">
     <div class="signup__wrapper">
       <button class="signup__toggle">
@@ -1141,13 +1141,13 @@
   <script src="js/header-style-large.js"></script>
   <script src="js/map.js"></script>
   <script src="js/modal.js"></script>
-  <script src="plugins/datepicker/js/pikaday.js"></script>
-  <script src="plugins/datepicker/js/datepicker-setup.js"></script>
+  <script async src="plugins/datepicker/js/pikaday.js"></script>
+  <script async src="plugins/datepicker/js/datepicker-setup.js"></script>
   <script src="plugins/timepicker/js/chung-timepicker.js"></script>
   <script>
     $('#timepicker').chungTimePicker();
   </script>
-  <script src="js/marks.js"></script>
+  <script async src="js/marks.js"></script>
   <script src="js/slide-in.js"></script>
 </body>
 </html>

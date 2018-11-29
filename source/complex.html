@@ -6,11 +6,11 @@
   <meta name="format-detection" content="telephone=no">
   <title>Подробная информация о комплексе Park Avenue VIP</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
-  <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <script src="js/intersection-observer.js"></script>
+  <script src="js/lozad.min.js"></script>
+  <script src="js/youtube-loader.js"></script>
 </head>
 
 <body>
@@ -286,7 +286,8 @@
         Видео-презентация Scorpio Real Estate
       </h2>
       <div class="container">
-        <iframe class="video__content slide-left-start" src="https://www.youtube.com/embed/unsAX9PaRDw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video__content" data-id="unsAX9PaRDw"></div>
+        <!-- <iframe class="lozad video__content" data-src="https://www.youtube.com/embed/unsAX9PaRDw" src="https://www.youtube.com/embed/unsAX9PaRDw" allowfullscreen></iframe> -->
         <p class="video__slogan slide-left-start">
           В&nbsp;ближайшие 6&nbsp;лет Scorpio Real Estate Group планирует инвестировать в украинские проекты&nbsp;1&nbsp;миллиард долларов.
         </p>
@@ -321,7 +322,7 @@
             <li class="galleries__slider galleries__slider--architect gallery" data-title="Архитектура">
               <ul class="slider gallery__list gallery__list--architect">
                 <li class="gallery__item gallery__item--1">
-                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.jpg" srcset="img/complex__slider--1@1x.jpg 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
                 </li>
                 <li class="gallery__item gallery__item--2">
                   <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
@@ -340,7 +341,7 @@
             <li class="galleries__slider galleries__slider--hall gallery" data-title="Холл">
               <ul class="slider gallery__list gallery__list--hall">
                 <li class="gallery__item gallery__item--1">
-                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.jpg" srcset="img/complex__slider--1@1x.jpg 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
                 </li>
                 <li class="gallery__item gallery__item--2">
                   <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
@@ -359,7 +360,7 @@
             <li class="galleries__slider galleries__slider--infrastructure gallery" data-title="Инфраструктура">
               <ul class="slider gallery__list gallery__list--infrastructure">
                 <li class="gallery__item gallery__item--1">
-                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.jpg" srcset="img/complex__slider--1@1x.jpg 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
                 </li>
                 <li class="gallery__item gallery__item--2">
                   <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
@@ -378,7 +379,7 @@
             <li class="galleries__slider galleries__slider--construction gallery" data-title="Ход строительства">
               <ul class="slider gallery__list gallery__list--construction">
                 <li class="gallery__item gallery__item--1">
-                  <img class="gallery__img" src="img/complex__slider--1@1x.png" srcset="img/complex__slider--1@1x.png 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
+                  <img class="gallery__img" src="img/complex__slider--1@1x.jpg" srcset="img/complex__slider--1@1x.jpg 1x, img/complex__slider--1@2x.jpg 2x" alt="Слайд №1">
                 </li>
                 <li class="gallery__item gallery__item--2">
                   <img class="gallery__img" src="https://via.placeholder.com/1280x800" alt="Слайд №2">
@@ -591,6 +592,8 @@
   </footer>
 
 <!-- По умолчанию модалка сверстана для записи на просмотр. Через modal-toggle.js она переоформляется в модалку для обратного звонка в случае, если нажат соответствующий элемент. -->
+  <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
+  <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
   <div class="signup">
     <div class="signup__wrapper">
       <button class="signup__toggle">
