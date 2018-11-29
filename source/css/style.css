@@ -4172,15 +4172,16 @@ div.construction__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 40px 0 0 0;
     padding: 0;
     list-style: none; }
   .team__member {
-    margin: 0 5px 20px 5px;
+    margin: 0 0 20px 0;
     font-family: "Gotham Pro", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -4366,7 +4367,7 @@ div.construction__buttons {
     margin-left: 400px;
     width: auto; }
   .tech-advantages__img {
-    float: left; }
+    position: absolute; }
   .tech-advantages__chapter {
     margin-top: 0; }
   .tech-advantages__title {
@@ -4388,6 +4389,7 @@ div.construction__buttons {
   .tech-advantages__title {
     margin-left: 43.10345%; }
   .tech-advantages__img {
+    position: absolute;
     width: 34.48276%;
     height: auto; }
   .tech-advantages__list {
