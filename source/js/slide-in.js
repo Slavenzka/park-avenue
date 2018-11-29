@@ -19,7 +19,7 @@
       var options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.65
+        threshold: 0.5
       };
 
       observer = new IntersectionObserver(handleIntersect, options);
@@ -50,7 +50,7 @@
       var options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.65
+        threshold: 0.5
       };
 
       observer = new IntersectionObserver(handleIntersect, options);

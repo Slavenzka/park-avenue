@@ -122,13 +122,19 @@ a {
           transition-duration: 1s;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
   opacity: 1; }
   .slide-left-end::before {
     opacity: 1;
     -webkit-transition-delay: 0.5s;
             transition-delay: 0.5s;
     -webkit-transition-duration: 0.8s;
-            transition-duration: 0.8s; }
+            transition-duration: 0.8s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity; }
 
 .slide-right-start {
   -webkit-transform: translateX(60px);
@@ -142,13 +148,19 @@ a {
           transition-duration: 1s;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
   opacity: 1; }
   .slide-right-end::before {
     opacity: 1;
     -webkit-transition-delay: 0.5s;
             transition-delay: 0.5s;
     -webkit-transition-duration: 0.8s;
-            transition-duration: 0.8s; }
+            transition-duration: 0.8s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity; }
 
 @media (min-width: 768px) {
   .container {
