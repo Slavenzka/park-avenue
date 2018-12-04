@@ -33,6 +33,11 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("style2", function() {
+  gulp.src("source/css/modal.css")
+    .pipe(server.stream());
+});
+
 gulp.task("normalize-min", function() {
   gulp.src("source/css/normalize.css")
   .pipe(minify())
@@ -119,6 +124,7 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/css/modal.css", ["style2"]);
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
