@@ -138,6 +138,23 @@ a {
   }
 }
 
+.callback-ringo {
+  position: absolute;
+  top: 0;
+  right: 100% * 15 / 320;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-color: $background__highlight;
+  background-image: url("../img/callback.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 50% 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
 @media (min-width: $width__tablet) {
   .container {
     min-width: $width__tablet;
@@ -149,10 +166,22 @@ a {
   }
 }
 
+@media (min-width: $width__notebook) {
+  .callback-ringo {
+    top: 50px;
+    right: calc(100% * 15 / 320 - 50px);
+  }
+}
+
 @media (min-width: $width__desktop) {
   .container {
     width: $width__desktop;
     margin: 0 auto;
     padding: 0 74px;
+  }
+
+  .callback-ringo {
+    top: 60px;
+    right: 25px;
   }
 }

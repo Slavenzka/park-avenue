@@ -5,6 +5,7 @@
   const langs = header.querySelectorAll('.language__link');
   const socials = header.querySelectorAll('.social__link');
   const desktop = window.matchMedia('(min-width: 1440px)');
+  const notebook = window.matchMedia('(min-width: 1280px)');
   const tablet = window.matchMedia('(min-width: 768px)');
   const phone = window.matchMedia('(min-width: 320px)');
 
@@ -46,6 +47,21 @@
         }
       });
       socials.forEach(item => item.style.color = 'rgb(123, 101, 66)');
+    } else if (notebook.matches) {
+      langs.forEach((item, index) => {
+        if (window.pageYOffset >= 185 + 25 * index) {
+          item.style.color = 'rgb(123, 101, 66)';
+        } else {
+          item.style.color = 'rgb(255, 255, 255)';
+        }
+      });
+      socials.forEach((item, index) => {
+        if (window.pageYOffset >= 15 + 70 * index) {
+          item.style.color = 'rgb(123, 101, 66)';
+        } else {
+          item.style.color = 'rgb(255, 255, 255)';
+        }
+      });
     } else if (tablet.matches) {
       langs.forEach((item, index) => {
         if (window.pageYOffset >= 555 + 25 * index) {

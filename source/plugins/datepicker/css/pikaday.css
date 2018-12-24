@@ -8,12 +8,28 @@
 .pika-single {
   z-index: 9999;
   display: block;
-  position: relative;
+  position: fixed !important;
+  top: 325px !important;
+  left: auto;
   color: #333333;
   background: #ffffff;
   border: 1px solid #cccccc;
   border-bottom-color: #bbbbbb;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@media (max-width: 1439px) {
+  .pika-single {
+    top: 240px !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .pika-single {
+    top: calc(50% - 248px / 2) !important;
+    left: calc(50% - 258px / 2) !important;
+  }
 }
 
 /*
@@ -233,4 +249,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-table abbr {
   border-bottom: none;
   cursor: help;
+}
+
+.pika-row td:first-of-type .pika-button {
+  opacity: 0.5;
+  pointer-events: none;
 }

@@ -1,0 +1,218 @@
+@keyframes modal-open {
+  0% {
+    top: -200vh;
+  }
+
+  80% {
+    top: -70px;
+  }
+
+  100% {
+    top: -100px;
+  }
+}
+
+@keyframes modal-bg-open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-close {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: -200vh;
+  }
+}
+
+@keyframes modal-bg-close {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  z-index: 5;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 35, 39, 0.7);
+  opacity: 1;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal__wrapper {
+  position: relative;
+  margin: 80px auto 0 auto;
+  padding: 395px 50px 98px 50px;
+  background-color: white;
+  width: 740px;
+}
+
+.success > .modal__wrapper {
+  padding: 40px;
+}
+
+.modal-open {
+  animation-name: modal-open;
+}
+
+.modal-open::before {
+  animation-name: modal-bg-open;
+  animation-delay: 0.4s;
+}
+
+.modal-close {
+  animation-name: modal-close;
+}
+
+.modal-close::before {
+  animation-name: modal-bg-close;
+  animation-delay: none;
+  animation-duration: 0.3s;
+}
+
+.modal__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 370px;
+  background-image: url("../img/index__advantages-bg@1x.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal__toggle {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 10;
+}
+
+.modal__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 0.7;
+  transform-origin: 0;
+  transform: rotate(45deg);
+}
+
+.modal__toggle::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 2px;
+  width: 18px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 0.7;
+  transform-origin: 0;
+  transform: rotate(-45deg);
+}
+
+.success .modal__toggle::after,
+.success .modal__toggle::before {
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+.modal__heading {
+  font-family: "Playfair Display";
+  font-size: 18px;
+}
+
+.modal__descriptor {
+  margin: 0;
+  margin-top: 21px;
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  line-height: 155%;
+  text-indent: 6px;
+}
+
+.modal__btn {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 330px;
+  height: 68px;
+  padding: 0 40px;
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.5px;
+  background-color: rgb(123, 101, 66);
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .modal__wrapper {
+    margin: 46px auto 0 auto;
+    padding: 167px 20px 79px 20px;
+    width: 300px;
+  }
+
+  .modal__frame {
+    height: 150px;
+  }
+
+  .modal__heading {
+    font-size: 16px;
+  }
+
+  .modal__descriptor {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 155%;
+    text-indent: 6px;
+  }
+
+  .modal__btn {
+    bottom: -10px;
+    right: calc(50% - 100px);
+    width: 200px;
+    height: 60px;
+    padding: 0 40px;
+    font-size: 15px;
+  }
+}

@@ -198,6 +198,9 @@
           </li>
         </ul>
       </aside>
+      <button class="callback-ringo slide-right-start">
+        Открыть приложение Ringostat для набора номера
+      </button>
     </div>
   </header>
 
@@ -498,7 +501,7 @@
                 <use xlink:href="#advantages__mail"></use>
               </svg>
             </a>
-            <a href="#" class="button buttons__button buttons__button--call signup-trigger slide-left-start">
+            <a href="#" class="button advantages__button--call buttons__button buttons__button--call signup-trigger slide-left-start">
               Заказать звонок
               <svg class="buttons__icon-phone" width="21" height="21" viewbox="0 0 21 21">
                 <use xlink:href="#advantages__phone"></use>
@@ -593,7 +596,8 @@
 
 <!-- По умолчанию модалка сверстана для записи на просмотр. Через modal-toggle.js она переоформляется в модалку для обратного звонка в случае, если нажат соответствующий элемент. -->
   <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
-  <link rel="stylesheet" href="plugins/timepicker/css/chung-timepicker.css">
+  <link rel="stylesheet" href="plugins/phone/css/intlTelInput.css">
+  <link rel="stylesheet" href="plugins/timepicker2/jquery.timepicker.min.css">
   <div class="signup">
     <div class="signup__wrapper">
       <button class="signup__toggle">
@@ -611,13 +615,13 @@
           <label for="signup-name">
             Имя
           </label>
-          <p class="signup__error signup__error--disabled">
+          <p class="signup__error signup__error--phone signup__error--disabled">
             Сообщение об ошибке
           </p>
         </fieldset>
         <fieldset>
-          <input class="signup__phone" type="tel" placeholder="+3 8(0XX) XXX XX XX" pattern="^[0-9-+s()]*$" id="signup-phone" required>
-          <label for="signup-phone">
+          <input class="signup__phone" type="tel" id="signup-phone" placeholder="" required>
+          <label class="signup__label signup__label--phone" for="signup-phone">
             Телефон
           </label>
           <p class="signup__error signup__error--disabled">
@@ -657,18 +661,16 @@
 
   <script src="js/menu-toggle.js"></script>
   <script src="js/header-style-medium.js"></script>
-  <script src="js/menu-toggle.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script src="plugins/slick/slick.min.js"></script>
   <script src="js/slider-init.js"></script>
   <script src="js/modal.js"></script>
+  <script src="plugins/phone/js/intlTelInput.min.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>
-  <script src="plugins/timepicker/js/chung-timepicker.js"></script>
-  <script>
-    $('#timepicker').chungTimePicker();
-  </script>
+  <script src="plugins/timepicker2/jquery.timepicker.min.js"></script>
+  <script src="js/pickers-init.js"></script>
   <script src="js/marks.js"></script>
   <script src="js/slide-in.js"></script>
 
