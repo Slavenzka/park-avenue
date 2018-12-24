@@ -189,7 +189,8 @@
 }
 
 
-.signup input + label {
+.signup input + label,
+.signup label {
   position: absolute;
   top: 14px;
   left: 20px;
@@ -206,8 +207,7 @@
   width: 310px;
 }
 
-.signup__name:focus + label,
-.signup__phone:focus + label {
+.signup__name:focus + label {
   color: $font-color__highlight;
 }
 
@@ -319,9 +319,15 @@ input.signup__error {
   vertical-align: top;
 }
 
+.signup .flag-dropdown {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
 @media (max-width: 1439px) {
   .signup__wrapper {
-    margin: 150px auto 0 auto;
+    margin: 120px auto 0 auto;
   }
 }
 

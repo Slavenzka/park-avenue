@@ -1,6 +1,8 @@
 'use strict';
 
 (function () {
+  let html = document.querySelector('html');
+
   let signup = {
     modal: document.querySelector('.signup'),
     trigger: document.querySelectorAll('.signup-trigger'),
@@ -42,13 +44,15 @@
     }
 
     function openModal () {
+      let time = document.querySelector('.ui-timepicker-wrapper');
+
       if (modalContent.modal.classList.contains(modalContent.classClose)) {
         modalContent.modal.classList.remove(modalContent.classClose);
       }
       modalContent.modal.classList.add(modalContent.classOpen);
       modalContent.closeBtn.focus();
       modalContent.modal.addEventListener('click', closeModal);
-      document.addEventListener('keydown', closeModalKey)
+      document.addEventListener('keydown', closeModalKey);
     };
 
     openModal.switchCall = function (formContent) {

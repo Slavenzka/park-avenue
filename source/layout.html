@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <script src="js/intersection-observer.js"></script>
+  <link rel="stylesheet" type="text/css" href="plugins/fancybox/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -177,6 +178,9 @@
           </li>
         </ul>
       </aside>
+      <button class="callback-ringo slide-right-start">
+        Открыть приложение Ringostat для набора номера
+      </button>
     </div>
   </header>
 
@@ -254,10 +258,14 @@
             Фото
           </label>
           <div class="visual__3d">
-            <img src="img/design__selection-item--1@1x.png" srcset="img/design__selection-item--1@1x.png 1x, img/design__selection-item--1@2x.png 2x" alt="Трехмерная модель квартиры" class="visual__3d-img">
+            <a href="img/design__selection-item--1@2x.png" data-fancybox>
+              <img src="img/design__selection-item--1@1x.png" srcset="img/design__selection-item--1@1x.png 1x, img/design__selection-item--1@2x.png 2x" alt="Трехмерная модель квартиры" class="visual__3d-img">
+            </a>
           </div>
           <div class="visual__plan">
-            <img src="img/layout__visual-plan-img.png" alt="План-схема квартиры" class="visual__plan-img">
+            <a href="img/layout__visual-plan-img.png" data-fancybox>
+              <img src="img/layout__visual-plan-img.png" alt="План-схема квартиры" class="visual__plan-img">
+            </a>
           </div>
           <div class="visual__photo">
             <ul class="slider visual__photo-list">
@@ -485,6 +493,7 @@
   <script src="plugins/slick/slick.min.js"></script>
   <script src="js/slider-init.js"></script>
   <script src="js/menu-toggle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>
