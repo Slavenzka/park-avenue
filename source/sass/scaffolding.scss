@@ -158,6 +158,7 @@ a {
 @media (min-width: $width__tablet) {
   .container {
     min-width: $width__tablet;
+    max-width: 100%;
     padding: 0 100% * 36 / 768;
   }
 

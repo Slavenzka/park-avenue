@@ -11,6 +11,13 @@
   list-style: none;
 }
 
+.feed__item {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 365px;
+}
+
 .feed__item:not(:last-of-type) {
   margin-bottom: 30px;
 }

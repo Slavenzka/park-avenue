@@ -186,6 +186,7 @@
   line-height: 23px;
   color: $font-color__darker;
   border: 1px solid $border__input--modal;
+  box-shadow: none;
 }
 
 
@@ -368,14 +369,29 @@ input.signup__error {
     margin-bottom: 19px;
   }
 
+  .signup fieldset:first-of-type {
+    margin: 0;
+    width: 100%;
+  }
+
   .signup__name,
   .signup__phone {
     width: 100%;
   }
 
+  .signup__date-fieldset {
+    margin-top: 20px;
+  }
+
   input.signup__date,
   input.signup__time {
+    margin-top: 20px;
     width: 125px;
+  }
+
+  input.signup__date + label,
+  input.signup__time + label {
+    top: 34px;
   }
 
   .signup__submit {
