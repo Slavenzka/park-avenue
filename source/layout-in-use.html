@@ -437,6 +437,9 @@
   </footer>
 
 <!-- По умолчанию модалка сверстана для записи на просмотр. Через modal-toggle.js она переоформляется в модалку для обратного звонка в случае, если нажат соответствующий элемент. -->
+  <link rel="stylesheet" href="plugins/datepicker/css/pikaday.css">
+  <link rel="stylesheet" href="plugins/phone/css/intlTelInput.css">
+  <link rel="stylesheet" href="plugins/timepicker2/jquery.timepicker.min.css">
   <div class="signup">
     <div class="signup__wrapper">
       <button class="signup__toggle">
@@ -454,13 +457,13 @@
           <label for="signup-name">
             Имя
           </label>
-          <p class="signup__error signup__error--disabled">
+          <p class="signup__error signup__error--phone signup__error--disabled">
             Сообщение об ошибке
           </p>
         </fieldset>
         <fieldset>
-          <input class="signup__phone" type="tel" placeholder="+3 8(0XX) XXX XX XX" pattern="^[0-9-+s()]*$" id="signup-phone" required>
-          <label for="signup-phone">
+          <input class="signup__phone" type="tel" id="signup-phone" placeholder="" required>
+          <label class="signup__label signup__label--phone" for="signup-phone">
             Телефон
           </label>
           <p class="signup__error signup__error--disabled">
@@ -508,10 +511,9 @@
   <script src="js/modal.js"></script>
   <script src="plugins/datepicker/js/pikaday.js"></script>
   <script src="plugins/datepicker/js/datepicker-setup.js"></script>
-  <script src="plugins/timepicker/js/chung-timepicker.js"></script>
-  <script>
-    $('#timepicker').chungTimePicker();
-  </script>
+  <script src="plugins/timepicker2/jquery.timepicker.min.js"></script>
+  <script src="plugins/phone/js/intlTelInput.min.js"></script>
+  <script src="js/pickers-init.js"></script>
   <script src="js/slide-in.js"></script>
 </body>
 </html>
