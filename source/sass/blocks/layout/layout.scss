@@ -59,6 +59,10 @@
 }
 
 @media (min-width: $width__notebook) {
+  .layout > .container {
+    justify-content: space-between;
+  }
+
   .layout__services {
     margin-right: auto;
   }

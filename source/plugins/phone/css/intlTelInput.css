@@ -39,6 +39,8 @@
 	bottom: 0;
 	padding: 1px;
   padding-top: 20px;
+  font-family: "Arial";
+  font-size: 14px;
 }
 
 .intl-tel-input .flag-dropdown:hover {
@@ -153,6 +155,11 @@
 	width: 42px;
 	height: 100%;
 	opacity: 0;
+  font-family: "Arial";
+  font-size: 14px;
+}
+
+.intl-tel-input select option {
   font-family: "Arial";
   font-size: 14px;
 }

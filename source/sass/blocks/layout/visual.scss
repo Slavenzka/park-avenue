@@ -108,6 +108,18 @@
   }
 }
 
+@media (min-width: $width__notebook) {
+  .visual {
+    width: 100% * 450 / 1141;
+  }
+
+  .visual__3d-img,
+  .visual__plan-img,
+  .visual__photo-img {
+    width: 100%;
+  }
+}
+
 @media (min-width: $width__desktop) {
   .visual {
     margin-left: 31px;
