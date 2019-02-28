@@ -3889,7 +3889,7 @@ div.construction__buttons {
   background-color: #272327;
   background-image: url("../img/index__promo-slide1@1x.jpg");
   background-size: cover;
-  background-position: -200px 0;
+  background-position: 0 0;
   background-repeat: no-repeat; }
   .contacts__complex::before {
     content: "";
@@ -5908,18 +5908,20 @@ a.options__link--comissioned {
   stroke: #7b6542; }
 
 .options .slick-dots {
-  margin-top: 16px;
-  max-width: 120px; }
+  margin-top: 16px; }
+
+.options .slick-dots > li > button {
+  width: 28px; }
 
 .options .slick-arrow {
-  bottom: 9px; }
+  bottom: -25px; }
 
 .options .slick-prev {
-  left: 140px;
+  left: 0;
   right: auto; }
 
 .options .slick-next {
-  left: 177px;
+  left: 57px;
   right: auto; }
 
 @media (min-width: 768px) {
