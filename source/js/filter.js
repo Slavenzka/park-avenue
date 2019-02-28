@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+
   const filter = document.querySelector('.filter');
   const fieldsetRooms = filter.querySelector('.filter__section--bedrooms');
   const fieldsetSpace = filter.querySelector('.filter__section--space');
@@ -157,7 +158,7 @@
     }
 
     applyFilter.spaceMinMax = function (item) {
-      if ((item.dataset.space >= selectSpaceMin.value) && (item.dataset.space <= selectSpaceMax.value)) {
+      if ((+item.dataset.space >= +selectSpaceMin.value) && (+item.dataset.space <= +selectSpaceMax.value)) {
         return true;
       }
       return false;

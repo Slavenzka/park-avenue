@@ -78,20 +78,24 @@ a.options__link--comissioned {
 
 .options .slick-dots {
   margin-top: 16px;
-  max-width: 120px;
+  // max-width: 120px; Удаляем
+}
+
+.options .slick-dots > li > button {
+  width: 28px; //Добавляем это правило, чтобы нумерация выстраивалась в строку на странице
 }
 
 .options .slick-arrow {
-  bottom: 9px;
+  bottom: -25px; //Меняем на -25px
 }
 
 .options .slick-prev {
-  left: 140px;
+  left: 0; //Обнуляем
   right: auto;
 }
 
 .options .slick-next {
-  left: 177px;
+  left: 57px; //Меняем на 57рх
   right: auto;
 }
 
