@@ -19,11 +19,28 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 320px;
   padding-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+  }
+}
+
+.advantages__item > * {
+  position: relative;
+  z-index: 2;
 }
 
 .advantages__item--1 {
@@ -348,7 +365,7 @@
       width: 100%;
       height: 92px;
       background-color: $background__light;
-      z-index: 1;
+      z-index: 5;
     }
   }
 
