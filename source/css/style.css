@@ -1488,6 +1488,17 @@ span.nav-main__phone {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.environment__map {
+  position: relative; }
+  .environment__map::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+
 .environment__title {
   position: relative;
   margin-left: -1px;
