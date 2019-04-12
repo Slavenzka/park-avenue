@@ -4330,14 +4330,24 @@ div.construction__buttons {
     margin: 0 0 20px 0; } }
 
 .construction__intro {
+  position: relative;
   background-image: url("../img/technical__intro-bg@1x.jpg");
   background-size: cover;
   background-position: -20px 0; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .construction__intro {
       background-image: url("../img/technical__intro-bg@2x.jpg"); } }
+  .construction__intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
 
 .construction__intro .intro__title {
+  position: relative;
   letter-spacing: -0.8px; }
 
 @media (min-width: 768px) {

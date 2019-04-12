@@ -1,4 +1,5 @@
 .construction__intro {
+  position: relative;
   background-image: url("../img/technical__intro-bg@1x.jpg");
   background-size: cover;
   background-position: -20px 0;
@@ -6,9 +7,20 @@
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/technical__intro-bg@2x.jpg");
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background__hover-lighter;
+  }
 }
 
 .construction__intro .intro__title {
+  position: relative;
   letter-spacing: -0.8px;
 }
 
