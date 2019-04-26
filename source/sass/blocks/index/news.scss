@@ -38,12 +38,6 @@
   margin-bottom: 20px;
 }
 
-.news__item:nth-child(2),
-.news__item:nth-child(3),
-.news__item:last-child {
-  display: none;
-}
-
 .news__date {
   position: relative;
   display: inline-block;
@@ -116,16 +110,7 @@
 
   .news__item {
     margin: 0 5px;
-  }
-
-  .news__item:nth-child(2) {
-    display: block;
-  }
-}
-
-@media (min-width: $width__notebook) {
-  .news__item:nth-child(3) {
-    display: block;
+    margin-right: auto;
   }
 }
 
@@ -161,10 +146,6 @@
       top: 20px;
       right: 20px;
     }
-  }
-
-  .news__item:last-child {
-    display: block;
   }
 
   .news__item:not(:last-of-type) {
