@@ -2268,7 +2268,7 @@ a.map__link--selected {
   font-weight: 700;
   line-height: 24px; }
 
-.advantages__descriptor:not(.adavantages__descriptor--mobile) {
+.adavantages__descriptor--mobile {
   display: none; }
 
 .advantages__descriptor {
@@ -2457,14 +2457,10 @@ a.map__link--selected {
     margin: 20px 30px 0 auto;
     padding-left: 35px;
     width: 400px; }
-  .advantages__descriptor:not(.adavantages__descriptor--mobile) {
-    display: block; }
   .advantages__descriptor {
     margin: 20px 30px 0 auto;
     padding-left: 35px;
     width: 400px; }
-  .adavantages__descriptor--mobile {
-    display: none; }
   .advantages__list .slick-dots {
     position: absolute;
     bottom: 0;

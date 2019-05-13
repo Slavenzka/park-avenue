@@ -75,7 +75,7 @@
       findUniques(allStatuses, 'comissioned');
 
       if ((allStatuses.length === 1) && (allStatuses[0] === 'true')) {
-        filedsetStatus.style = 'display: none';
+        fieldsetStatus.style = 'display: none';
       }
 
       let allDates = [];
