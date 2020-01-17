@@ -1,8 +1,8 @@
 {
-  "name": "GlobusVet",
+  "name": "ParkAvenue",
   "version": "1.0.0",
   "private": true,
-  "description": "Верстка макета магазина GlobusVet",
+  "description": "Верстка ParkAvenue",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
@@ -50,6 +50,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "natives": "^1.1.6",
     "npm": "^6.0.1",
     "pikaday": "^1.7.0"
   }
