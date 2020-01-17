@@ -2501,7 +2501,7 @@ a.map__link--selected {
       position: absolute;
       top: -11px;
       left: 390px;
-      width: 100%;
+      width: 80%;
       height: 92px;
       background-color: white;
       z-index: 5; }
