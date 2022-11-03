@@ -7,7 +7,7 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
-    "gulp": "3.9.x",
+    "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-minify": "^3.1.0",
